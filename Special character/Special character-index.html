@@ -1,0 +1,2460 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>特殊文字</title>
+<script>
+  (function(d) {
+    var config = {
+      kitId: 'zez1ooy',
+      scriptTimeout: 3000,
+      async: true
+    },
+    h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+  })(document);
+</script> 
+<script defer src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script> 
+
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.js"></script> 
+<script defer src="JS/script.js"></script>
+<link rel="stylesheet" href="CSS/destyle.css">
+<link rel="stylesheet" href="CSS/program.css">
+<link rel="stylesheet" href="CSS/layout.css">
+</head>
+<body>
+
+<!--loading-->
+
+  <div id="bar">
+    <div id="circle">
+    </div>
+    <div id="bar-logo">
+      <p id="from">
+        Code<br>
+        Hint
+      </p>
+      <p id="to">Special<br>
+        Character
+      </p>
+    </div>
+  </div>  
+
+
+  
+  
+<div id="container">
+  <header id="header">
+    <img src="image/codeHint.gif" alt="" width="100px">
+  </header>
+  <main>
+    
+<!--topArea-->
+    <div id="topArea" class="content-area">
+      <h1><span class="slide-in leftAnime"><span class="slidein_inner leftAnimeInner">特殊文字</span></span></h1>
+      <p>HTMLでは記号を入力する一般的な方法として、「文字実体参照」か「数値文字参照」を使って入力します。<br>
+        記号はキーボードで直接入力したり、「記号」を変換して入力することもできますが,OSやブラウザ、使用している言語に影響されるためオススメできません。<br>
+        HTMLでは記号を入力する一般的な方法として、「文字実体参照」か「数値文字参照」を使って入力します。<br>
+        Unicodeで定められた文字コードを使用するため、機械依存文字(特定の環境でしか表示されない文字のこと)による文字化けを防ぐことができます。
+      </p>
+    </div>
+    
+
+    
+    
+    
+<!---->
+    <div>
+      <h2>文字実態参照</h2>
+      <p>
+        文字実体参照とは定義された名前から記号を入力する形式です。<br>
+        フォーマットは記号名を「&amp;」と「;」で囲みます。
+      </p>
+    </div>
+    
+    
+    
+    
+    
+    
+    
+    
+<!---->
+    <div>
+      <h2>数値文字参照</h2>
+      <p>
+        数値文字参照はUnicodeで定義されたコード位置(「26」や「A9」など)を数値で入力する形式です<br>
+        10進数の入力フォーマットは、コード位置を「&amp;#」と「;」で囲みます。
+        16進数の入力フォーマットは、コード位置を「&amp;#x」と「;」で囲みます。
+      </p>
+    </div>
+    
+    
+
+    
+<!--section1-->
+    <section class="section-wrap">
+      <span><h3>よく使う特殊文字</h3></span>
+      <ul class="section-topList">
+        <li class="topList-btn">&amp;</li>
+        <li class="topList-btn">&copy;</li>
+        <li class="topList-btn">&reg;</li>
+        <li class="topList-btn">&trade;</li>
+        <li class="topList-btn">&quot;</li>
+        <li class="topList-btn">&apos;</li>
+        <li class="topList-btn">:</li>
+        <li class="topList-btn">;</li>
+        <li class="topList-btn">&nbsp;</li>
+        <li class="topList-btn">&lt;</li>
+        <li class="topList-btn">&gt;</li>
+        <li class="topList-btn">&plus;</li>
+        <li class="topList-btn">&minus;</li>
+        <li class="topList-btn">&times;</li>
+        <li class="topList-btn">&divide;</li>
+        <li class="topList-btn">&equals;</li>
+      </ul> 
+         
+ 
+        <ul class="section-orderTitle">
+          <li>記号</li>
+          <li>文字実態参照</li>
+          <li>10進数</li>
+          <li>16進数</li>
+          <li>呼び方</li>
+        </ul>
+        <ul class="section-orderItem">
+          <li>&amp;</li>
+          <li>&amp;amp;</li>
+          <li>&amp;#0038;</li>
+          <li>&amp;#x26;</li>
+          <li>アンパサンド</li>
+        </ul>
+        <ul class="section-orderItem">
+          <li>&copy;</li>
+          <li>&amp;copy;</li>
+          <li>&amp;#0169;</li>
+          <li>&amp;#xA9;</li>
+          <li>著作権記号<br>(コピーライト)</li>
+        </ul>
+        <ul class="section-orderItem">
+          <li>&reg;</li>
+          <li>&amp;reg;</li>
+          <li>&amp;#0174;</li>
+          <li>&amp;#xAE;</li>
+          <li>登録商標</li>
+        </ul>
+        <ul class="section-orderItem">
+          <li>&trade;</li>
+          <li>&amp;trade;</li>
+          <li>&amp;#8482;</li>
+          <li>&amp;#x2122;</li>
+          <li>商標</li>
+        </ul>
+        <ul class="section-orderItem">
+          <li>&quot;</li>
+          <li>&amp;quot;</li>
+          <li>&amp;#0034;</li>
+          <li>&amp;#x22;</li>
+          <li>ダブルクォーテーション</li>
+        </ul>
+        <ul class="section-orderItem">
+          <li>&apos;</li>
+          <li>&amp;apos;</li>
+          <li>&amp;#0039;</li>
+          <li>&amp;#x27;</li>
+          <li>シングルクォーテーション</li>
+        </ul>
+        <ul class="section-orderItem">
+          <li>:</li>
+          <li>&amp;</li>
+          <li>&amp;#0058;</li>
+          <li>&amp;#x3A;</li>
+          <li>コロン</li>
+        </ul>
+        <ul class="section-orderItem">
+          <li>;</li>
+           <li>&amp;</li>
+          <li>&amp;#0059;</li>
+          <li>&amp;#x3B;</li>
+          <li>セミコロン</li>
+        </ul>
+        <ul class="section-orderItem">
+          <li></li>
+           <li>&amp;nbsp;</li>
+          <li>&amp;#0160;</li>
+          <li>&amp;#xA0;</li>
+          <li>ノーブレークスペース<br>半角スペース</li>
+        </ul>
+        <ul class="section-orderItem">
+          <li>&lt;</li>
+          <li>&amp;lt;</li>
+          <li>&amp;#0060;</li>
+          <li>&amp;#x3C;</li>
+          <li>小なり</li>
+        </ul>
+        <ul class="section-orderItem">
+          <li>&gt;</li>
+           <li>&amp;gt;</li>
+          <li>&amp;#0062;</li>
+          <li>&amp;#x3E;</li>
+          <li>大なり</li>
+        </ul>
+        <ul class="section-orderItem">
+          <li>&plus;</li>
+           <li>&amp;plus;</li>
+          <li>&amp;#0043;</li>
+          <li>&amp;#x2B;</li>
+          <li>プラス</li>
+        </ul>
+        <ul class="section-orderItem">
+          <li>&minus;</li>
+           <li>&amp;minus;</li>
+          <li>&amp;#8722;</li>
+          <li>&amp;#x2212;</li>
+          <li>マイナス</li>
+        </ul>
+        <ul class="section-orderItem">
+          <li>&times;</li>
+           <li>&amp;times;</li>
+          <li>&amp;#0215;</li>
+          <li>&amp;#xD7;</li>
+          <li>掛け算</li>
+        </ul>
+        <ul class="section-orderItem">
+          <li>&divide;</li>
+           <li>&amp;divide;</li>
+          <li>&amp;#0247;</li>
+          <li>&amp;#xF7;</li>
+          <li>割り算</li>
+        </ul>
+        <ul class="section-orderItem">
+          <li>&equals;</li>
+           <li>&amp;equals;</li>
+          <li>&amp;#0061;</li>
+          <li>&amp;#x3D;</li>
+          <li>等号<br>イコール</li>
+        </ul>
+    </section>
+     
+    
+    
+    
+    
+    
+   
+<!--section2-->
+    <section class="section-wrap">
+      <span><h3>記号・特殊文字</h3></span>
+      <ul class="section-topList">
+        <li class="topList-btn">&iexcl;</li>
+        <li class="topList-btn">&cent;</li>
+        <li class="topList-btn">&pound;</li>
+        <li class="topList-btn">&curren;</li>
+        <li class="topList-btn">&yen;</li>
+        <li class="topList-btn">&brvbar;</li>
+        <li class="topList-btn">&sect;</li>
+        <li class="topList-btn">&uml;</li>
+        <li class="topList-btn">&copy;</li>
+        <li class="topList-btn">&ordf;</li>
+        <li class="topList-btn">&laquo;</li>
+        <li class="topList-btn">&not;</li>
+        <li class="topList-btn">&shy;</li>
+        <li class="topList-btn">&reg;</li>
+        <li class="topList-btn">&macr;</li>
+        <li class="topList-btn">&deg;</li>
+        <li class="topList-btn">&plusmn;</li>
+        <li class="topList-btn">&sup2;</li>
+        <li class="topList-btn">&sup3;</li>
+        <li class="topList-btn">&acute;</li>
+        <li class="topList-btn">&micro;</li>
+        <li class="topList-btn">&para;</li>
+        <li class="topList-btn">&middot;</li>
+        <li class="topList-btn">&cedil;</li>
+        <li class="topList-btn">&sup1;</li>
+        <li class="topList-btn">&ordm;</li>
+        <li class="topList-btn">&raquo;</li>
+        <li class="topList-btn">&frac14;</li>
+        <li class="topList-btn">&frac12;</li>
+        <li class="topList-btn">&frac34;</li>
+        <li class="topList-btn">&iquest;</li>
+        <li class="topList-btn">&Agrave;</li>
+        <li class="topList-btn">&Aacute;</li>
+        <li class="topList-btn">&Acirc;</li>
+        <li class="topList-btn">&Atilde;</li>
+        <li class="topList-btn">&Auml;</li>
+        <li class="topList-btn">&Aring;</li>
+        <li class="topList-btn">&AElig;</li>
+        <li class="topList-btn">&Ccedil;</li>
+        <li class="topList-btn">&Egrave;</li>
+        <li class="topList-btn">&Eacute;</li>
+        <li class="topList-btn">&Ecirc;</li>
+        <li class="topList-btn">&Euml;</li>
+        <li class="topList-btn">&Igrave;</li>
+        <li class="topList-btn">&Iacute;</li>
+        <li class="topList-btn">&Icirc;</li>
+        <li class="topList-btn">&Iuml;</li>
+        <li class="topList-btn">&ETH;</li>
+        <li class="topList-btn">&Ntilde;</li>
+        <li class="topList-btn">&Ograve;</li>
+        <li class="topList-btn">&Oacute;</li>
+        <li class="topList-btn">&Ocirc;</li>
+        <li class="topList-btn">&Otilde;</li>
+        <li class="topList-btn">&Ouml;</li>
+        <li class="topList-btn">&times;</li>
+        <li class="topList-btn">&Oslash;</li>
+        <li class="topList-btn">&Ugrave;</li>
+        <li class="topList-btn">&Uacute;</li>
+        <li class="topList-btn">&Ucirc;</li>
+        <li class="topList-btn">&Uuml;</li>
+        <li class="topList-btn">&Yacute;</li>
+        <li class="topList-btn">&THORN;</li>
+        <li class="topList-btn">&szlig;</li>
+        <li class="topList-btn">&agrave;</li>
+        <li class="topList-btn">&aacute;</li>
+        <li class="topList-btn">&acirc;</li>
+        <li class="topList-btn">&atilde;</li>
+        <li class="topList-btn">&auml;</li>
+        <li class="topList-btn">&aring;</li>
+        <li class="topList-btn">&aelig;</li>
+        <li class="topList-btn">&ccedil;</li>
+        <li class="topList-btn">&egrave;</li>
+        <li class="topList-btn">&eacute;</li>
+        <li class="topList-btn">&ecirc;</li>
+        <li class="topList-btn">&euml;</li>
+        <li class="topList-btn">&igrave;</li>
+        <li class="topList-btn">&iacute;</li>
+        <li class="topList-btn">&icirc;</li>
+        <li class="topList-btn">&iuml;</li>
+        <li class="topList-btn">&eth;</li>
+        <li class="topList-btn">&ntilde;</li>
+        <li class="topList-btn">&ograve;</li>
+        <li class="topList-btn">&oacute;</li>
+        <li class="topList-btn">&ocirc;</li>
+        <li class="topList-btn">&otilde;</li>
+        <li class="topList-btn">&ouml;</li>
+        <li class="topList-btn">&divide;</li>
+        <li class="topList-btn">&oslash;</li>
+        <li class="topList-btn">&ugrave;</li>
+        <li class="topList-btn">&uacute;</li>
+        <li class="topList-btn">&ucirc;</li>
+        <li class="topList-btn">&uuml;</li>
+        <li class="topList-btn">&yacute;</li>
+        <li class="topList-btn">&thorn;</li>
+        <li class="topList-btn">&yuml;</li>
+        <li class="topList-btn">&bull;</li>
+        <li class="topList-btn">&#8451;</li>
+        <li class="topList-btn">&#8467;</li>
+        <li class="topList-btn">&#8470;</li>
+        <li class="topList-btn">&#8481;</li>
+        <li class="topList-btn">&#8544;</li>
+        <li class="topList-btn">&#8545;</li>
+        <li class="topList-btn">&#8546;</li>
+        <li class="topList-btn">&#8547;</li>
+        <li class="topList-btn">&#8548;</li>
+        <li class="topList-btn">&#8549;</li>
+        <li class="topList-btn">&#8550;</li>
+        <li class="topList-btn">&#8551;</li>
+        <li class="topList-btn">&#8552;</li>
+        <li class="topList-btn">&#8553;</li>
+        <li class="topList-btn">&#8554;</li>
+        <li class="topList-btn">&#8555;</li>
+        <li class="topList-btn">&lArr;</li>
+        <li class="topList-btn">&uArr;</li>
+        <li class="topList-btn">&rArr;</li>
+        <li class="topList-btn">&dArr;</li>
+        <li class="topList-btn">&hArr;</li>
+        <li class="topList-btn">&larr;</li>
+        <li class="topList-btn">&uarr;</li>
+        <li class="topList-btn">&rarr;</li>
+        <li class="topList-btn">&darr;</li>
+        <li class="topList-btn">&harr;</li>
+        <li class="topList-btn">&crarr;</li>
+        <li class="topList-btn">&#9166;</li>
+        <li class="topList-btn">&#9632;</li>
+        <li class="topList-btn">&#9633;</li>
+        <li class="topList-btn">&#9650;</li>
+        <li class="topList-btn">&#9651;</li>
+        <li class="topList-btn">&#9660;</li>
+        <li class="topList-btn">&#9661;</li>
+        <li class="topList-btn">&#9670;</li>
+        <li class="topList-btn">&#9671;</li>
+        <li class="topList-btn">&loz;</li>
+        <li class="topList-btn">&#9675;</li>
+        <li class="topList-btn">&#9679;</li>
+        <li class="topList-btn">&#9702;</li>
+        <li class="topList-btn">&spades;</li>
+        <li class="topList-btn">&#9825;</li>
+        <li class="topList-btn">&#9826;</li>
+        <li class="topList-btn">&clubs;</li>
+        <li class="topList-btn">&#9828;</li>
+        <li class="topList-btn">&hearts;</li>
+        <li class="topList-btn">&diams;</li>
+        <li class="topList-btn">&#9831;</li>
+        <li class="topList-btn">&#9832;</li>
+        <li class="topList-btn">&#9833;</li>
+        <li class="topList-btn">&#9834;</li>
+        <li class="topList-btn">&#9835;</li>
+        <li class="topList-btn">&#9836;</li>
+        <li class="topList-btn">&#9837;</li>
+        <li class="topList-btn">&#9838;</li>
+        <li class="topList-btn">&#9839;</li>
+        <li class="topList-btn">&#10731;</li>
+      </ul> 
+         
+ 
+        <ul class="section-orderTitle">
+          <li>記号</li>
+          <li>文字実態参照</li>
+          <li>10進数</li>
+          <li>16進数</li>
+          <li>呼び方</li>
+        </ul>
+        <ul class="section-orderItem">
+          <li>&iexcl;</li>			
+          <li>&amp;iexcl;</li>
+          <li>&amp;#0161;</li>
+          <li>&amp;#x00A1;</li>
+          <li>逆さ感嘆符</li>
+        </ul>
+        <ul class="section-orderItem">
+          <li>&cent;</li>
+          <li>&amp;cent;</li>
+          <li>&amp;#0162;</li>
+          <li>&amp;#x00A2;</li>
+          <li>セント</li>
+        </ul>
+        <ul class="section-orderItem">
+          <li>&pound;</li>			
+          <li>&amp;pound;</li>
+          <li>&amp;#0163;</li>
+          <li>&amp;#x00A3;</li>
+          <li>ポンド</li>
+        </ul>
+      <ul class="section-orderItem">
+          <li>&curren;</li>			
+          <li>&amp;curren;</li>
+          <li>&amp;#0164;</li>
+          <li>&amp;#x00A4;</li>
+          <li>通貨記号</li>
+        </ul>
+      <ul class="section-orderItem">
+          <li>&yen;</li>			
+          <li>&amp;yen;</li>
+          <li>&amp;#0165;</li>
+          <li>&amp;#x00A5;</li>
+          <li>円</li>
+        </ul>
+      <ul class="section-orderItem">
+          <li>&brvbar;</li>			
+          <li>&amp;brvbar;</li>
+          <li>&amp;#0166;</li>
+          <li>&amp;#x00A6;</li>
+          <li>縦破線</li>
+        </ul>
+      <ul class="section-orderItem">
+          <li>&sect;</li>			
+          <li>&amp;sect;</li>
+          <li>&amp;#0167;</li>
+          <li>&amp;#x00A7;</li>
+          <li>節記号</li>
+        </ul>
+      <ul class="section-orderItem">
+          <li>&uml;</li>			
+          <li>&amp;uml;</li>
+          <li>&amp;#0168;</li>
+          <li>&amp;#x00A8;</li>
+          <li>ウムラウト</li>
+        </ul>
+      <ul class="section-orderItem">
+          <li>&copy;</li>			
+          <li>&amp;copy;</li>
+          <li>&amp;#0169;</li>
+          <li>&amp;#x00A9;</li>
+          <li>著作権（コピーライト）</li>
+        </ul>
+      <ul class="section-orderItem">
+          <li>&ordf;</li>			
+          <li>&amp;ordf;</li>
+          <li>&amp;#0170;</li>
+          <li>&amp;#x00AA;</li>
+          <li>女性序数</li>
+        </ul>
+      <ul class="section-orderItem">
+          <li>&laquo;</li>			
+          <li>&amp;laquo;</li>
+          <li>&amp;#0171;</li>
+          <li>&amp;#x00AB;</li>
+          <li>二重山括弧(開始)</li>
+        </ul>
+      <ul class="section-orderItem">
+          <li>&not;</li>			
+          <li>&amp;anot;</li>
+          <li>&amp;#0172;</li>
+          <li>&amp;#x00AC;</li>
+          <li>否定記号</li>
+        </ul>
+      <ul class="section-orderItem">
+          <li>&shy;</li>			
+          <li>&shy;</li>
+          <li>&#0173;</li>
+          <li>&#x00AD;</li>
+          <li>ソフトハイフン</li>
+        </ul>
+      <ul class="section-orderItem">
+          <li>&reg;</li>			
+          <li>&amp;reg;</li>
+          <li>&amp;#0174;</li>
+          <li>&amp;#x00AE;</li>
+          <li>登録商標</li>
+        </ul>
+      <ul class="section-orderItem">
+          <li>&macr;</li>			
+          <li>&amp;macr;</li>
+          <li>&amp;#0175;</li>
+          <li>&amp;#x00AF;</li>
+          <li>マクロン</li>
+        </ul>
+      <ul class="section-orderItem">
+          <li>&deg;</li>			
+          <li>&amp;deg;</li>
+          <li>&amp;#0176;</li>
+          <li>&amp;#x00B0;</li>
+          <li>度</li>
+        </ul><ul class="section-orderItem">
+          <li>&plusmn;</li>			
+          <li>&amp;plusmn;</li>
+          <li>&amp;#0177;</li>
+          <li>&amp;#x00B1;</li>
+          <li>プラスマイナス</li>
+        </ul>
+      <ul class="section-orderItem">
+          <li>&sup2;</li>			
+          <li>&amp;sup2;</li>
+          <li>&amp;#0178;</li>
+          <li>&amp;#x00B2;</li>
+          <li>上付き数字の2</li>
+        </ul>
+      <ul class="section-orderItem">
+          <li>&sup3;</li>			
+          <li>&amp;sup3;</li>
+          <li>&amp;#0179;</li>
+          <li>&amp;#x00B3;</li>
+          <li>上付き数字の3</li>
+        </ul>
+      <ul class="section-orderItem">
+          <li>&acute;</li>			
+          <li>&amp;acute;</li>
+          <li>&amp;#0180;</li>
+          <li>&amp;#x00B4;</li>
+          <li>鋭アクセント</li>
+        </ul>
+      <ul class="section-orderItem">
+          <li>&micro;</li>			
+          <li>&amp;micro;</li>
+          <li>&amp;#0181;</li>
+          <li>&amp;#x00B5;</li>
+          <li>ミクロン</li>
+        </ul>
+      <ul class="section-orderItem">
+          <li>&para;</li>			
+          <li>&amp;para;</li>
+          <li>&amp;#0182;</li>
+          <li>&amp;#x00B6;</li>
+          <li>段落記号</li>
+        </ul>
+      <ul class="section-orderItem">
+          <li>&middot;</li>			
+          <li>&amp;middot;</li>
+          <li>&amp;#0183;</li>
+          <li>&amp;#x00B7;</li>
+          <li>中黒</li>
+        </ul>
+      <ul class="section-orderItem">
+          <li>&cedil;</li>			
+          <li>&amp;cedil;</li>
+          <li>&amp;#0184;</li>
+          <li>&amp;#x00B8;</li>
+          <li>セディーユ</li>
+        </ul>
+      <ul class="section-orderItem">
+          <li>&sup1;</li>			
+          <li>&amp;sup1;</li>
+          <li>&amp;#0185;</li>
+          <li>&amp;#x00B9;</li>
+          <li>上付き数字の1</li>
+        </ul>
+      <ul class="section-orderItem">
+          <li>&ordm;</li>			
+          <li>&amp;ordm;</li>
+          <li>&amp;#0186;</li>
+          <li>&amp;#x00BA;</li>
+          <li>男性序数</li>
+        </ul>
+      <ul class="section-orderItem">
+          <li>&raquo;</li>			
+          <li>&amp;raquo;</li>
+          <li>&amp;#0187;</li>
+          <li>&amp;#x00BB;</li>
+          <li>二重山括弧(終了)</li>
+        </ul>
+      <ul class="section-orderItem">
+          <li>&frac14;</li>			
+          <li>&amp;frac14;</li>
+          <li>&amp;#0188;</li>
+          <li>&amp;#x00BC;</li>
+          <li>分数1/4</li>
+        </ul>
+      <ul class="section-orderItem">
+          <li>&frac12;</li>			
+          <li>&amp;frac12;</li>
+          <li>&amp;#0189;</li>
+          <li>&amp;#x00BD;</li>
+          <li>分数1/2</li>
+        </ul>
+      <ul class="section-orderItem">
+          <li>&frac34;</li>			
+          <li>&amp;frac34;</li>
+          <li>&amp;#0190;</li>
+          <li>&amp;#x00BE;</li>
+          <li>分数3/4</li>
+        </ul>
+      <ul class="section-orderItem">
+          <li>&iquest;</li>		
+          <li>&amp;iquest;</li>
+          <li>&amp;#0191;</li>
+          <li>&amp;#x00BF;</li>
+          <li>逆さ疑問符</li>
+        </ul>
+      <ul class="section-orderItem">
+          <li>&Agrave;</li>			
+          <li>&amp;Agrave;</li>
+          <li>&amp;#0192;</li>
+          <li>&amp;#x00C0;</li>
+          <li>A (低アクセント)</li>
+        </ul>
+      <ul class="section-orderItem">
+          <li>&Aacute;</li>			
+          <li>&amp;Aacute;</li>
+          <li>&amp;#0193;</li>
+          <li>&amp;#x00C1;</li>
+          <li>A (鋭アクセント)</li>
+        </ul>
+      <ul class="section-orderItem">
+          <li>&Acirc;</li>			
+          <li>&amp;Acirc;</li>
+          <li>&amp;#0194;</li>
+          <li>&amp;#x00C2;</li>
+          <li>A (曲折アクセント)</li>
+        </ul>
+      <ul class="section-orderItem">
+          <li>&Atilde;</li>			
+          <li>&amp;Atilde;</li>
+          <li>&amp;#0195;</li>
+          <li>&amp;#x00C3;</li>
+          <li>A (チルダ)</li>
+        </ul>
+      <ul class="section-orderItem">
+          <li>&Auml;</li>			
+          <li>&amp;Auml;</li>
+          <li>&amp;#0196;</li>
+          <li>&amp;#x00C4;</li>
+          <li>A (ウムラウト)</li>
+        </ul>
+      <ul class="section-orderItem">
+          <li>&Aring;</li>			
+          <li>&amp;Aring;</li>
+          <li>&amp;#0197;</li>
+          <li>&amp;#x00C5;</li>
+          <li>A (リング)</li>
+        </ul>
+      <ul class="section-orderItem">
+          <li>&AElig;</li>			
+          <li>&amp;AElig;</li>
+          <li>&amp;#0198;</li>
+          <li>&amp;#x00C6;</li>
+          <li>AE</li>
+        </ul>
+      <ul class="section-orderItem">
+          <li>&Ccedil;</li>		
+          <li>&amp;Ccedil;</li>
+          <li>&amp;#0199;</li>
+          <li>&amp;#x00C7;</li>
+          <li>C (セディーラ)</li>
+        </ul>
+      <ul class="section-orderItem">
+          <li>&Egrave;</li>			
+          <li>&amp;Egrave;</li>
+          <li>&amp;#0200;</li>
+          <li>&amp;#x00C8;</li>
+          <li>E (低アクセント)</li>
+        </ul>
+      <ul class="section-orderItem">
+          <li>&Eacute;</li>			
+          <li>&amp;Eacute;</li>
+          <li>&amp;#0201;</li>
+          <li>&amp;#x00C9;</li>
+          <li>E (鋭アクセント)</li>
+        </ul>
+      <ul class="section-orderItem">
+          <li>&Ecirc;</li>			
+          <li>&amp;Ecirc;</li>
+          <li>&amp;#0202;</li>
+          <li>&amp;#x00CA;</li>
+          <li>E (曲折アクセント)</li>
+        </ul>
+      <ul class="section-orderItem">
+          <li>&Euml;</li>			
+          <li>&amp;Euml;</li>
+          <li>&amp;#0203;</li>
+          <li>&amp;#x00CB;</li>
+          <li>E (ウムラウト)</li>
+        </ul>
+      <ul class="section-orderItem">
+          <li>&Igrave;</li>			
+          <li>&amp;Igrave;</li>
+          <li>&amp;#0204;</li>
+          <li>&amp;#x00CC;</li>
+          <li>I (低アクセント)</li>
+        </ul>
+      <ul class="section-orderItem">
+          <li>&Iacute;</li>			
+          <li>&amp;Iacute;</li>
+          <li>&amp;#0205;</li>
+          <li>&amp;#x00CD;</li>
+          <li>I (鋭アクセント)</li>
+        </ul>
+      <ul class="section-orderItem">
+          <li>&Icirc;</li>			
+          <li>&amp;Icirc;</li>
+          <li>&amp;#0206;</li>
+          <li>&amp;#x00CE;</li>
+          <li>I (曲折アクセント)</li>
+        </ul>
+      <ul class="section-orderItem">
+          <li>&Iuml;</li>			
+          <li>&amp;Iuml;</li>
+          <li>&amp;#0207;</li>
+          <li>&amp;#x00CF;</li>
+          <li>I (ウムラウト)</li>
+        </ul>
+      <ul class="section-orderItem">
+          <li>&ETH;</li>			
+          <li>&amp;ETH;</li>
+          <li>&amp;#0208;</li>
+          <li>&amp;#x00D0;</li>
+          <li>ETH (アイルランド語)</li>
+        </ul>
+      <ul class="section-orderItem">
+          <li>&Ntilde;</li>			
+          <li>&amp;Ntilde;</li>
+          <li>&amp;#0209;</li>
+          <li>&amp;#x00D1;</li>
+          <li>N (チルダ)</li>
+        </ul>
+      <ul class="section-orderItem">
+          <li>&Ograve;</li>			
+          <li>&amp;Ograve;</li>
+          <li>&amp;#0210;</li>
+          <li>&amp;#x00D2;</li>
+          <li>O (低アクセント)</li>
+        </ul>
+      <ul class="section-orderItem">
+          <li>&Oacute;</li>		
+          <li>&amp;Oacute;</li>
+          <li>&amp;#0211;</li>
+          <li>&amp;#x00D3;</li>
+          <li>O (鋭アクセント)</li>
+        </ul>
+      <ul class="section-orderItem">
+          <li>&Ocirc;</li>			
+          <li>&amp;Ocirc;</li>
+          <li>&amp;#0212;</li>
+          <li>&amp;#x00D4;</li>
+          <li>O (曲折アクセント)</li>
+        </ul>
+      <ul class="section-orderItem">
+          <li>&Otilde;</li>			
+          <li>&amp;Otilde;</li>
+          <li>&amp;#0213;</li>
+          <li>&amp;#x00D5;</li>
+          <li>O (チルダ)</li>
+        </ul>
+      <ul class="section-orderItem">
+          <li>&Ouml;</li>			
+          <li>&amp;Ouml;</li>
+          <li>&amp;#0214;</li>
+          <li>&amp;#x00D6;</li>
+          <li>O (ウムラウト)</li>
+        </ul>
+      <ul class="section-orderItem">
+          <li>&times;</li>			
+          <li>&amp;times;</li>
+          <li>&amp;#0215;</li>
+          <li>&amp;#x00D7;</li>
+          <li>乗算記号</li>
+        </ul>
+      <ul class="section-orderItem">
+          <li>&Oslash;</li>		
+          <li>&amp;Oslash;</li>
+          <li>&amp;#0216;</li>
+          <li>&amp;#x00D8;</li>
+          <li>O (スラッシュ)</li>
+        </ul>
+      <ul class="section-orderItem">
+          <li>&Ugrave;</li>			
+          <li>&amp;Ugrave;</li>
+          <li>&amp;#0217;</li>
+          <li>&amp;#x00D9;</li>
+          <li>U (低アクセント)</li>
+        </ul>
+      <ul class="section-orderItem">
+          <li>&Uacute;</li>			
+          <li>&amp;Uacute;</li>
+          <li>&amp;#0218;</li>
+          <li>&amp;#x00DA;</li>
+          <li>U (鋭アクセント)</li>
+        </ul>
+      <ul class="section-orderItem">
+          <li>&Ucirc;</li>			
+          <li>&amp;Ucirc;</li>
+          <li>&amp;#0219;</li>
+          <li>&amp;#x00DB;</li>
+          <li>U (曲折アクセント)</li>
+        </ul>
+      <ul class="section-orderItem">
+          <li>&Uuml;</li>			
+          <li>&amp;Uuml;</li>
+          <li>&amp;#0220;</li>
+          <li>&amp;#x00DC;</li>
+          <li>U (ウムラウト)</li>
+        </ul>
+      <ul class="section-orderItem">
+          <li>&Yacute;</li>			
+          <li>&amp;Yacute;</li>
+          <li>&amp;#0221;</li>
+          <li>&amp;#x00DD;</li>
+          <li>Y (鋭アクセント)</li>
+        </ul>
+      <ul class="section-orderItem">
+          <li>&THORN;</li>				
+          <li>&amp;THORN;</li>
+          <li>&amp;#0222;</li>
+          <li>&amp;#x00DE;</li>
+          <li>ソーン (アイルランド語)</li>
+        </ul>
+      <ul class="section-orderItem">
+          <li>&szlig;</li>			
+          <li>&amp;szlig;</li>
+          <li>&amp;#0223;</li>
+          <li>&amp;#x00DF;</li>
+          <li>ドイツ語の sz 連字</li>
+        </ul>
+      <ul class="section-orderItem">
+          <li>&agrave;</li>		
+          <li>&amp;agrave;</li>
+          <li>&amp;#0224;</li>
+          <li>&amp;#x00E0;</li>
+          <li>a (低アクセント)</li>
+        </ul>
+      <ul class="section-orderItem">
+          <li>&aacute;</li>				
+          <li>&amp;aacute;</li>
+          <li>&amp;#0225;</li>
+          <li>&amp;#x00E1;</li>
+          <li>a (鋭アクセント)</li>
+        </ul>
+      <ul class="section-orderItem">
+          <li>&acirc;</li>				
+          <li>&amp;acirc;</li>
+          <li>&amp;#0226;</li>
+          <li>&amp;#x00E2;</li>
+          <li>a (曲折アクセント)</li>
+        </ul>
+      <ul class="section-orderItem">
+          <li>&atilde;</li>				
+          <li>&amp;atilde;</li>
+          <li>&amp;#0227;</li>
+          <li>&amp;#x00E3;</li>
+          <li>a (チルダ)</li>
+        </ul>
+      <ul class="section-orderItem">
+          <li>&auml;</li>			
+          <li>&amp;auml;</li>
+          <li>&amp;#0228;</li>
+          <li>&amp;#x00E4;</li>
+          <li>a (ウムラウト)</li>
+        </ul>
+      <ul class="section-orderItem">
+          <li>&aring;</li>			
+          <li>&amp;aring;</li>
+          <li>&amp;#0229;</li>
+          <li>&amp;#x00E5;</li>
+          <li>a (リング)</li>
+        </ul>
+      <ul class="section-orderItem">
+          <li>&aelig;</li>			
+          <li>&amp;aelig;</li>
+          <li>&amp;#0230;</li>
+          <li>&amp;#x00E6;</li>
+          <li>ae 連字</li>
+        </ul>
+      <ul class="section-orderItem">
+          <li>&ccedil;</li>			
+          <li>&amp;ccedil;</li>
+          <li>&amp;#0231;</li>
+          <li>&amp;#x00E7;</li>
+          <li>c (セディーユ)</li>
+        </ul>
+      <ul class="section-orderItem">
+          <li>&egrave;</li>			
+          <li>&amp;egrave;</li>
+          <li>&amp;#0232;</li>
+          <li>&amp;#x00E8;</li>
+          <li>e (低アクセント)</li>
+        </ul>
+      <ul class="section-orderItem">
+          <li>&eacute;</li>			
+          <li>&amp;eacute;</li>
+          <li>&amp;#0233;</li>
+          <li>&amp;#x00E9;</li>
+          <li>e (鋭アクセント)</li>
+        </ul>
+      <ul class="section-orderItem">
+          <li>&ecirc;</li>				
+          <li>&amp;ecirc;</li>
+          <li>&amp;#0234;</li>
+          <li>&amp;#x00EA;</li>
+          <li>e (曲折アクセント)</li>
+        </ul>
+      <ul class="section-orderItem">
+          <li>&euml;</li>			
+          <li>&amp;euml;</li>
+          <li>&amp;#0235;</li>
+          <li>&amp;#x00EB;</li>
+          <li>e (ウムラウト)</li>
+        </ul>
+      <ul class="section-orderItem">
+          <li>&igrave;</li>				
+          <li>&amp;igrave;</li>
+          <li>&amp;#0236;</li>
+          <li>&amp;#x00EC;</li>
+          <li>i (低アクセント)</li>
+        </ul>
+      <ul class="section-orderItem">
+          <li>&iacute;</li>			
+          <li>&amp;iacute;</li>
+          <li>&amp;#0237;</li>
+          <li>&amp;#x00ED;</li>
+          <li>i (鋭アクセント)</li>
+        </ul>
+      <ul class="section-orderItem">
+          <li>&icirc;</li>			
+          <li>&amp;icirc;</li>
+          <li>&amp;#0238;</li>
+          <li>&amp;#x00EE;</li>
+          <li>i (曲折アクセント)</li>
+        </ul>
+      <ul class="section-orderItem">
+          <li>&iuml;</li>			
+          <li>&amp;iuml;</li>
+          <li>&amp;#0239;</li>
+          <li>&amp;#x00EF;</li>
+          <li>i (ウムラウト)</li>
+        </ul>
+      <ul class="section-orderItem">
+          <li>&eth;</li>			
+          <li>&amp;eth;</li>
+          <li>&amp;#0240;</li>
+          <li>&amp;#x00F0;</li>
+          <li>eth (アイルランド語)</li>
+        </ul>
+      <ul class="section-orderItem">
+          <li>&ntilde;</li>			
+          <li>&amp;ntilde;</li>
+          <li>&amp;#0241;</li>
+          <li>&amp;#x00F1;</li>
+          <li>n (チルダ)</li>
+        </ul>
+      <ul class="section-orderItem">
+          <li>&ograve;</li>			
+          <li>&amp;ograve;</li>
+          <li>&amp;#0242;</li>
+          <li>&amp;#x00F2;</li>
+          <li>o (低アクセント)</li>
+        </ul>
+      <ul class="section-orderItem">
+          <li>&oacute;</li>			
+          <li>&amp;oacute;</li>
+          <li>&amp;#0243;</li>
+          <li>&amp;#x00F3;</li>
+          <li>o (鋭アクセント)</li>
+        </ul>
+      <ul class="section-orderItem">
+          <li>&ocirc;</li>			
+          <li>&amp;ocirc;</li>
+          <li>&amp;#0244;</li>
+          <li>&amp;#x00F4;</li>
+          <li>o (曲折アクセント)</li>
+        </ul>
+      <ul class="section-orderItem">
+          <li>&otilde;</li>			
+          <li>&amp;otilde;</li>
+          <li>&amp;#0245;</li>
+          <li>&amp;#x00F5;</li>
+          <li>o (チルダ)</li>
+        </ul>
+      <ul class="section-orderItem">
+          <li>&ouml;</li>			
+          <li>&amp;ouml;</li>
+          <li>&amp;#0246;</li>
+          <li>&amp;#x00F6;</li>
+          <li>o (ウムラウト)</li>
+        </ul>
+      <ul class="section-orderItem">
+          <li>&divide;</li>			
+          <li>&amp;divide;</li>
+          <li>&amp;#0247;</li>
+          <li>&amp;#x00F7;</li>
+          <li>除算記号</li>
+        </ul>
+      <ul class="section-orderItem">
+          <li>&oslash;</li>			
+          <li>&amp;oslash;</li>
+          <li>&amp;#0248;</li>
+          <li>&amp;#x00F8;</li>
+          <li>o (斜線)</li>
+        </ul>
+      <ul class="section-orderItem">
+          <li>&ugrave;</li>			
+          <li>&amp;ugrave;</li>
+          <li>&amp;#0249;</li>
+          <li>&amp;#x00F9;</li>
+          <li>u (低アクセント)</li>
+        </ul>
+      <ul class="section-orderItem">
+          <li>&uacute;</li>			
+          <li>&amp;uacute;</li>
+          <li>&amp;#0250;</li>
+          <li>&amp;#x00FA;</li>
+          <li>u (鋭アクセント)</li>
+        </ul>
+      <ul class="section-orderItem">
+          <li>&ucirc;</li>			
+          <li>&amp;ucirc;</li>
+          <li>&amp;#0251;</li>
+          <li>&amp;#x00FB;</li>
+          <li>u (曲折アクセント)</li>
+        </ul>
+      <ul class="section-orderItem">
+          <li>&uuml;</li>			
+          <li>&amp;uuml;</li>
+          <li>&amp;#0252;</li>
+          <li>&amp;#x00FC;</li>
+          <li>u (ウムラウト)</li>
+        </ul>
+      <ul class="section-orderItem">
+          <li>&yacute;</li>				
+          <li>&amp;yacute;</li>
+          <li>&amp;#0253;</li>
+          <li>&amp;#x00FD;</li>
+          <li>y (鋭アクセント)</li>
+        </ul>
+      <ul class="section-orderItem">
+          <li>&thorn;</li>			
+          <li>&amp;thorn;</li>
+          <li>&amp;#0254;</li>
+          <li>&amp;#x00FE;</li>
+          <li>小文字 ソーン</li>
+        </ul>
+      <ul class="section-orderItem">
+          <li>&yuml;</li>				
+          <li>&amp;yuml;</li>
+          <li>&amp;#0255;</li>
+          <li>&amp;#x00FF;</li>
+          <li>y (ウムラウト)</li>
+        </ul>
+      <ul class="section-orderItem">
+          <li>&bull;</li>			
+          <li>&amp;bull;</li>
+          <li>&amp;#8226;</li>
+          <li>&amp;#x2022;</li>
+          <li>ビュレット</li>
+        </ul>
+      <ul class="section-orderItem">
+          <li>&#8451;</li>			
+          <li></li>
+          <li>&amp;#8451;</li>
+          <li>&amp;#x2103;</li>
+          <li>摂氏温度</li>
+        </ul>
+      <ul class="section-orderItem">
+          <li>&#8467;</li>		
+          <li></li>
+          <li>&amp;#8467;</li>
+          <li>&amp;#x2113;</li>
+          <li>リットル</li>
+        </ul>
+      <ul class="section-orderItem">
+          <li>&#8470;</li>		
+          <li></li>
+          <li>&amp;#8470;</li>
+          <li>&amp;#x2116;</li>
+          <li>No.</li>
+        </ul>
+      <ul class="section-orderItem">
+          <li>&#8481;</li>		
+          <li></li>
+          <li>&amp;#8481;</li>
+          <li>&amp;#x2121;</li>
+          <li>TEL</li>
+        </ul>
+      <ul class="section-orderItem">
+          <li>&#8544;</li>		
+          <li></li>
+          <li>&amp;#8544;</li>
+          <li>&amp;#x2160;</li>
+          <li>ローマ数字1</li>
+        </ul>
+      <ul class="section-orderItem">
+          <li>&#8545;</li>		
+          <li></li>
+          <li>&amp;#8545;</li>
+          <li>&amp;#x2161;</li>
+          <li>ローマ数字2</li>
+        </ul>
+      <ul class="section-orderItem">
+          <li>&#8546;</li>		
+          <li></li>
+          <li>&amp;#8546;</li>
+          <li>&amp;#x2162;</li>
+          <li>ローマ数字3</li>
+        </ul>
+      <ul class="section-orderItem">
+          <li>&#8547;</li>		
+          <li></li>
+          <li>&amp;#8547;</li>
+          <li>&amp;#x2163;</li>
+          <li>ローマ数字4</li>
+        </ul>
+      <ul class="section-orderItem">
+          <li>&#8548;</li>		
+          <li></li>
+          <li>&amp;#8548;</li>
+          <li>&amp;#x2164;</li>
+          <li>ローマ数字5</li>
+        </ul>
+      <ul class="section-orderItem">
+          <li>&#8549;</li>		
+          <li></li>
+          <li>&amp;#8549;</li>
+          <li>&amp;#x2165;</li>
+          <li>ローマ数字6</li>
+        </ul>
+      <ul class="section-orderItem">
+          <li>&#8550;</li>		
+          <li></li>
+          <li>&amp;#8550;</li>
+          <li>&amp;#x2166;</li>
+          <li>ローマ数字7</li>
+        </ul>
+      <ul class="section-orderItem">
+          <li>&#8551;</li>		
+          <li></li>
+          <li>&amp;#8551;</li>
+          <li>&amp;#x2167;</li>
+          <li>ローマ数字8</li>
+        </ul>
+      <ul class="section-orderItem">
+          <li>&#8552;</li>		
+          <li></li>
+          <li>&amp;#8552;</li>
+          <li>&amp;#x2168;</li>
+          <li>ローマ数字9</li>
+        </ul>
+      <ul class="section-orderItem">
+          <li>&#8553;</li>		
+          <li></li>
+          <li>&amp;#8553;</li>
+          <li>&amp;#x2169;</li>
+          <li>ローマ数字10</li>
+        </ul>
+      <ul class="section-orderItem">
+          <li>&#8554;</li>		
+          <li></li>
+          <li>&amp;#8554;</li>
+          <li>&amp;#x216a;</li>
+          <li>ローマ数字11</li>
+        </ul>
+      <ul class="section-orderItem">
+          <li>&#8555;</li>		
+          <li></li>
+          <li>&amp;#8555;</li>
+          <li>&amp;#x216b;</li>
+          <li>ローマ数字12</li>
+        </ul>
+      <ul class="section-orderItem">
+          <li>&lArr;</li>			
+          <li>&amp;lArr;</li>
+          <li>&amp;#8556;</li>
+          <li>&amp;#x21D0;</li>
+          <li>二重矢印 (左)</li>
+        </ul>
+      <ul class="section-orderItem">
+          <li>&uArr;</li>			
+          <li>&amp;uArr;</li>
+          <li>&amp;#8557;</li>
+          <li>&amp;#x21D1;</li>
+          <li>二重矢印 (上)</li>
+        </ul>
+      <ul class="section-orderItem">
+          <li>&rArr;</li>			
+          <li>&amp;rArr;</li>
+          <li>&amp;#8558;</li>
+          <li>&amp;#x21D2;</li>
+          <li>二重矢印 (右)</li>
+        </ul>
+      <ul class="section-orderItem">
+          <li>&dArr;</li>			
+          <li>&amp;dArr;</li>
+          <li>&amp;#8559;</li>
+          <li>&amp;#x21D3;</li>
+          <li>二重矢印 (下)</li>
+        </ul>
+      <ul class="section-orderItem">
+          <li>&hArr;</li>			
+          <li>&amp;hArr;</li>
+          <li>&amp;#8560;</li>
+          <li>&amp;#x21D4;</li>
+          <li>二重矢印 (左右)</li>
+        </ul>
+      <ul class="section-orderItem">
+          <li>&larr;</li>			
+          <li>&amp;larr;</li>
+          <li>&amp;#8592;</li>
+          <li>&amp;#x2190;</li>
+          <li>矢印 (左)</li>
+        </ul>
+      <ul class="section-orderItem">
+          <li>&uarr;</li>			
+          <li>&amp;uarr;</li>
+          <li>&amp;#8593;</li>
+          <li>&amp;#x2191;</li>
+          <li>矢印 (上)</li>
+        </ul>
+      <ul class="section-orderItem">
+          <li>&rarr;</li>			
+          <li>&amp;rarr;</li>
+          <li>&amp;#8594;</li>
+          <li>&amp;#x2192;</li>
+          <li>矢印 (右)</li>
+        </ul>
+      <ul class="section-orderItem">
+          <li>&darr;</li>			
+          <li>&amp;darr;</li>
+          <li>&amp;#8595;</li>
+          <li>&amp;#x2193;</li>
+          <li>矢印 (下)</li>
+        </ul>
+      <ul class="section-orderItem">
+          <li>&harr;</li>			
+          <li>&amp;harr;</li>
+          <li>&amp;#8596;</li>
+          <li>&amp;#x2194;</li>
+          <li>矢印 (左右)</li>
+        </ul>
+      <ul class="section-orderItem">
+          <li>&crarr;</li>			
+          <li>&amp;crarr;</li>
+          <li>&amp;#8629;</li>
+          <li>&amp;#x21B5;</li>
+          <li>黒リターン</li>
+        </ul>
+      <ul class="section-orderItem">
+          <li>&#9166;</li>		
+          <li></li>
+          <li>&amp;#9166;</li>
+          <li>&amp;#x23CE;</li>
+          <li>白リターン</li>
+        </ul>
+      <ul class="section-orderItem">
+          <li>&#9632;</li>		
+          <li></li>
+          <li>&amp;#9632;</li>
+          <li>&amp;#x25A0;</li>
+          <li>黒四角</li>
+        </ul>
+      <ul class="section-orderItem">
+          <li>&#9633;</li>&#9633;	&#x25A1;	
+          <li></li>
+          <li>&amp;#9633;</li>
+          <li>&amp;#x25A1;</li>
+          <li>白四角</li>
+        </ul>
+      <ul class="section-orderItem">
+          <li>&#9650;</li>
+          <li></li>
+          <li>&amp;#9650;</li>
+          <li>&amp;#x25B2;</li>
+          <li>黒三角</li>
+        </ul>
+      <ul class="section-orderItem">
+          <li>&#9651;</li>	
+          <li></li>
+          <li>&amp;#9651;</li>
+          <li>&amp;#x25B3;</li>
+          <li>白三角</li>
+        </ul>
+      <ul class="section-orderItem">
+          <li>&#9660;</li>
+          <li></li>
+          <li>&amp;#9660;</li>
+          <li>&amp;#x25BC;</li>
+          <li>逆黒三角</li>
+        </ul>
+      <ul class="section-orderItem">
+          <li>&#9661;</li>
+          <li></li>
+          <li>&amp;#9661;</li>
+          <li>&amp;#x25BD;</li>
+          <li>逆白三角</li>
+        </ul>
+      <ul class="section-orderItem">
+          <li>&#9670;</li>
+          <li></li>
+          <li>&amp;#9670;</li>
+          <li>&amp;#x25C6;</li>
+          <li>黒ひし形</li>
+        </ul>
+      <ul class="section-orderItem">
+          <li>&#9671;</li>
+          <li></li>
+          <li>&amp;#9671;</li>
+          <li>&amp;#x25C7;</li>
+          <li>白ひし形</li>
+        </ul>
+      <ul class="section-orderItem">
+          <li>&loz;</li>
+          <li>&amp;loz;</li>
+          <li>&amp;#9674;</li>
+          <li>&amp;#x25CA;</li>
+          <li>ロゼンジ</li>
+        </ul>
+      <ul class="section-orderItem">
+          <li>&#9675;</li>
+          <li></li>
+          <li>&amp;#9675;</li>
+          <li>&amp;#x25CB;</li>
+          <li>白丸</li>
+        </ul>
+      <ul class="section-orderItem">
+          <li>&#9679;</li>
+          <li></li>
+          <li>&amp;#9679;</li>
+          <li>&amp;#x25CF;</li>
+          <li>黒丸</li>
+        </ul>
+      <ul class="section-orderItem">
+          <li>&#9702;</li>
+          <li></li>
+          <li>&amp;#9702;</li>
+          <li>&amp;#x25E6;</li>
+          <li>白ビュレット</li>
+        </ul>
+      <ul class="section-orderItem">
+          <li>&spades;</li>
+          <li>&amp;spades;</li>
+          <li>&amp;#9824;</li>
+          <li>&amp;#x2660;</li>
+          <li>黒スペード</li>
+        </ul>
+      <ul class="section-orderItem">
+          <li>&#9825;</li>
+          <li></li>
+          <li>&amp;#9825;</li>
+          <li>&amp;#x2661;</li>
+          <li>白ハート</li>
+        </ul>
+      <ul class="section-orderItem">
+          <li>&#9826;</li>
+          <li>&amp;;</li>
+          <li>&amp;#9826;</li>
+          <li>&amp;#x2662;</li>
+          <li>白ダイヤ</li>
+        </ul>
+      <ul class="section-orderItem">
+          <li>&clubs;</li>
+          <li>&amp;clubs;</li>
+          <li>&amp;#9827;</li>
+          <li>&amp;#x2663;</li>
+          <li>黒クラブ</li>
+        </ul>
+      <ul class="section-orderItem">
+          <li>&#9828;</li>
+          <li></li>
+          <li>&amp;#9828;</li>
+          <li>&amp;#x2664;</li>
+          <li>白スペード</li>
+        </ul>
+      <ul class="section-orderItem">
+          <li>&hearts;</li>
+          <li>&amp;hearts;</li>
+          <li>&amp;#9829;</li>
+          <li>&amp;#x2665;</li>
+          <li>黒ハート</li>
+        </ul>
+      <ul class="section-orderItem">
+          <li>&diams;</li>
+          <li>&amp;diams;</li>
+          <li>&amp;#9830;</li>
+          <li>&amp;#x2666;</li>
+          <li>黒ダイヤ</li>
+        </ul>
+      <ul class="section-orderItem">
+          <li>&#9831;</li>
+          <li></li>
+          <li>&amp;#9831;</li>
+          <li>&amp;#x2667;</li>
+          <li>白クラブ</li>
+        </ul>
+      <ul class="section-orderItem">
+          <li>&#9832;</li>
+          <li></li>
+          <li>&amp;#9832;</li>
+          <li>&amp;#x2668;</li>
+          <li>温泉</li>
+        </ul>
+      <ul class="section-orderItem">
+          <li>&#9833;</li>
+          <li></li>
+          <li>&amp;#9833;</li>
+          <li>&amp;#x2669;</li>
+          <li>四分音符</li>
+        </ul>
+      <ul class="section-orderItem">
+          <li>&#9834;</li>
+          <li></li>
+          <li>&amp;#9834;</li>
+          <li>&amp;#x266a;</li>
+          <li>八分音符</li>
+        </ul>
+      <ul class="section-orderItem">
+          <li>&#9835;</li>
+          <li></li>
+          <li>&amp;#9835;</li>
+          <li>&amp;#x266b;</li>
+          <li>連音符</li>
+        </ul>
+      <ul class="section-orderItem">
+          <li>&#9836;</li>
+          <li></li>
+          <li>&amp;#9836;</li>
+          <li>&amp;#x266c;</li>
+          <li>16分連音符</li>
+        </ul>
+      <ul class="section-orderItem">
+          <li>&#9837;</li>
+          <li></li>
+          <li>&amp;#9837;</li>
+          <li>&amp;#x266d;</li>
+          <li>フラット</li>
+        </ul>
+      <ul class="section-orderItem">
+          <li>&#9838;</li>
+          <li></li>
+          <li>&amp;#9838;</li>
+          <li>&amp;#x266e;</li>
+          <li>ナチュラル</li>
+        </ul>
+      <ul class="section-orderItem">
+          <li>&#9839;</li>
+          <li></li>
+          <li>&amp;#9839;</li>
+          <li>&amp;#x266f;</li>
+          <li>シャープ</li>
+        </ul>
+      <ul class="section-orderItem">
+          <li>&#10731;</li>
+          <li></li>
+          <li>&amp;#10731;</li>
+          <li>&amp;#x29EB;</li>
+          <li>黒ロゼンジ</li>
+        </ul>
+    </section>
+
+    
+    
+    
+    
+<!--section3-->
+    <section class="section-wrap">
+      <span><h3>括弧囲み特殊文字</h3></span>
+      <ul class="section-topList">
+        <li class="topList-btn">&#12832;</li>
+        <li class="topList-btn">&#12833;</li>
+        <li class="topList-btn">&#12834;</li>
+        <li class="topList-btn">&#12835;</li>
+        <li class="topList-btn">&#12836;</li>
+        <li class="topList-btn">&#12837;</li>
+        <li class="topList-btn">&#12838;</li>
+        <li class="topList-btn">&#12839;</li>
+        <li class="topList-btn">&#12840;</li>
+        <li class="topList-btn">&#12841;</li>
+        <li class="topList-btn">&#12842;</li>
+        <li class="topList-btn">&#12843;</li>
+        <li class="topList-btn">&#12844;</li>
+        <li class="topList-btn">&#12845;</li>
+        <li class="topList-btn">&#12846;</li>
+        <li class="topList-btn">&#12847;</li>
+        <li class="topList-btn">&#12848;</li>
+        <li class="topList-btn">&#12849;</li>
+        <li class="topList-btn">&#12850;</li>
+        <li class="topList-btn">&#12851;</li>
+        <li class="topList-btn">&#12852;</li>
+        <li class="topList-btn">&#12853;</li>
+        <li class="topList-btn">&#12854;</li>
+        <li class="topList-btn">&#12855;</li>
+        <li class="topList-btn">&#12856;</li>
+        <li class="topList-btn">&#12857;</li>
+        <li class="topList-btn">&#12858;</li>
+        <li class="topList-btn">&#12859;</li>
+        <li class="topList-btn">&#12860;</li>
+        <li class="topList-btn">&#12861;</li>
+        <li class="topList-btn">&#12862;</li>
+        <li class="topList-btn">&#12863;</li>
+        <li class="topList-btn">&#12864;</li>
+        <li class="topList-btn">&#12865;</li>
+        <li class="topList-btn">&#12866;</li>
+        <li class="topList-btn">&#12867;</li>
+        <li class="topList-btn">&#9332;</li>
+        <li class="topList-btn">&#9333;</li>
+        <li class="topList-btn">&#9334;</li>
+        <li class="topList-btn">&#9335;</li>
+        <li class="topList-btn">&#9336;</li>
+        <li class="topList-btn">&#9337;</li>
+        <li class="topList-btn">&#9338;</li>
+        <li class="topList-btn">&#9339;</li>
+        <li class="topList-btn">&#9340;</li>
+        <li class="topList-btn">&#9341;</li>
+        <li class="topList-btn">&#9342;</li>
+        <li class="topList-btn">&#9343;</li>
+        <li class="topList-btn">&#9344;</li>
+        <li class="topList-btn">&#9345;</li>
+        <li class="topList-btn">&#9346;</li>
+        <li class="topList-btn">&#9347;</li>
+        <li class="topList-btn">&#9348;</li>
+        <li class="topList-btn">&#9349;</li>
+        <li class="topList-btn">&#9350;</li>
+        <li class="topList-btn">&#9351;</li>
+      </ul> 
+         
+ 
+      <ul class="section-orderTitle">
+        <li>記号</li>
+        <li>文字実態参照</li>
+        <li>10進数</li>
+        <li>16進数</li>
+        <li>呼び方</li>
+      </ul>
+      <ul class="section-orderItem">
+        <li>&#12832;</li>
+        <li></li>
+        <li>&#12832;</li>
+        <li>&#x3220;</li>
+        <li>括弧1</li>
+      </ul>
+      <ul class="section-orderItem">
+        <li>&#12833;</li>		
+        <li></li>
+        <li>&#12833;</li>
+        <li>&#x3221;</li>
+        <li>括弧2</li>
+       </ul>
+      <ul class="section-orderItem">
+          <li>&#12834;</li>		
+          <li></li>
+          <li>&#12834;</li>
+          <li>&#x3222;</li>
+          <li>括弧3</li>
+        </ul>
+      <ul class="section-orderItem">
+          <li>&#12835;</li>		
+          <li></li>
+          <li>&#12835;</li>
+          <li>&#x3223;</li>
+          <li>括弧4</li>
+        </ul>
+      <ul class="section-orderItem">
+          <li>&#12836;</li>		
+          <li></li>
+          <li>&#12836;</li>
+          <li>&#x3224;</li>
+          <li>括弧5</li>
+        </ul>
+      <ul class="section-orderItem">
+          <li>&#12837;</li>		
+          <li></li>
+          <li>&#12837;</li>
+          <li>&#x3225;</li>
+          <li>括弧6</li>
+        </ul>
+      <ul class="section-orderItem">
+          <li>&#12838;</li>		
+          <li></li>
+          <li>&#12838;</li>
+          <li>&#x3226;</li>
+          <li>括弧7</li>
+        </ul>
+      <ul class="section-orderItem">
+          <li>&#12839;</li>		
+          <li></li>
+          <li>&#12839;</li>
+          <li>&#x3227;</li>
+          <li>括弧8</li>
+        </ul>
+      <ul class="section-orderItem">
+          <li>&#12840;</li>		
+          <li></li>
+          <li>&#12840;</li>
+          <li>&#x3228;</li>
+          <li>括弧9</li>
+        </ul>
+      <ul class="section-orderItem">
+          <li>&#12841;</li>		
+          <li></li>
+          <li>&#12841;</li>
+          <li>&#x3229;</li>
+          <li>括弧10</li>
+      </ul>
+      <ul class="section-orderItem">
+          <li>&#12842;</li>		
+          <li></li>
+          <li>&#12842;</li>
+          <li>&#x322a;</li>
+          <li>括弧 月曜日</li>
+      </ul>
+      <ul class="section-orderItem">
+          <li>&#12843;</li>		
+          <li></li>
+          <li>&#12843;</li>
+          <li>&#x322b;</li>
+          <li>括弧 火曜日</li>
+      </ul>
+      <ul class="section-orderItem">
+          <li>&#12844;</li>		
+          <li></li>
+          <li>&#12844;</li>
+          <li>&#x322c;</li>
+          <li>括弧 水曜日</li>
+      </ul>
+      <ul class="section-orderItem">
+          <li>&#12845;</li>		
+          <li></li>
+          <li>&#12845;</li>
+          <li>&#x322d;</li>
+          <li>括弧 木曜日</li>
+      </ul>
+      <ul class="section-orderItem">
+          <li>&#12846;</li>		
+          <li></li>
+          <li>&#12846;</li>
+          <li>&#x322e;</li>
+          <li>括弧 金曜日</li>
+      </ul>
+      <ul class="section-orderItem">
+          <li>&#12847;</li>		
+          <li></li>
+          <li>&#12847;</li>
+          <li>&#x322f;</li>
+          <li>括弧 土曜日</li>
+      </ul>
+      <ul class="section-orderItem">
+          <li>&#12848;</li>		
+          <li></li>
+          <li>&#12848;</li>
+          <li>&#x3230;</li>
+          <li>括弧 日曜日</li>
+      </ul>
+      <ul class="section-orderItem">
+          <li>&#12849;</li>		
+          <li></li>
+          <li>&#12849;</li>
+          <li>&#x3231;</li>
+          <li>括弧 株式会社</li>
+      </ul>
+      <ul class="section-orderItem">
+          <li>&#12850;</li>		
+          <li></li>
+          <li>&#12850;</li>
+          <li>&#x3232;</li>
+          <li>括弧 有限会社</li>
+      </ul>
+      <ul class="section-orderItem">
+          <li>&#12851;</li>		
+          <li></li>
+          <li>&#12851;</li>
+          <li>&#x3233;</li>
+          <li>括弧 社団法人</li>
+      </ul>
+      <ul class="section-orderItem">
+          <li>&#12852;</li>		
+          <li></li>
+          <li>&#12852;</li>
+          <li>&#x3234;</li>
+          <li>括弧 合名会社</li>
+      </ul>
+      <ul class="section-orderItem">
+          <li>&#12853;</li>		
+          <li></li>
+          <li>&#12853;</li>
+          <li>&#x3235;</li>
+          <li>括弧 特殊法人</li>
+      </ul>
+      <ul class="section-orderItem">
+          <li>&#12854;</li>		
+          <li></li>
+          <li>&#12854;</li>
+          <li>&#x3236;</li>
+          <li>括弧 財団法人</li>
+      </ul>
+      <ul class="section-orderItem">
+          <li>&#12855;</li>		
+          <li></li>
+          <li>&#12855;</li>
+          <li>&#x3237;</li>
+          <li>括弧 祝日</li>
+      </ul>
+      <ul class="section-orderItem">
+          <li>&#12856;</li>		
+          <li></li>
+          <li>&#12856;</li>
+          <li>&#x3238;</li>
+          <li>括弧 労働組合</li>
+      </ul>
+      <ul class="section-orderItem">
+          <li>&#12857;</li>		
+          <li></li>
+          <li>&#12857;</li>
+          <li>&#x3239;</li>
+          <li>括弧 代表電話</li>
+      </ul>
+      <ul class="section-orderItem">
+          <li>&#12858;</li>		
+          <li></li>
+          <li>&#12858;</li>
+          <li>&#x323a;</li>
+          <li>括弧 呼び出し電話</li>
+      </ul>
+      <ul class="section-orderItem">
+          <li>&#12859;</li>		
+          <li></li>
+          <li>&#12859;</li>
+          <li>&#x323b;</li>
+          <li>括弧 学校法人</li>
+      </ul>
+      <ul class="section-orderItem">
+          <li>&#12860;</li>		
+          <li></li>
+          <li>&#12860;</li>
+          <li>&#x323c;</li>
+          <li>括弧 監査法人</li>
+      </ul>
+      <ul class="section-orderItem">
+          <li>&#12861;</li>		
+          <li></li>
+          <li>&#12861;</li>
+          <li>&#x323d;</li>
+          <li>括弧 企業組合</li>
+      </ul>
+      <ul class="section-orderItem">
+          <li>&#12862;</li>		
+          <li></li>
+          <li>&#12862;</li>
+          <li>&#x323e;</li>
+          <li>括弧 合資会社</li>
+      </ul>
+      <ul class="section-orderItem">
+          <li>&#12863;</li>		
+          <li></li>
+          <li>&#12863;</li>
+          <li>&#x323f;</li>
+          <li>括弧 協同組合</li>
+      </ul>
+      <ul class="section-orderItem">
+          <li>&#12864;</li>		
+          <li></li>
+          <li>&#12864;</li>
+          <li>&#x3240;</li>
+          <li>括弧 祭日</li>
+      </ul>
+      <ul class="section-orderItem">
+          <li>&#12865;</li>		
+          <li></li>
+          <li>&#12865;</li>
+          <li>&#x3241;</li>
+          <li>括弧 休日</li>
+      </ul>
+      <ul class="section-orderItem">
+          <li>&#12866;</li>		
+          <li></li>
+          <li>&#12866;</li>
+          <li>&#x3242;</li>
+          <li>括弧 自</li>
+      </ul>
+      <ul class="section-orderItem">
+          <li>&#12867;</li>		
+          <li></li>
+          <li>&#12867;</li>
+          <li>&#x3243;</li>
+          <li>括弧 至</li>
+      </ul>
+      <ul class="section-orderItem">
+          <li>&#9332;</li>		
+          <li></li>
+          <li>&#9332;</li>
+          <li>&#x2474;</li>
+          <li>括弧 1</li>
+      </ul>
+      <ul class="section-orderItem">
+          <li>&#9333;</li>		
+          <li></li>
+          <li>&#9333;</li>
+          <li>&#x2475;</li>
+          <li>括弧 2</li>
+      </ul>
+      <ul class="section-orderItem">
+          <li>&#9334;</li>		
+          <li></li>
+          <li>&#9334;</li>
+          <li>&#x2476;</li>
+          <li>括弧 3</li>
+      </ul>
+      <ul class="section-orderItem">
+          <li>&#9335;</li>		
+          <li></li>
+          <li>&#9335;</li>
+          <li>&#x2477;</li>
+          <li>括弧 4</li>
+      </ul>
+      <ul class="section-orderItem">
+          <li>&#9336;</li>		
+          <li></li>
+          <li>&#9336;</li>
+          <li>&#x2478;</li>
+          <li>括弧 5</li>
+      </ul>
+      <ul class="section-orderItem">
+          <li>&#9337;</li>		
+          <li></li>
+          <li>&#9337;</li>
+          <li>&#x2479;</li>
+          <li>括弧 6</li>
+      </ul>
+      <ul class="section-orderItem">
+          <li>&#9338;</li>		
+          <li></li>
+          <li>&#9338;</li>
+          <li>&#x247A;</li>
+          <li>括弧 7</li>
+      </ul>
+      <ul class="section-orderItem">
+          <li>&#9339;</li>		
+          <li></li>
+          <li>&#9339;</li>
+          <li>&#x247B;</li>
+          <li>括弧 8</li>
+      </ul>
+      <ul class="section-orderItem">
+          <li>&#9340;</li>		
+          <li></li>
+          <li>&#9340;</li>
+          <li>&#x247C;</li>
+          <li>括弧 9</li>
+      </ul>
+      <ul class="section-orderItem">
+          <li>&#9341;</li>		
+          <li></li>
+          <li>&#9341;</li>
+          <li>&#x247D;</li>
+          <li>括弧 10</li>
+      </ul>
+      <ul class="section-orderItem">
+          <li>&#9342;</li>		
+          <li></li>
+          <li>&#9342;</li>
+          <li>&#x247E;</li>
+          <li>括弧 11</li>
+      </ul>
+      <ul class="section-orderItem">
+          <li>&#9343;</li>		
+          <li></li>
+          <li>&#9343;</li>
+          <li>&#x247F;</li>
+          <li>括弧 12</li>
+      </ul>
+      <ul class="section-orderItem">
+          <li>&#9344;</li>		
+          <li></li>
+          <li>&#9344;</li>
+          <li>&#x2480;</li>
+          <li>括弧 13</li>
+      </ul>
+      <ul class="section-orderItem">
+          <li>&#9345;</li>		
+          <li></li>
+          <li>&#9345;</li>
+          <li>&#x2481;</li>
+          <li>括弧 14</li>
+      </ul>
+      <ul class="section-orderItem">
+          <li>&#9346;</li>		
+          <li></li>
+          <li>&#9346;</li>
+          <li>&#x2482;</li>
+          <li>括弧 15</li>
+      </ul>
+      <ul class="section-orderItem">
+          <li>&#9347;</li>		
+          <li></li>
+          <li>&#9347;</li>
+          <li>&#x2483;</li>
+          <li>括弧 16</li>
+      </ul>
+      <ul class="section-orderItem">
+          <li>&#9348;</li>		
+          <li></li>
+          <li>&#9348;</li>
+          <li>&#x2484;</li>
+          <li>括弧 17</li>
+      </ul>
+      <ul class="section-orderItem">
+          <li>&#9349;</li>		
+          <li></li>
+          <li>&#9349;</li>
+          <li>&#x2485;</li>
+          <li>括弧 18</li>
+      </ul>
+      <ul class="section-orderItem">
+          <li>&#9350;</li>		
+          <li></li>
+          <li>&#9350;</li>
+          <li>&#x2486;</li>
+          <li>括弧 19</li>
+      </ul>
+      <ul class="section-orderItem">
+          <li>&#9351;</li>		
+          <li></li>
+          <li>&#9351;</li>
+          <li>&#x2487;</li>
+          <li>括弧 20</li>
+      </ul>
+      
+    </section>
+
+      
+  </main>
+  <footer>
+  </footer>
+</div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--section1-->
+    <section class="section-wrap">
+      <span><h3>特殊文字</h3></span>
+      <ul class="section-topList">
+        <li class="topList-btn"></li>
+        <li class="topList-btn"></li>
+        <li class="topList-btn"></li>
+        <li class="topList-btn"></li>
+        <li class="topList-btn"></li>
+        <li class="topList-btn"></li>
+        <li class="topList-btn"></li>
+        <li class="topList-btn"></li>
+        <li class="topList-btn"></li>
+        <li class="topList-btn"></li>
+        <li class="topList-btn"></li>
+        <li class="topList-btn"></li>
+        <li class="topList-btn"></li>
+        <li class="topList-btn"></li>
+        <li class="topList-btn"></li>
+        <li class="topList-btn"></li>
+        <li class="topList-btn"></li>
+        <li class="topList-btn"></li>
+        <li class="topList-btn"></li>
+        <li class="topList-btn"></li>
+        <li class="topList-btn"></li>
+        <li class="topList-btn"></li>
+        <li class="topList-btn"></li>
+        <li class="topList-btn"></li>
+        <li class="topList-btn"></li>
+        <li class="topList-btn"></li>
+        <li class="topList-btn"></li>
+        <li class="topList-btn"></li>
+        <li class="topList-btn"></li>
+        <li class="topList-btn"></li>
+        <li class="topList-btn"></li>
+        <li class="topList-btn"></li>
+        <li class="topList-btn"></li>
+        <li class="topList-btn"></li>
+        <li class="topList-btn"></li>
+        <li class="topList-btn"></li>
+        <li class="topList-btn"></li>
+        <li class="topList-btn"></li>
+        <li class="topList-btn"></li>
+        <li class="topList-btn"></li>
+        <li class="topList-btn"></li>
+        <li class="topList-btn"></li>
+        <li class="topList-btn"></li>
+        <li class="topList-btn"></li>
+        <li class="topList-btn"></li>
+        <li class="topList-btn"></li>
+        <li class="topList-btn"></li>
+        <li class="topList-btn"></li>
+        <li class="topList-btn"></li>
+        <li class="topList-btn"></li>
+        <li class="topList-btn"></li>
+        <li class="topList-btn"></li>
+        <li class="topList-btn"></li>
+        <li class="topList-btn"></li>
+        <li class="topList-btn"></li>
+        <li class="topList-btn"></li>
+        <li class="topList-btn"></li>
+        <li class="topList-btn"></li>
+        <li class="topList-btn"></li>
+        <li class="topList-btn"></li>
+        <li class="topList-btn"></li>
+        <li class="topList-btn"></li>
+        <li class="topList-btn"></li>
+        <li class="topList-btn"></li>
+        <li class="topList-btn"></li>
+        <li class="topList-btn"></li>
+        <li class="topList-btn"></li>
+        <li class="topList-btn"></li>
+        <li class="topList-btn"></li>
+        <li class="topList-btn"></li>
+        <li class="topList-btn"></li>
+        <li class="topList-btn"></li>
+        <li class="topList-btn"></li>
+        <li class="topList-btn"></li>
+        <li class="topList-btn"></li>
+        <li class="topList-btn"></li>
+        <li class="topList-btn"></li>
+        <li class="topList-btn"></li>
+        <li class="topList-btn"></li>
+        <li class="topList-btn"></li>
+        <li class="topList-btn"></li>
+        <li class="topList-btn"></li>
+        <li class="topList-btn"></li>
+        <li class="topList-btn"></li>
+        <li class="topList-btn"></li>
+        <li class="topList-btn"></li>
+        <li class="topList-btn"></li>
+        <li class="topList-btn"></li>
+        <li class="topList-btn"></li>
+        <li class="topList-btn"></li>
+        <li class="topList-btn"></li>
+        <li class="topList-btn"></li>
+        <li class="topList-btn"></li>
+        <li class="topList-btn"></li>
+        <li class="topList-btn"></li>
+        <li class="topList-btn"></li>
+        <li class="topList-btn"></li>
+        <li class="topList-btn"></li>
+        <li class="topList-btn"></li>
+        <li class="topList-btn"></li>
+        <li class="topList-btn"></li>
+        <li class="topList-btn"></li>
+        <li class="topList-btn"></li>
+        <li class="topList-btn"></li>
+        <li class="topList-btn"></li>
+        <li class="topList-btn"></li>
+        <li class="topList-btn"></li>
+        <li class="topList-btn"></li>
+        <li class="topList-btn"></li>
+        <li class="topList-btn"></li>
+        <li class="topList-btn"></li>
+        <li class="topList-btn"></li>
+        <li class="topList-btn"></li>
+        <li class="topList-btn"></li>
+        <li class="topList-btn"></li>
+        <li class="topList-btn"></li>
+        <li class="topList-btn"></li>
+        <li class="topList-btn"></li>
+        <li class="topList-btn"></li>
+        <li class="topList-btn"></li>
+        <li class="topList-btn"></li>
+        <li class="topList-btn"></li>
+        <li class="topList-btn"></li>
+        <li class="topList-btn"></li>
+        <li class="topList-btn"></li>
+        <li class="topList-btn"></li>
+        <li class="topList-btn"></li>
+        <li class="topList-btn"></li>
+        <li class="topList-btn"></li>
+        <li class="topList-btn"></li>
+        <li class="topList-btn"></li>
+        <li class="topList-btn"></li>
+        <li class="topList-btn"></li>
+        <li class="topList-btn"></li>
+        <li class="topList-btn"></li>
+        <li class="topList-btn"></li>
+        <li class="topList-btn"></li>
+        <li class="topList-btn"></li>
+        <li class="topList-btn"></li>
+        <li class="topList-btn"></li>
+        <li class="topList-btn"></li>
+        <li class="topList-btn"></li>
+        <li class="topList-btn"></li>
+        <li class="topList-btn"></li>
+        <li class="topList-btn"></li>
+        <li class="topList-btn"></li>
+        <li class="topList-btn"></li>
+        <li class="topList-btn"></li>
+        <li class="topList-btn"></li>
+        <li class="topList-btn"></li>
+        <li class="topList-btn"></li>
+        <li class="topList-btn"></li>
+        <li class="topList-btn"></li>
+        <li class="topList-btn"></li>
+      </ul> 
+         
+ 
+      <ul class="section-orderTitle">
+        <li>記号</li>
+        <li>文字実態参照</li>
+        <li>10進数</li>
+        <li>16進数</li>
+        <li>呼び方</li>
+      </ul>
+      <ul class="section-orderItem">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+      <ul class="section-orderItem">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+       </ul>
+      <ul class="section-orderItem">
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+      <ul class="section-orderItem">
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+      <ul class="section-orderItem">
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+      <ul class="section-orderItem">
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+      <ul class="section-orderItem">
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+      <ul class="section-orderItem">
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+      <ul class="section-orderItem">
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+      <ul class="section-orderItem">
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+      </ul>
+      <ul class="section-orderItem">
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+      </ul>
+      <ul class="section-orderItem">
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+      </ul>
+      <ul class="section-orderItem">
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+      </ul>
+      <ul class="section-orderItem">
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+      </ul>
+      <ul class="section-orderItem">
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+      </ul>
+      <ul class="section-orderItem">
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+      </ul>
+      <ul class="section-orderItem">
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+      </ul>
+      <ul class="section-orderItem">
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+      </ul>
+      <ul class="section-orderItem">
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+      </ul>
+      <ul class="section-orderItem">
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+      </ul>
+      <ul class="section-orderItem">
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+      </ul>
+      <ul class="section-orderItem">
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+      </ul>
+      <ul class="section-orderItem">
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+      </ul>
+      <ul class="section-orderItem">
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+      </ul>
+      <ul class="section-orderItem">
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+      </ul>
+      <ul class="section-orderItem">
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+      </ul>
+      <ul class="section-orderItem">
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+      </ul>
+      <ul class="section-orderItem">
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+      </ul>
+      <ul class="section-orderItem">
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+      </ul>
+      <ul class="section-orderItem">
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+      </ul>
+      <ul class="section-orderItem">
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+      </ul>
+      <ul class="section-orderItem">
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+      </ul>
+      <ul class="section-orderItem">
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+      </ul>
+      <ul class="section-orderItem">
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+      </ul><ul class="section-orderItem">
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+      </ul>
+      <ul class="section-orderItem">
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+      </ul>
+      <ul class="section-orderItem">
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+      </ul>
+      <ul class="section-orderItem">
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+      </ul>
+      <ul class="section-orderItem">
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+      </ul>
+      <ul class="section-orderItem">
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+      </ul>
+      <ul class="section-orderItem">
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+      </ul>
+      <ul class="section-orderItem">
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+      </ul>
+      <ul class="section-orderItem">
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+      </ul>
+      <ul class="section-orderItem">
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+      </ul>
+      <ul class="section-orderItem">
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+      </ul>
+      
+    </section>
