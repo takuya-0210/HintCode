@@ -1,0 +1,1187 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>要素のカテゴリー</title>
+<script>
+  (function(d) {
+    var config = {
+      kitId: 'zez1ooy',
+      scriptTimeout: 3000,
+      async: true
+    },
+    h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+  })(document);
+</script> 
+<script defer src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script> 
+
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.js"></script> 
+<script defer src="JS/script.js"></script>
+<link rel="stylesheet" href="CSS/destyle.css">
+<link rel="stylesheet" href="CSS/program.css">
+<link rel="stylesheet" href="CSS/layout.css">
+</head>
+<body>
+
+<!--loading-->
+
+  <div id="bar">
+    <div id="circle">
+    </div>
+    <div id="bar-logo">
+      <p id="from">
+        Code<br>
+        Hint
+      </p>
+      <p id="to">Category
+        <br>of<br>
+        Element
+      </p>
+    </div>
+  </div>  
+
+
+  
+  
+<div id="container">
+  <header id="header">
+    <img src="image/codeHint.gif" alt="" width="100px">
+    <nav id="nav-list">
+      <ul>
+        <li><a class="js-nav-switch" href="#topArea">top</a></li>
+        <li><a class="js-nav-switch" href="#FlowArea">フロー<br>コンテンツ</a></li>
+        <li><a class="js-nav-switch" href="#InteractiveArea">インタラクティブ<br>コンテンツ</a></li>
+        <li><a class="js-nav-switch" href="#MetadataArea">メタデータ<br>コンテンツ</a></li>
+        <li><a class="js-nav-switch" href="#PhrasingArea">フレージン<br>コンテンツ</a></li>
+        <li><a class="js-nav-switch" href="#EmbeddedArea">エンベディッド<br>コンテンツ</a></li>
+        <li><a class="js-nav-switch" href="#HeadingArea">ヘディング<br>コンテンツ</a></li>
+        <li><a class="js-nav-switch" href="#SectioningArea">セクショニング<br>コンテンツ</a></li>
+        <li><a class="js-nav-switch" href="#others">その他</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    
+<!--topArea-->
+    <div id="topArea" class="content-area">
+      <h1><span class="slide-in leftAnime"><span class="slidein_inner leftAnimeInner">要素のカテゴリー</span></span></h1>
+      <p>HTMLには、要素を分類する<span class="marker">カテゴリー</span>という概念があります。<br>
+        主要なカテゴリーだけでも<span class="marker">7つ</span>あります。<br>
+        多くの要素は1つのカテゴリーにのみ属しているわけではなく、複数のカテゴリーに属していたりします。<br>
+        カテゴリーに属さない要素もあります。<br>
+        以下が7つの主要カテゴリーです。
+      </p>
+    </div>
+    
+
+    
+<!--figureArea-->
+   
+    <div id="figureArea">
+      <dl>
+        <a href="#FlowArea">
+          <div id="Flow" class="figure">
+            <span>フロー</span><br>コンテンツ
+          </div>
+        </a>
+        <a href="#InteractiveArea">
+          <div id="Interactive">
+            <span>インタラクティブ</span><br>コンテンツ
+          </div>
+        </a>
+        <a href="#MetadataArea">
+          <div id="Metadeta">
+            <span>メタデータ</span><br>コンテンツ
+          </div>
+        </a>
+        <a href="#PhrasingArea">
+          <div id="Phrasing">
+            <span>フレージング</span><br>コンテンツ
+          </div>
+        </a>
+        <a href="#EmbeddedArea">
+          <div id="Embedded">
+            <span>エンベディッド</span><br>コンテンツ
+          </div>
+        </a>
+        <a href="#HeadingArea">
+          <div id="Heading">
+            <span>ヘディング</span><br>コンテンツ
+          </div>
+        </a>
+        <a href="#SectionArea">
+          <div id="Section">
+            <span>セクショニング</span><br>コンテンツ
+          </div>
+        </a>
+      </dl>
+    </div>
+    
+<!--scroll-->
+    <div class="scrolldown"><span>scroll</span></div>
+    
+    
+    
+<!--FlowArea-->
+    <section id="FlowArea" class="content-area">
+      <h3><span class="slide-in leftAnime"><span class="slidein_inner leftAnimeInner">フローコンテンツ　Flow content</span></span></h3>
+      <p>
+        body要素の中なら基本的に<span class="marker">どこにでも配置できる要素</span>が分類されます。<br>
+        ほとんどの要素はこのコンテンツになります。
+      </p>
+ 
+      <div class="tab-wrap">
+        <ul>
+        <li class="tab-btn show">すべて</li>
+        <li class="tab-btn">a</li>
+        <li class="tab-btn">b</li>
+        <li class="tab-btn">c</li>
+        <li class="tab-btn">d</li>
+        <li class="tab-btn">e</li>
+        <li class="tab-btn">f</li>
+        <li class="tab-btn">h</li>
+        <li class="tab-btn">i</li>
+        <li class="tab-btn">k</li>
+        <li class="tab-btn">l</li>
+        <li class="tab-btn">m</li>
+        <li class="tab-btn">n</li>
+        <li class="tab-btn">o</li>
+        <li class="tab-btn">p</li>
+        <li class="tab-btn">q</li>
+        <li class="tab-btn">r</li>
+        <li class="tab-btn">s</li>
+        <li class="tab-btn">t</li>
+        <li class="tab-btn">u</li>
+        <li class="tab-btn">v</li>
+        <li class="tab-btn">w</li>
+      </ul>
+      <code class="tab-area-conteiner">
+        <div class="tab-contents show">
+          <a href="">&lt;a&gt;</a>
+          <a href="">&lt;abbr&gt;</a>
+          <a href="">&lt;address&gt;</a>
+          <a href="">&lt;area&gt;</a>
+          <a href="">&lt;article&gt;</a>
+          <a href="">&lt;aside&gt;</a>
+          <a href="">&lt;audio&gt;</a>
+          <a href="">&lt;b&gt;</a>
+          <a href="">&lt;bdi&gt;</a>
+          <a href="">&lt;bdo&gt;</a>
+          <a href="">&lt;blockquote&gt;</a>
+          <a href="">&lt;br&gt;</a>
+          <a href="">&lt;button&gt;</a>
+          <a href="">&lt;canvas&gt;</a>
+          <a href="">&lt;cite&gt;</a>
+          <a href="">&lt;code&gt;</a>
+          <a href="">&lt;data&gt;</a>
+          <a href="">&lt;datalist&gt;</a>
+          <a href="">&lt;del&gt;</a>
+          <a href="">&lt;details&gt;</a>
+          <a href="">&lt;dfn&gt;</a>
+          <a href="">&lt;div&gt;</a>
+          <a href="">&lt;dl&gt;</a>
+          <a href="">&lt;em&gt;</a>
+          <a href="">&lt;embed&gt;</a>
+          <a href="">&lt;fieldset&gt;</a>
+          <a href="">&lt;figure&gt;</a>
+          <a href="">&lt;footer&gt;</a>
+          <a href="">&lt;form&gt;</a>
+          <a href="">&lt;h1&gt;</a>
+          <a href="">&lt;h2&gt;</a>
+          <a href="">&lt;h3&gt;</a>
+          <a href="">&lt;h4&gt;</a>
+          <a href="">&lt;h5&gt;</a>
+          <a href="">&lt;h6&gt;</a>
+          <a href="">&lt;header&gt;</a>
+          <a href="">&lt;hr&gt;</a>
+          <a href="">&lt;i&gt;</a>
+          <a href="">&lt;iframe&gt;</a>
+          <a href="">&lt;img&gt;</a>
+          <a href="">&lt;input&gt;</a>
+          <a href="">&lt;ins&gt;</a>
+          <a href="">&lt;kbd&gt;</a>
+          <a href="">&lt;keygen&gt;</a>
+          <a href="">&lt;label&gt;</a> 
+          <a href="">&lt;main&gt;</a>
+          <a href="">&lt;map&gt;</a>
+          <a href="">&lt;mark&gt;</a>
+          <a href="">&lt;math&gt;</a>
+          <a href="">&lt;menu&gt;</a>
+          <a href="">&lt;meter&gt;</a>
+          <a href="">&lt;nav&gt;</a>
+          <a href="">&lt;noscript&gt;</a>
+          <a href="">&lt;object&gt;</a>
+          <a href="">&lt;ol&gt;</a>
+          <a href="">&lt;output&gt;</a>
+          <a href="">&lt;p&gt;</a>
+          <a href="">&lt;pre&gt;</a>
+          <a href="">&lt;progress&gt;</a>
+          <a href="">&lt;q&gt;</a>
+          <a href="">&lt;ruby&gt;</a>
+          <a href="">&lt;s&gt;</a>
+          <a href="">&lt;samp&gt;</a>
+          <a href="">&lt;script&gt;</a>
+          <a href="">&lt;section&gt;</a>
+          <a href="">&lt;select&gt;</a>
+          <a href="">&lt;small&gt;</a>
+          <a href="">&lt;span&gt;</a>
+          <a href="">&lt;strong&gt;</a>
+          <a href="">&lt;style&gt;</a>
+          <a href="">&lt;sub&gt;</a>
+          <a href="">&lt;sup&gt;</a>
+          <a href="">&lt;svg&gt;</a>
+          <a href="">&lt;table&gt;</a>
+          <a href="">&lt;template&gt;</a>
+          <a href="">&lt;textarea&gt;</a>
+          <a href="">&lt;time&gt;</a>
+          <a href="">&lt;u&gt;</a>
+          <a href="">&lt;ul&gt;</a>
+          <a href="">&lt;var&gt;</a>
+          <a href="">&lt;video&gt;</a>
+          <a href="">&lt;wbr&gt;</a>
+        </div>
+        
+        <div class="tab-contents">
+          <a href="">&lt;a&gt;</a>
+          <a href="">&lt;abbr&gt;</a>
+          <a href="">&lt;address&gt;</a>
+          <a href="">&lt;area&gt;</a>
+          <a href="">&lt;article&gt;</a>
+          <a href="">&lt;aside&gt;</a>
+          <a href="">&lt;audio&gt;</a>
+        </div>
+        <div class="tab-contents">
+          <a href="">&lt;b&gt;</a>
+          <a href="">&lt;bdi&gt;</a>
+          <a href="">&lt;bdo&gt;</a>
+          <a href="">&lt;blockquote&gt;</a>
+          <a href="">&lt;br&gt;</a>
+          <a href="">&lt;button&gt;</a>
+        </div>
+        <div class="tab-contents">
+          <a href="">&lt;canvas&gt;</a>
+          <a href="">&lt;cite&gt;</a>
+          <a href="">&lt;code&gt;</a>
+        </div>
+        <div class="tab-contents">
+          <a href="">&lt;data&gt;</a>
+          <a href="">&lt;datalist&gt;</a>
+          <a href="">&lt;del&gt;</a>
+          <a href="">&lt;details&gt;</a>
+          <a href="">&lt;dfn&gt;</a>
+          <a href="">&lt;div&gt;</a>
+          <a href="">&lt;dl&gt;</a>
+        </div>
+        <div class="tab-contents">
+          <a href="">&lt;em&gt;</a>
+          <a href="">&lt;embed&gt;</a>
+        </div>
+        <div class="tab-contents">
+          <a href="">&lt;fieldset&gt;</a>
+          <a href="">&lt;figure&gt;</a>
+          <a href="">&lt;footer&gt;</a>
+          <a href="">&lt;form&gt;</a>
+        </div>
+        <div class="tab-contents">
+          <a href="">&lt;h1&gt;</a>
+          <a href="">&lt;h2&gt;</a>
+          <a href="">&lt;h3&gt;</a>
+          <a href="">&lt;h4&gt;</a>
+          <a href="">&lt;h5&gt;</a>
+          <a href="">&lt;h6&gt;</a>
+          <a href="">&lt;header&gt;</a>
+          <a href="">&lt;hr&gt;</a>
+        </div>
+        <div class="tab-contents">
+          <a href="">&lt;i&gt;</a>
+          <a href="">&lt;iframe&gt;</a>
+          <a href="">&lt;img&gt;</a>
+          <a href="">&lt;input&gt;</a>
+          <a href="">&lt;ins&gt;</a>
+        </div>
+        <div class="tab-contents">
+          <a href="">&lt;kbd&gt;</a>
+          <a href="">&lt;keygen&gt;</a>
+        </div>
+        <div class="tab-contents">
+          <a href="">&lt;label&gt;</a>      
+        </div>
+        <div class="tab-contents">
+          <a href="">&lt;main&gt;</a>
+          <a href="">&lt;map&gt;</a>
+          <a href="">&lt;mark&gt;</a>
+          <a href="">&lt;math&gt;</a>
+          <a href="">&lt;menu&gt;</a>
+          <a href="">&lt;meter&gt;</a>
+        </div>
+        <div class="tab-contents">
+          <a href="">&lt;nav&gt;</a>
+          <a href="">&lt;noscript&gt;</a>
+        </div>
+        <div class="tab-contents">
+          <a href="">&lt;object&gt;</a>
+          <a href="">&lt;ol&gt;</a>
+          <a href="">&lt;output&gt;</a>
+        </div>
+        <div class="tab-contents">
+          <a href="">&lt;p&gt;</a>
+          <a href="">&lt;pre&gt;</a>
+          <a href="">&lt;progress&gt;</a>
+        </div>
+        <div class="tab-contents">
+          <a href="">&lt;q&gt;</a>
+        </div>
+        <div class="tab-contents">
+          <a href="">&lt;ruby&gt;</a>
+        </div>
+        <div class="tab-contents">
+          <a href="">&lt;s&gt;</a>
+          <a href="">&lt;samp&gt;</a>
+          <a href="">&lt;script&gt;</a>
+          <a href="">&lt;section&gt;</a>
+          <a href="">&lt;select&gt;</a>
+          <a href="">&lt;small&gt;</a>
+          <a href="">&lt;span&gt;</a>
+          <a href="">&lt;strong&gt;</a>
+          <a href="">&lt;style&gt;</a>
+          <a href="">&lt;sub&gt;</a>
+          <a href="">&lt;sup&gt;</a>
+          <a href="">&lt;svg&gt;</a>
+        </div>
+        <div class="tab-contents">
+          <a href="">&lt;table&gt;</a>
+          <a href="">&lt;template&gt;</a>
+          <a href="">&lt;textarea&gt;</a>
+          <a href="">&lt;time&gt;</a>
+        </div>
+        <div class="tab-contents">
+          <a href="">&lt;u&gt;</a>
+          <a href="">&lt;ul&gt;</a>
+        </div>
+        <div class="tab-contents">
+          <a href="">&lt;var&gt;</a>
+          <a href="">&lt;video&gt;</a>
+        </div>
+        <div class="tab-contents">
+          <a href="">&lt;wbr&gt;</a>
+        </div>
+      </code>
+      </div>
+      
+      <div class="footnote">
+        <p>※&lt;area&gt;map要素の子孫だった場合</p>
+        <p>※&lt;style&gt;scoped属性が存在している場合</p>
+      </div>
+    </section>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+<!--InteractiveArea-->
+    <section id="InteractiveArea" class="content-area">
+      <h3><span class="slide-in leftAnime"><span class="slidein_inner leftAnimeInner">インタラクティブコンテンツ　Interactive content</span></span></h3>
+      <p>
+        ユーザーが何かしらの<span class="marker">操作(クリック)などをすることができる要素</span>が分類される
+      </p>
+ 
+      <div class="tab-wrap"> 
+        <ul>
+        <li class="tab-btn show">すべて</li>
+        <li class="tab-btn">a</li>
+        <li class="tab-btn">b</li>
+        <li class="tab-btn">d</li>
+        <li class="tab-btn">e</li>
+        <li class="tab-btn">i</li>
+        <li class="tab-btn">k</li>
+        <li class="tab-btn">l</li>
+        <li class="tab-btn">m</li>
+        <li class="tab-btn">o</li>
+        <li class="tab-btn">s</li>
+        <li class="tab-btn">t</li>
+        <li class="tab-btn">v</li>
+      </ul>
+      <code class="tab-area-conteiner">
+        <div id="Interactive-oll"  class="tab-contents show">
+          <a href="">&lt;a&gt;</a>
+          <a href="">&lt;audio&gt;</a>
+          <a href="">&lt;button&gt;</a>
+          <a href="">&lt;datalist&gt;</a>
+          <a href="">&lt;embed&gt;</a>
+          <a href="">&lt;iframe&gt;</a>
+          <a href="">&lt;img&gt;</a>
+          <a href="">&lt;input&gt;</a>
+          <a href="">&lt;keygen&gt;</a>
+          <a href="">&lt;label&gt;</a> 
+          <a href="">&lt;menu&gt;</a>
+          <a href="">&lt;object&gt;</a>
+          <a href="">&lt;select&gt;</a>
+          <a href="">&lt;textarea&gt;</a>
+          <a href="">&lt;video&gt;</a>
+          <a href="">&lt;wbr&gt;</a>
+        </div>
+        
+        <div class="tab-contents">
+          <a href="">&lt;a&gt;</a>
+          <a href="">&lt;audio&gt;</a>
+        </div>
+        <div class="tab-contents">
+          <a href="">&lt;button&gt;</a>
+        </div>
+        <div class="tab-contents">
+          <a href="">&lt;datalist&gt;</a>
+        </div>
+        <div class="tab-contents">
+          <a href="">&lt;embed&gt;</a>
+        </div>
+        <div class="tab-contents">
+          <a href="">&lt;iframe&gt;</a>
+          <a href="">&lt;img&gt;</a>
+          <a href="">&lt;input&gt;</a>
+        </div>
+        <div class="tab-contents">
+          <a href="">&lt;laber&gt;</a>      
+        </div>
+         <div class="tab-contents">
+          <a href="">&lt;menu&gt;</a>      
+        </div>
+        <div class="tab-contents">
+          <a href="">&lt;object&gt;</a>      
+        </div>
+        <div class="tab-contents">
+          <a href="">&lt;select&gt;</a>
+        </div>
+        <div class="tab-contents">
+          <a href="">&lt;textarea&gt;</a>
+        </div>
+        <div class="tab-contents">
+          <a href="">&lt;video&gt;</a>
+        </div>
+      </code>
+      </div>
+      
+      <div class="footnote">
+        <p>※&lt;audio&gt;control属性が存在している場合</p>
+        <p>※&lt;img&gt;usemap属性が存在している場合</p>
+        <p>※&lt;input&gt;type属性がhiddenではない場合</p>
+        <p>※&lt;menu&gt;type属性がtoolbar状態の場合</p>
+        <p>※&lt;video&gt;controls属性が存在している場合</p>
+      </div>
+    </section>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+<!--MetadataArea-->
+    <section id="MetadataArea" class="content-area">
+      <h3><span class="slide-in leftAnime"><span class="slidein_inner leftAnimeInner">メタデータコンテンツ　Metadata content</span></span></h3>
+      <p>
+        <span class="marker">メタデータやCSS、JavaScript（サイトに動きをつけるプログラム言語）を指定する要素</span>などが分類されます。<br>
+        基本的には画面に表示されない要素になります。
+      </p>
+ 
+      <div class="tab-wrap">
+        <ul>
+        <li class="tab-btn show">すべて</li>
+        <li class="tab-btn">b</li>
+        <li class="tab-btn">c</li>
+        <li class="tab-btn">l</li>
+        <li class="tab-btn">m</li>
+        <li class="tab-btn">n</li>
+        <li class="tab-btn">s</li>
+        <li class="tab-btn">t</li>
+      </ul>
+      <code class="tab-area-conteiner">
+        <div  class="tab-contents show">
+          <a href="">&lt;base&gt;</a>
+          <a href="">&lt;command&gt;</a>
+          <a href="">&lt;link&gt;</a>
+          <a href="">&lt;meta&gt;</a>
+          <a href="">&lt;noscript&gt;</a>
+          <a href="">&lt;script&gt;</a>
+          <a href="">&lt;style&gt;</a>
+          <a href="">&lt;title&gt;</a> 
+        </div>
+        
+        <div class="tab-contents">
+          <a href="">&lt;base&gt;</a>
+        </div>
+        <div class="tab-contents">
+          <a href="">&lt;command&gt;</a>
+        </div>
+        <div class="tab-contents">
+          <a href="">&lt;link&gt;</a>      
+        </div>
+         <div class="tab-contents">
+          <a href="">&lt;meta&gt;</a>      
+        </div>
+        <div class="tab-contents">
+          <a href="">&lt;noscript&gt;</a>      
+        </div>
+        <div class="tab-contents">
+          <a href="">&lt;script&gt;</a>
+          <a href="">&lt;style&gt;</a>
+        </div>
+        <div class="tab-contents">
+          <a href="">&lt;title&gt;</a>
+        </div>
+      </code>
+      </div>
+    </section>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+<!--PhrasingArea-->
+    <section id="PhrasingArea" class="content-area">
+      <h3><span class="slide-in leftAnime"><span class="slidein_inner leftAnimeInner">フレージングコンテンツ　Phrasing content</span></span></h3>
+      <p>
+        ドキュメントの<span class="marker">テキスト範囲を示す要素</span>が分類されます。
+      </p>
+ 
+      <div class="tab-wrap">
+        <ul>
+        <li class="tab-btn show">すべて</li>
+        <li class="tab-btn">a</li>
+        <li class="tab-btn">b</li>
+        <li class="tab-btn">c</li>
+        <li class="tab-btn">d</li>
+        <li class="tab-btn">e</li>
+        <li class="tab-btn">i</li>
+        <li class="tab-btn">k</li>
+        <li class="tab-btn">l</li>
+        <li class="tab-btn">m</li>
+        <li class="tab-btn">n</li>
+        <li class="tab-btn">o</li>
+        <li class="tab-btn">p</li>
+        <li class="tab-btn">q</li>
+        <li class="tab-btn">r</li>
+        <li class="tab-btn">s</li>
+        <li class="tab-btn">t</li>
+        <li class="tab-btn">u</li>
+        <li class="tab-btn">v</li>
+        <li class="tab-btn">w</li>
+      </ul>
+      <code class="tab-area-conteiner">
+        <div class="tab-contents show">
+          <a href="">&lt;a&gt;</a>
+          <a href="">&lt;abbr&gt;</a>
+          <a href="">&lt;area&gt;</a>
+          <a href="">&lt;audio&gt;</a>
+          <a href="">&lt;b&gt;</a>
+          <a href="">&lt;bdi&gt;</a>
+          <a href="">&lt;bdo&gt;</a>
+          <a href="">&lt;br&gt;</a>
+          <a href="">&lt;button&gt;</a>
+          <a href="">&lt;canvas&gt;</a>
+          <a href="">&lt;cite&gt;</a>
+          <a href="">&lt;code&gt;</a>
+          <a href="">&lt;data&gt;</a>
+          <a href="">&lt;datalist&gt;</a>
+          <a href="">&lt;del&gt;</a>
+          <a href="">&lt;dfn&gt;</a>
+          <a href="">&lt;em&gt;</a>
+          <a href="">&lt;embed&gt;</a>
+          <a href="">&lt;i&gt;</a>
+          <a href="">&lt;iframe&gt;</a>
+          <a href="">&lt;img&gt;</a>
+          <a href="">&lt;input&gt;</a>
+          <a href="">&lt;ins&gt;</a>
+          <a href="">&lt;kbd&gt;</a>
+          <a href="">&lt;keygen&gt;</a>
+          <a href="">&lt;label&gt;</a> 
+          <a href="">&lt;map&gt;</a>
+          <a href="">&lt;mark&gt;</a>
+          <a href="">&lt;math&gt;</a>
+          <a href="">&lt;meter&gt;</a>
+          <a href="">&lt;noscript&gt;</a>
+          <a href="">&lt;object&gt;</a>
+          <a href="">&lt;output&gt;</a>
+          <a href="">&lt;progress&gt;</a>
+          <a href="">&lt;q&gt;</a>
+          <a href="">&lt;ruby&gt;</a>
+          <a href="">&lt;s&gt;</a>
+          <a href="">&lt;samp&gt;</a>
+          <a href="">&lt;script&gt;</a>
+          <a href="">&lt;select&gt;</a>
+          <a href="">&lt;small&gt;</a>
+          <a href="">&lt;span&gt;</a>
+          <a href="">&lt;strong&gt;</a>
+          <a href="">&lt;sub&gt;</a>
+          <a href="">&lt;sup&gt;</a>
+          <a href="">&lt;svg&gt;</a>
+          <a href="">&lt;template&gt;</a>
+          <a href="">&lt;textarea&gt;</a>
+          <a href="">&lt;time&gt;</a>
+          <a href="">&lt;u&gt;</a>
+          <a href="">&lt;var&gt;</a>
+          <a href="">&lt;video&gt;</a>
+          <a href="">&lt;wbr&gt;</a>
+        </div>
+        <div class="tab-contents">
+          <a href="">&lt;a&gt;</a>
+          <a href="">&lt;abbr&gt;</a>
+          <a href="">&lt;area&gt;</a>
+          <a href="">&lt;audio&gt;</a>
+        </div>
+        <div class="tab-contents">
+          <a href="">&lt;b&gt;</a>
+          <a href="">&lt;bdi&gt;</a>
+          <a href="">&lt;bdo&gt;</a>
+          <a href="">&lt;br&gt;</a>
+          <a href="">&lt;button&gt;</a>
+        </div>
+        <div class="tab-contents">
+          <a href="">&lt;canvas&gt;</a>
+          <a href="">&lt;cite&gt;</a>
+          <a href="">&lt;code&gt;</a>
+        </div>
+        <div class="tab-contents">
+          <a href="">&lt;data&gt;</a>
+          <a href="">&lt;datalist&gt;</a>
+          <a href="">&lt;del&gt;</a>
+          <a href="">&lt;dfn&gt;</a>
+        </div>
+        <div class="tab-contents">
+          <a href="">&lt;em&gt;</a>
+          <a href="">&lt;embed&gt;</a>
+        </div>
+        <div class="tab-contents">
+          <a href="">&lt;i&gt;</a>
+          <a href="">&lt;iframe&gt;</a>
+          <a href="">&lt;img&gt;</a>
+          <a href="">&lt;input&gt;</a>
+          <a href="">&lt;ins&gt;</a>
+        </div>
+        <div class="tab-contents">
+          <a href="">&lt;kbd&gt;</a>
+          <a href="">&lt;keygen&gt;</a>
+        </div>
+        <div class="tab-contents">
+          <a href="">&lt;label&gt;</a>      
+        </div>
+        <div class="tab-contents">
+          <a href="">&lt;map&gt;</a>
+          <a href="">&lt;mark&gt;</a>
+          <a href="">&lt;math&gt;</a>
+          <a href="">&lt;meter&gt;</a>
+        </div>
+        <div class="tab-contents">
+          <a href="">&lt;noscript&gt;</a>
+        </div>
+        <div class="tab-contents">
+          <a href="">&lt;object&gt;</a>
+          <a href="">&lt;output&gt;</a>
+        </div>
+        <div class="tab-contents">
+          <a href="">&lt;progress&gt;</a>
+        </div>
+        <div class="tab-contents">
+          <a href="">&lt;q&gt;</a>
+        </div>
+        <div class="tab-contents">
+          <a href="">&lt;ruby&gt;</a>
+        </div>
+        <div class="tab-contents">
+          <a href="">&lt;s&gt;</a>
+          <a href="">&lt;samp&gt;</a>
+          <a href="">&lt;script&gt;</a>
+          <a href="">&lt;select&gt;</a>
+          <a href="">&lt;small&gt;</a>
+          <a href="">&lt;span&gt;</a>
+          <a href="">&lt;strong&gt;</a>
+          <a href="">&lt;sub&gt;</a>
+          <a href="">&lt;sup&gt;</a>
+          <a href="">&lt;svg&gt;</a>
+        </div>
+        <div class="tab-contents">
+          <a href="">&lt;template&gt;</a>
+          <a href="">&lt;textarea&gt;</a>
+          <a href="">&lt;time&gt;</a>
+        </div>
+        <div class="tab-contents">
+          <a href="">&lt;u&gt;</a>
+        </div>
+        <div class="tab-contents">
+          <a href="">&lt;var&gt;</a>
+          <a href="">&lt;video&gt;</a>
+        </div>
+        <div class="tab-contents">
+          <a href="">&lt;wbr&gt;</a>
+        </div>
+      </code>
+      </div>
+      
+      <div class="footnote">
+        <p>※&lt;a&gt;フレージングコンテンツのみを含んでいる場合</p>
+        <p>※&lt;area&gt;map要素の子孫だった場合</p>
+        <p>※&lt;del&gt;フレージングコンテンツのみを含んでいる場合</p>
+        <p>※&lt;ins&gt;フレージングコンテンツのみを含んでいる場合</p>
+        <p>※&lt;map&gt;フレージングコンテンツのみを含んでいる場合</p>
+      </div>
+    </section>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+<!--EmbeddedArea-->
+    <section id="EmbeddedArea" class="content-area">
+      <h3><span class="slide-in leftAnime"><span class="slidein_inner leftAnimeInner">エンベッディッドコンテンツ　Embedded content</span></span></h3>
+      <p>
+        外部のリソースや、<span class="marker">HTML以外の言語で生成されたコンテンツを埋め込む要素</span>が分類されます。
+      </p>
+ 
+      <div class="tab-wrap">
+        <ul>
+        <li class="tab-btn show">すべて</li>
+        <li class="tab-btn">a</li>
+        <li class="tab-btn">c</li>
+        <li class="tab-btn">e</li>
+        <li class="tab-btn">i</li>
+        <li class="tab-btn">m</li>
+        <li class="tab-btn">o</li>
+        <li class="tab-btn">s</li>
+        <li class="tab-btn">v</li>
+      </ul>
+      <code class="tab-area-conteiner">
+        <div  class="tab-contents show ">
+          <a href="">&lt;audio&gt;</a>
+          <a href="">&lt;canvas&gt;</a>
+          <a href="">&lt;embed&gt;</a>
+          <a href="">&lt;iframe&gt;</a>
+          <a href="">&lt;img&gt;</a>
+          <a href="">&lt;math&gt;</a>
+          <a href="">&lt;object&gt;</a>
+          <a href="">&lt;svg&gt;</a>
+          <a href="">&lt;video&gt;</a>
+        </div>
+        
+        <div class="tab-contents">
+          <a href="">&lt;audio&gt;</a>
+        </div>
+        <div class="tab-contents">
+          <a href="">&lt;canvas&gt;</a>
+        </div>
+        <div class="tab-contents">
+          <a href="">&lt;embed&gt;</a>
+        </div>
+        <div class="tab-contents">
+          <a href="">&lt;iframe&gt;</a>
+          <a href="">&lt;img&gt;</a>
+        </div>
+        <div class="tab-contents">
+          <a href="">&lt;math&gt;</a>
+        </div>
+        <div class="tab-contents">
+          <a href="">&lt;object&gt;</a>
+        </div>
+        <div class="tab-contents">
+          <a href="">&lt;svg&gt;</a>
+        </div>
+        <div class="tab-contents">
+          <a href="">&lt;video&gt;</a>
+        </div>
+      </code>
+      </div>
+    </section>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+<!--HeadingArea-->
+    <section id="HeadingArea" class="content-area">
+      <h3><span class="slide-in leftAnime"><span class="slidein_inner leftAnimeInner">ヘディングコンテンツ　Heading content</span></span></h3>
+      <p>
+        見出しを示す要素が分類されます。
+      </p>
+
+      <div class="tab-wrap">
+      <ul>
+        <li class="tab-btn show">h</li>
+      </ul>
+      <code class="tab-area-conteiner">
+        <div class="tab-contents show">
+          <a href="">&lt;h1&gt;</a>
+          <a href="">&lt;h2&gt;</a>
+          <a href="">&lt;h3&gt;</a>
+          <a href="">&lt;h4&gt;</a>
+          <a href="">&lt;h5&gt;</a>
+          <a href="">&lt;h6&gt;</a>
+          <a href="">&lt;header&gt;</a>
+          <a href="">&lt;hr&gt;</a>
+        </div>
+      </code>
+      </div>
+      
+      <div class="footnote">
+        <p>※&lt;area&gt;map要素の子孫だった場合</p>
+        <p>※&lt;style&gt;scoped属性が存在している場合</p>
+      </div>
+    </section>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+<!--SectioningArea-->
+    <section id="SectioningArea" class="content-area">
+      <h3><span class="slide-in leftAnime"><span class="slidein_inner leftAnimeInner">セクショニングコンテンツ　Sectioning content</span></span></h3>
+      <p>
+        章・節・項のように<span class="marker">アウトライン（階層構造）を形成する要素</span>が分類されます。
+      </p>
+ 
+      <div class="tab-wrap">
+        <ul>
+          <li class="tab-btn show">すべて</li>
+          <li class="tab-btn">a</li>
+          <li class="tab-btn">n</li>
+          <li class="tab-btn">s</li>
+        </ul>
+        <code class="tab-area-conteiner">
+          <div class="tab-contents show">
+            <a href="">&lt;article&gt;</a>
+            <a href="">&lt;aside&gt;</a>
+            <a href="">&lt;nav&gt;</a>
+            <a href="">&lt;section&gt;</a>
+          </div>
+          <div class="tab-contents">
+            <a href="">&lt;article&gt;</a>
+            <a href="">&lt;aside&gt;</a>
+          </div>
+          <div class="tab-contents">
+            <a href="">&lt;nav&gt;</a>
+          </div>
+          <div class="tab-contents">
+            <a href="">&lt;section&gt;</a>
+          </div>
+        </code>
+      </div>
+      
+    </section>
+  
+  
+    
+    
+    <div id="others">
+      <h2>その他のカテゴリー</h2>
+      <p>上記以外にも、少し特殊なカテゴリが存在します</p>
+    </div>
+    
+    
+    
+    
+    
+    
+<!--PalpableArea-->
+    <section id="PalpableArea" class="content-area">
+      <h3><span class="slide-in leftAnime"><span class="slidein_inner leftAnimeInner">パルパブルコンテンツ　Palpable content</span></span></h3>
+      <p>
+        コンテンツ・モデルがフロー・コンテンツまたは、フレージング・コンテンツの要素で、<br>
+        かつ、要素内にhidden 属性が指定されていない要素が1つ以上ある要素。
+      </p>
+ 
+      <div class="tab-wrap">
+        <ul>
+        <li class="tab-btn show">すべて</li>
+        <li class="tab-btn">a</li>
+        <li class="tab-btn">b</li>
+        <li class="tab-btn">c</li>
+        <li class="tab-btn">d</li>
+        <li class="tab-btn">e</li>
+        <li class="tab-btn">f</li>
+        <li class="tab-btn">h</li>
+        <li class="tab-btn">i</li>
+        <li class="tab-btn">k</li>
+        <li class="tab-btn">l</li>
+        <li class="tab-btn">m</li>
+        <li class="tab-btn">n</li>
+        <li class="tab-btn">o</li>
+        <li class="tab-btn">p</li>
+        <li class="tab-btn">q</li>
+        <li class="tab-btn">r</li>
+        <li class="tab-btn">s</li>
+        <li class="tab-btn">t</li>
+        <li class="tab-btn">u</li>
+        <li class="tab-btn">v</li>
+      </ul>
+    
+      <code class="tab-area-conteiner">
+        <div class="tab-contents show">
+          <a href="">&lt;a&gt;</a>
+          <a href="">&lt;abbr&gt;</a>
+          <a href="">&lt;address&gt;</a>
+          <a href="">&lt;article&gt;</a>
+          <a href="">&lt;aside&gt;</a>
+          <a href="">&lt;audio&gt;</a>
+          <a href="">&lt;b&gt;</a>
+          <a href="">&lt;bdi&gt;</a>
+          <a href="">&lt;bdo&gt;</a>
+          <a href="">&lt;blockquote&gt;</a>
+          <a href="">&lt;button&gt;</a>
+          <a href="">&lt;canvas&gt;</a>
+          <a href="">&lt;cite&gt;</a>
+          <a href="">&lt;code&gt;</a>
+          <a href="">&lt;data&gt;</a>
+          <a href="">&lt;dfn&gt;</a>
+          <a href="">&lt;div&gt;</a>
+          <a href="">&lt;dl&gt;</a>
+          <a href="">&lt;em&gt;</a>
+          <a href="">&lt;embed&gt;</a>
+          <a href="">&lt;fieldset&gt;</a>
+          <a href="">&lt;figure&gt;</a>
+          <a href="">&lt;footer&gt;</a>
+          <a href="">&lt;form&gt;</a>
+          <a href="">&lt;h1&gt;</a>
+          <a href="">&lt;h2&gt;</a>
+          <a href="">&lt;h3&gt;</a>
+          <a href="">&lt;h4&gt;</a>
+          <a href="">&lt;h5&gt;</a>
+          <a href="">&lt;h6&gt;</a>
+          <a href="">&lt;header&gt;</a>
+          <a href="">&lt;i&gt;</a>
+          <a href="">&lt;iframe&gt;</a>
+          <a href="">&lt;img&gt;</a>
+          <a href="">&lt;input&gt;</a>
+          <a href="">&lt;ins&gt;</a>
+          <a href="">&lt;kbd&gt;</a>
+          <a href="">&lt;keygen&gt;</a>
+          <a href="">&lt;label&gt;</a> 
+          <a href="">&lt;main&gt;</a>
+          <a href="">&lt;map&gt;</a>
+          <a href="">&lt;mark&gt;</a>
+          <a href="">&lt;math&gt;</a>
+          <a href="">&lt;meter&gt;</a>
+          <a href="">&lt;nav&gt;</a>
+          <a href="">&lt;object&gt;</a>
+          <a href="">&lt;ol&gt;</a>
+          <a href="">&lt;output&gt;</a>
+          <a href="">&lt;p&gt;</a>
+          <a href="">&lt;pre&gt;</a>
+          <a href="">&lt;progress&gt;</a>
+          <a href="">&lt;q&gt;</a>
+          <a href="">&lt;ruby&gt;</a>
+          <a href="">&lt;s&gt;</a>
+          <a href="">&lt;samp&gt;</a>
+          <a href="">&lt;section&gt;</a>
+          <a href="">&lt;select&gt;</a>
+          <a href="">&lt;small&gt;</a>
+          <a href="">&lt;span&gt;</a>
+          <a href="">&lt;strong&gt;</a>
+          <a href="">&lt;sub&gt;</a>
+          <a href="">&lt;sup&gt;</a>
+          <a href="">&lt;svg&gt;</a>
+          <a href="">&lt;table&gt;</a>
+          <a href="">&lt;textarea&gt;</a>
+          <a href="">&lt;time&gt;</a>
+          <a href="">&lt;u&gt;</a>
+          <a href="">&lt;ul&gt;</a>
+          <a href="">&lt;var&gt;</a>
+          <a href="">&lt;video&gt;</a>
+        </div>
+        <div class="tab-contents">
+          <a href="">&lt;a&gt;</a>
+          <a href="">&lt;abbr&gt;</a>
+          <a href="">&lt;address&gt;</a>
+          <a href="">&lt;article&gt;</a>
+          <a href="">&lt;aside&gt;</a>
+          <a href="">&lt;audio&gt;</a>
+        </div>
+        <div class="tab-contents">
+          <a href="">&lt;b&gt;</a>
+          <a href="">&lt;bdi&gt;</a>
+          <a href="">&lt;bdo&gt;</a>
+          <a href="">&lt;blockquote&gt;</a>
+          <a href="">&lt;button&gt;</a>
+        </div>
+        <div class="tab-contents">
+          <a href="">&lt;canvas&gt;</a>
+          <a href="">&lt;cite&gt;</a>
+          <a href="">&lt;code&gt;</a>
+        </div>
+        <div class="tab-contents">
+          <a href="">&lt;data&gt;</a>
+          <a href="">&lt;dfn&gt;</a>
+          <a href="">&lt;div&gt;</a>
+          <a href="">&lt;dl&gt;</a>
+        </div>
+        <div class="tab-contents">
+          <a href="">&lt;em&gt;</a>
+          <a href="">&lt;embed&gt;</a>
+        </div>
+        <div class="tab-contents">
+          <a href="">&lt;fieldset&gt;</a>
+          <a href="">&lt;figure&gt;</a>
+          <a href="">&lt;footer&gt;</a>
+          <a href="">&lt;form&gt;</a>
+        </div>
+        <div class="tab-contents">
+          <a href="">&lt;h1&gt;</a>
+          <a href="">&lt;h2&gt;</a>
+          <a href="">&lt;h3&gt;</a>
+          <a href="">&lt;h4&gt;</a>
+          <a href="">&lt;h5&gt;</a>
+          <a href="">&lt;h6&gt;</a>
+          <a href="">&lt;header&gt;</a>
+        </div>
+        <div class="tab-contents">
+          <a href="">&lt;i&gt;</a>
+          <a href="">&lt;iframe&gt;</a>
+          <a href="">&lt;img&gt;</a>
+          <a href="">&lt;input&gt;</a>
+          <a href="">&lt;ins&gt;</a>
+        </div>
+        <div class="tab-contents">
+          <a href="">&lt;kbd&gt;</a>
+          <a href="">&lt;keygen&gt;</a>
+        </div>
+        <div class="tab-contents">
+          <a href="">&lt;label&gt;</a>      
+        </div>
+        <div class="tab-contents">
+          <a href="">&lt;main&gt;</a>
+          <a href="">&lt;map&gt;</a>
+          <a href="">&lt;mark&gt;</a>
+          <a href="">&lt;math&gt;</a>
+          <a href="">&lt;meter&gt;</a>
+        </div>
+        <div class="tab-contents">
+          <a href="">&lt;nav&gt;</a>
+        </div>
+        <div class="tab-contents">
+          <a href="">&lt;object&gt;</a>
+          <a href="">&lt;ol&gt;</a>
+          <a href="">&lt;output&gt;</a>
+        </div>
+        <div class="tab-contents">
+          <a href="">&lt;p&gt;</a>
+          <a href="">&lt;pre&gt;</a>
+          <a href="">&lt;progress&gt;</a>
+        </div>
+        <div class="tab-contents">
+          <a href="">&lt;q&gt;</a>
+        </div>
+        <div class="tab-contents">
+          <a href="">&lt;ruby&gt;</a>
+        </div>
+        <div class="tab-contents">
+          <a href="">&lt;s&gt;</a>
+          <a href="">&lt;samp&gt;</a>
+          <a href="">&lt;section&gt;</a>
+          <a href="">&lt;select&gt;</a>
+          <a href="">&lt;small&gt;</a>
+          <a href="">&lt;span&gt;</a>
+          <a href="">&lt;strong&gt;</a>
+          <a href="">&lt;sub&gt;</a>
+          <a href="">&lt;sup&gt;</a>
+          <a href="">&lt;svg&gt;</a>
+        </div>
+        <div class="tab-contents">
+          <a href="">&lt;table&gt;</a>
+          <a href="">&lt;textarea&gt;</a>
+          <a href="">&lt;time&gt;</a>
+        </div>
+        <div class="tab-contents">
+          <a href="">&lt;u&gt;</a>
+          <a href="">&lt;ul&gt;</a>
+        </div>
+        <div class="tab-contents">
+          <a href="">&lt;var&gt;</a>
+          <a href="">&lt;video&gt;</a>
+        </div>
+      </code>
+      </div>
+      
+      <div class="footnote">
+        <p>※&lt;audio&gt;controls属性が存在している場合</p>
+        <p>※&lt;dl&gt;子孫要素に1つ以上のname-valueグループを含む場合</p>
+        <p>※&lt;input&gt;type属性がhiddenではない場合</p>
+        <p>※&lt;ol&gt;子要素に1つ以上のli要素を含む場合</p>
+        <p>※&lt;ul&gt;子要素に1つ以上のli要素を含む場合</p>
+      </div>
+    </section>
+    
+  
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+<!--Script-supportingArea-->
+    <section id="Script-supportingArea" class="content-area">
+      <h3><span class="slide-in leftAnime"><span class="slidein_inner leftAnimeInner">スクリプトサポート要素　Script-supporting elements</span></span></h3>
+      <p>
+        それ自身では何も表示されない要素で、ユーザーに機能を提供するなどの要素が分類されます。
+      </p>
+ 
+      <div class="tab-wrap">
+        <ul>
+        <li class="tab-btn show">すべて</li>
+        <li class="tab-btn">s</li>
+        <li class="tab-btn">t</li>
+      </ul>
+      <code class="tab-area-conteiner">
+        <div class="tab-contents show">
+          <a href="">&lt;script&gt;</a>
+          <a href="">&lt;template&gt;</a>
+        </div>   
+        <div class="tab-contents">
+          <a href="">&lt;script&gt;</a>
+        </div>
+        <div class="tab-contents">
+          <a href="">&lt;template&gt;</a>
+        </div>
+      </code>
+      </div>
+      
+    </section>
+    
+ 
+  </main>
+  <footer>
+  </footer>
+</div>
+</body>
+</html>

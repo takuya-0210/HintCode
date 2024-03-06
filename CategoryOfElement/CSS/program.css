@@ -1,0 +1,258 @@
+@charset "utf-8";
+/*CaregoryOfElement*/
+
+
+/*loading*/
+
+#bar {
+  position: relative;
+  top: 50%;
+  height: 2px;
+  width: 500px;
+  margin: 0 auto;
+  background: #C9BC9C;
+  margin-top: 40vh;
+}
+
+#circle {
+  position: absolute;
+  top: -30px;
+  margin-left: -30px;
+  height: 60px;
+  width: 60px;
+  left: 0;
+  background: #C9BC9C;
+  border-radius: 30%;
+  animation: move 8s infinite;
+  animation-delay: 1s;
+}
+
+#from {
+  position: absolute;
+  top: -15px;
+  right: 475px;
+  text-transform: uppercase;
+  color: #F2F2ED;
+  font-family: "a-otf-ud-reimin-pr6n", sans-serif;
+  font-size: 0.9rem;
+}
+
+#to {
+  position: absolute;
+  top: 20px;
+  right: -100px;
+  text-transform: uppercase;
+  color: #F2F2ED;
+  font-family: "a-otf-ud-reimin-pr6n", sans-serif;
+  font-size: 1.2rem;
+  text-align: 1.6em;
+}
+
+@keyframes move {
+  0% {
+    left: 0;
+  }
+  50% {
+    left: 100%;
+    transform: rotate(450deg);
+    width: 150px;
+    height: 150px;
+  }
+  75% {
+    left: 100%;
+    transform: rotate(450deg);
+    width: 150px;
+    height: 150px;
+  }
+  100% {
+    right: 100%;
+    z-index: -1;
+  }
+} 
+
+#container {
+  position: relative;
+  opacity: 0;
+}
+
+body.appear #container {
+  animation-name: PageAnimeAppear;
+  animation-duration: 5s;
+  animation-delay: 0.2s;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+@keyframes PageAnimeAppear {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+
+
+
+
+
+
+/*Animation*/
+
+.slide-in {
+  overflow: hidden;
+  display: inline-block;
+}
+
+.slidein_inner {
+  display: inline-block;
+}
+
+
+.leftAnime {
+  opacity: 0;
+}
+
+.slideAnimeLeftRight {
+  animation-name: slideText100;
+  animation-delay: .5s;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+@keyframes slideText100 {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  
+  to{
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.slideAnimeRightLeft {
+  animation-name: slideText-100;
+  animation-delay: .5s;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+@keyframes slideText-100 {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*scroll*/
+.scrolldown {
+  position: relative;
+  bottom: 90px;
+  left: 0;
+  width: 30px;
+  height: 70px;
+  margin-top: 30px;
+}
+
+.scrolldown span {
+  position: absolute;
+  left: 10px;
+  bottom: 20px;
+  color: #333;
+  font-size: 0.7rem;
+  letter-spacing: 0.1em;
+  writing-mode: vertical-rl;
+}
+
+.scrolldown::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: -4px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #000;
+  animation: 
+    circlemove 1.6s ease-in-out infinite,
+    circlemovehide 1.6s ease-in-out infinite;
+}
+
+@keyframes circlemove {
+  0%{bottom: 65px;}
+  100%{bottom: -5px;}
+}
+
+@keyframes circlemovehide {
+  0%{opacity: 0;}
+  50%{opacity: 1;}
+  80%{opacity: 0.9;}
+  100%{opacity: 0;}
+}
+
+.scrolldown::after{
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 1px;
+  height: 70px;
+  background-color: #333;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*marker*/
+.marker.is-active {
+  background-size: 100% 30%;
+}
+
+.marker{
+  padding: 0 3px;
+  background: linear-gradient(rgba(255,133,52,0.10), rgba(255,133,52,0.60));
+  background-repeat: no-repeat;
+  background-size: 0 30%;
+  background-position: 0 100%;
+  transition:  3s;
+  transition-delay: 2.5s;
+  font-size: 1.2rem;
+  line-height: 1.4em;
+}
+
+
+
