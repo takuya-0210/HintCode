@@ -1,0 +1,271 @@
+// JavaScript Document
+
+
+
+
+//loading設定
+var splash_text = $.cookie('accessdate'),
+  myD = new Date(),
+  myYear = String(myD.getFullYear()),
+  myMonth = String(myD.getMonth()),
+  myDate = String(myD.getDate());
+
+if (splash_text == myYear + myMonth + myDate) {
+  $("#splash").css('display', 'block');
+  setTimeout(function () {
+    $('#splash-logo').delay(1200).fadeOut('slow', function () {
+      $('body').addClass('appear');
+    });
+  });
+  setTimeout(function () {
+    $('#splash').delay(1500).fadeOut('slow', function () {
+      var myD = new Date(),
+        myYear = String(myD.getFullYear()),
+        myMonth = String(myD.getMonth()),
+        myDate = String(myD.getDate());
+      $.cookie('accessdate', myYear + myMonth + myDate);
+    });
+    $("#splashbg").on('animationend', function () {});
+  })
+} else {
+  $('#splash').css('display', 'none');
+  $('#splash-logo').css('display', 'none');
+  $('#splashbg').css('display', 'none');
+  $('body').addClass('appear');
+}
+
+
+
+
+
+/*(Html,Css,Js)topList出現方法*/
+
+function moveAnimation (){
+  
+  var randomElm = $('.randomBox'),
+      randomElmChild = $(randomElm).children();
+  
+  if(!$(randomElm).hasClass('play')) {
+    randomAnime();
+  }
+  
+  function randomAnime() {
+    
+    $(randomElm).addClass('play');
+    
+    var rnd = Math.floor(Math.random() * randomElmChild.length),
+        moveData = 'fadeup';
+    
+    $(randomElmChild[rnd]).addClass(moveData);
+    randomElmChild.splice(rnd,1);
+    
+    if(randomElmChild.length == 0) {
+      $(randomElm).removeClass('play');
+    }else {
+      setTimeout(function(){randomAnime();},400);
+    }
+  }
+}
+
+
+
+
+
+
+
+
+//Htmlのコンテンツ一覧イベント
+$("#tagHtml-btn").click(function() {
+  $(this).toggleClass('active');
+  $('#tagHtml-list').toggleClass('panelactive');
+  });
+
+
+$("#tagHtml-btn.active").click(function() {
+  $('#tagHtml-btn').removeClass('active');
+  $('#tagHtml-list').removeClass('panelactive');
+});
+
+
+//Cssのプロパティ一覧イベント
+$("#propertiesList-btn").click(function() {
+  $(this).toggleClass('active');
+  $('#properties-list').toggleClass('panelactive');
+  });
+
+
+$("#propertiesList-btn.active").click(function() {
+  $('#propertiesList-btn').removeClass('active');
+  $('#properties-list').removeClass('panelactive');
+});
+
+//Jsのオブジェクト一覧イベント
+$("#objectList-btn").click(function() {
+  $(this).toggleClass('active');
+  $('#objectList-list').toggleClass('panelactive');
+  $('#methodList-btn').toggleClass('displayNone');
+  });
+
+
+$("#objectList-btn.active").click(function() {
+  $('#objectList-btn').removeClass('active');
+  $('#objectList-list').removeClass('panelactive');
+  $('#methodList-btn').removeClass('displayNone');
+});
+
+//Jsのメソッド一覧イベント
+$("#methodList-btn").click(function() {
+  $(this).toggleClass('active');
+  $('#methodList-list').toggleClass('panelactive');
+  $('#objectList-btn').toggleClass('displayNone');
+  });
+
+$("#methodList-btn.active").click(function() {
+  $('#methodList-btn').removeClass('active');
+  $('#methodList-list').removeClass('panelactive');
+  $('#objectList-btn').removeClass('displayNone');
+});
+
+
+
+
+function ScrollAnimation() {
+  
+  var position = $(this).offset().top,
+      scroll = $(window).scrollTop(),
+      windowHeight = $(window).height();
+      
+  
+  $(".HTML-title-left").each(function(){
+      var position = $(this).offset().top; //ページの一番上から要素までの距離を取得
+      var scroll = $(window).scrollTop(); //スクロールの位置を取得
+      var windowHeight = $(window).height(); //ウインドウの高さを取得
+      if (scroll > position - windowHeight){ //スクロール位置が要素の位置を過ぎたとき
+        $(this).addClass('flipAnimeLeft'); //クラス「active」を与える
+      }
+    });
+  
+  $(".HTML-title-right").each(function(){
+      var position = $(this).offset().top; //ページの一番上から要素までの距離を取得
+      var scroll = $(window).scrollTop(); //スクロールの位置を取得
+      var windowHeight = $(window).height(); //ウインドウの高さを取得
+      if (scroll > position - windowHeight){ //スクロール位置が要素の位置を過ぎたとき
+        $(this).addClass('flipAnimeRight'); //クラス「active」を与える
+      }
+    });
+  
+  $(".Css-title-left").each(function(){
+      var position = $(this).offset().top; //ページの一番上から要素までの距離を取得
+      var scroll = $(window).scrollTop(); //スクロールの位置を取得
+      var windowHeight = $(window).height(); //ウインドウの高さを取得
+      if (scroll > position - windowHeight){ //スクロール位置が要素の位置を過ぎたとき
+        $(this).addClass('flipAnimeLeft'); //クラス「active」を与える
+      }
+    });
+  
+  $(".Css-title-right").each(function(){
+      var position = $(this).offset().top; //ページの一番上から要素までの距離を取得
+      var scroll = $(window).scrollTop(); //スクロールの位置を取得
+      var windowHeight = $(window).height(); //ウインドウの高さを取得
+      if (scroll > position - windowHeight){ //スクロール位置が要素の位置を過ぎたとき
+        $(this).addClass('flipAnimeRight'); //クラス「active」を与える
+      }
+    });
+  
+  $(".LbgextendTrigger").each(function(){
+      var position = $(this).offset().top; //ページの一番上から要素までの距離を取得
+      var scroll = $(window).scrollTop(); //スクロールの位置を取得
+      var windowHeight = $(window).height(); //ウインドウの高さを取得
+      if (scroll > position - windowHeight){ //スクロール位置が要素の位置を過ぎたとき
+        $(this).addClass('Lbgextend'); //クラス「active」を与える
+      }
+    });
+  
+  $(".bgRLextendTrigger").each(function(){
+      var position = $(this).offset().top; //ページの一番上から要素までの距離を取得
+      var scroll = $(window).scrollTop(); //スクロールの位置を取得
+      var windowHeight = $(window).height(); //ウインドウの高さを取得
+      if (scroll > position - windowHeight){ //スクロール位置が要素の位置を過ぎたとき
+        $(this).addClass('bgRLextend'); //クラス「active」を与える
+      }
+    });
+  
+  $(".RbgextendTrigger").each(function(){
+      var position = $(this).offset().top; //ページの一番上から要素までの距離を取得
+      var scroll = $(window).scrollTop(); //スクロールの位置を取得
+      var windowHeight = $(window).height(); //ウインドウの高さを取得
+      if (scroll > position - windowHeight){ //スクロール位置が要素の位置を過ぎたとき
+        $(this).addClass('Rbgextend'); //クラス「active」を与える
+      }
+    });
+  
+  $(".bgLRextendTrigger").each(function(){
+      var position = $(this).offset().top; //ページの一番上から要素までの距離を取得
+      var scroll = $(window).scrollTop(); //スクロールの位置を取得
+      var windowHeight = $(window).height(); //ウインドウの高さを取得
+      if (scroll > position - windowHeight){ //スクロール位置が要素の位置を過ぎたとき
+        $(this).addClass('bgLRextend'); //クラス「active」を与える
+      }
+    });
+  
+  
+  
+  
+  $(".marker").each(function(){
+      var position = $(this).offset().top; //ページの一番上から要素までの距離を取得
+      var scroll = $(window).scrollTop(); //スクロールの位置を取得
+      var windowHeight = $(window).height(); //ウインドウの高さを取得
+      if (scroll > position - windowHeight){ //スクロール位置が要素の位置を過ぎたとき
+        $(this).addClass('is-active'); //クラス「active」を与える
+      }else {
+        $(this).removeClass('is-active');
+      }
+    });
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+$(window).scroll(function (){
+    
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+$(window).scroll(function (){
+    
+});
+
+
+
+$(window).on('load', function() {
+  moveAnimation(); 
+})
+$(window).on('scroll', function() {
+  ScrollAnimation(); 
+})
+

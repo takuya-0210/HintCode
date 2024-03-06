@@ -1,0 +1,462 @@
+@charset "utf-8";
+/*英語フォント
+font-family: "m-plus-2c", sans-serif;
+font-weight: 700;
+font-style: normal;
+font-family: "a-otf-ud-reimin-pr6n", sans-serif;
+font-weight: 300;
+font-style: normal;
+
+font-family: "a-otf-ud-reimin-pr6n", sans-serif;
+font-weight: 300;
+font-style: normal;
+*/
+:root {
+  --black: #2D2D2B;
+  --Hcolor: #ff8534;
+  --Ccolor: #215EC6;
+  --Jcolor: #DBC530;
+  --bgc: #F2F2ED;
+  --h2: 1.4rem;
+}
+
+article {
+  margin: 0 50px 500px 50px;
+
+}
+
+
+#container {
+  font-family: "a-otf-ud-reimin-pr6n", sans-serif;
+  width: 100%;
+}
+
+.test {
+  color: var(--bgc);
+}
+
+
+header {
+  position: relative;
+  width: 100%;
+}
+
+#pagination ul{
+  display: flex;
+  justify-content: flex-end;
+}
+
+#pagination li {
+  width: 10%;
+  padding: 16px 0;
+  text-align: center;
+}
+
+
+main {
+  background-color: var(--bgc);
+}
+
+
+
+
+
+#HomeArticle {
+  margin-top: 100px;
+}
+
+#HomeArticle h1{
+  font-size: 8rem;
+  letter-spacing: .1em;
+  margin-left: 32px;
+  color: var(--black);
+}
+
+#HomeArticle .kinds{
+  margin: 24px 0 0 32px;
+  display: flex;
+  justify-content: flex-start;
+}
+
+#HomeArticle .kinds li+li {
+  margin-left: 50px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*Html-svg*/
+#HtmlIcon .Hcls-1, #HtmlIcon .Hcls-2, #HtmlIcon .Hcls-3, #HtmlIcon .Hcls-4 {
+  transition-duration: 1s;
+  cursor: pointer;
+}
+
+#HtmlIcon:hover .Hcls-1 {
+  fill: var(--Hcolor);
+}
+
+#HtmlIcon:hover .Hcls-2 {
+  fill: var(--bgc);
+  stroke: var(--bgc);
+}
+
+#HtmlIcon:hover .Hcls-3 {
+  fill: var(--Hcolor);
+  stroke: none;
+}
+
+#HtmlIcon:hover .Hcls-4 {
+  stroke: var(--Hcolor);
+  fill: var(--bgc);
+}
+
+
+
+
+
+
+
+
+/*css-svg*/
+#CssIcon .Ccls-1, #CssIcon .Ccls-2, #CssIcon .Ccls-3, #CssIcon .Ccls-4 {
+  transition-duration: 1s;
+  cursor: pointer;
+}
+
+#CssIcon:hover .Ccls-1 {
+  fill: #215EC6;
+}
+
+#CssIcon:hover .Ccls-2 {
+  fill: #F2F2ED;
+  stroke: #F2F2ED;
+}
+
+#CssIcon:hover .Ccls-3 {
+  fill: #215EC6;
+  stroke: none;
+}
+
+#CssIcon:hover .Ccls-4 {
+  stroke: #215EC6;
+  fill: #F2F2ED;
+}
+
+
+
+     
+
+
+/*Js-svg*/
+#JsIcon .Jcls-1, #JsIcon .Jcls-2, #JsIcon .Jcls-3, #JsIcon .Jcls-4 {
+  transition-duration: 1s;
+  cursor: pointer;
+}
+
+#JsIcon:hover .Jcls-1 {
+  fill: var(--Jcolor);
+}
+
+#JsIcon:hover .Jcls-2 {
+  fill: var(--bgc);
+  stroke: var(--bgc);
+}
+
+#JsIcon:hover .Jcls-3 {
+  fill: var(--Jcolor);
+  stroke: none;
+}
+
+#JsIcon:hover .Jcls-4 {
+  stroke: var(--Jcolor);
+  fill: var(--bgc);
+}
+
+
+
+
+
+
+#HtmlArticle .TextTyping {
+  font-size: 10rem;
+  letter-spacing: .1em;
+  margin: 0 0 0 auto;
+  color: var(--Hcolor);
+  
+}
+
+
+
+
+
+
+.container {
+  position: relative;
+  width: 100%;
+  height: 550px;
+}
+
+.swiper {
+  width: 100%;
+}
+
+.ItemWrap{
+  margin-top: 50px;
+}
+
+.Item {
+  padding: 40px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 10px;
+}
+
+.Item-Title {
+  font-size: 1rem;
+  color: var(--black);
+  text-align: start;
+}
+
+
+
+
+
+
+
+.Item-sentens {
+  font-size: 1rem;
+  line-height: 1.4em;
+  color: var(--black);
+  text-align: center;
+  padding: 50px 0 0 0;
+  border-top: solid 3px var(--bgc);
+}
+
+.Item-more {
+  font-size: 0.8rem;
+  text-align: end;
+  color: var(--black);
+  padding: 20px 0 0 0;
+}
+
+.Item-more a {
+  position: relative;
+}
+
+.Item-more a:hover {
+  color: var(--Hcolor);
+}
+
+.Item-more a::after {
+    content: '';
+    /*絶対配置で線の位置を決める*/
+    position: absolute;
+    bottom: 0;
+    left: 5%;
+    width: 100%;
+    height: 2px;
+    /*アニメーションの指定*/
+    transition: all .3s;
+    transform: scale(0, 1);/*X方向0、Y方向1*/
+    transform-origin: left top;/*左上基点*/
+}
+
+.Item-more a:hover::after {
+    transform: scale(1, 1);/*X方向にスケール拡大*/
+  background:var(--Hcolor);
+}
+
+
+
+/* ページネーション */
+.swiper-pagination-bullets.swiper-pagination-horizontal {
+  position: relative;
+  top: 20px;
+}
+
+
+
+/*HtmlArticle-search*/
+.search-wrap {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+
+
+.search-btn {
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0 auto;
+  width: 140px;
+  padding: 10px 0 10px 25px;
+  color: var(--black);
+  transition: 0.3s ease-in-out;
+}
+
+.search-btn::before, .search-btn::after {
+  content: "";
+  position: absolute;
+  display: block;
+  top: 50%;
+  left: 0;
+}
+
+.search-btn::before {
+  width: 0.5rem;
+  height: 0.5rem;
+  left: 1.1rem;
+  border-top: solid 2px var(--bgc);
+  border-right: solid 2px var(--bgc);
+  z-index: 2;
+  transform: translateY(-50%) rotate(45deg);
+  transition: all 0.3s;
+}
+
+
+
+.search-btn::after {
+  left: 0;
+  background-color: var(--Hcolor);
+  z-index: 1;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 4rem;
+  transform: translateY(-50%);
+  transition: all 0.5s;
+}
+
+.search-btn h3 {
+  position: relative;
+  left: 1rem;
+  transition: all 0.3s;
+  z-index: 3;
+}
+
+.search-btn:hover h3 {
+  color: #fff;
+}
+
+.search-btn:hover::before {
+  left: 2rem;
+}
+
+.search-btn:hover::after {
+  right: 0;
+  width: 120%;
+}
+
+
+/*Html-item1-list*/
+#Html-item1-list {
+  margin-top: 32px;
+  display: none;
+}
+
+.on {
+  display: block;
+}
+
+#Html-item1-list ul{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#Html-item1-list li {
+  padding: 10px 15px;
+  border: solid 0.5px var(--black);
+  border-radius: 20px;
+  margin: 10px 20px 0 0;
+  opacity: 0.3;
+}
+
+#Html-item1-list li:hover {
+  opacity: 0.6;
+  background-color: var(--black);
+  color: var(--bgc);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

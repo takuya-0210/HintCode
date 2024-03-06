@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="_レイヤー_12" data-name="レイヤー 12" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 389.59 300.04">
+  <defs>
+    <style>
+      .cls-1 {
+        stroke: #bab9b9;
+        stroke-width: 3px;
+      }
+
+      .cls-1, .cls-2 {
+        fill: #f1f1ec;
+        stroke-miterlimit: 10;
+      }
+
+      .cls-3 {
+        stroke-width: 0px;
+      }
+
+      .cls-3, .cls-4 {
+        fill: #bab9b9;
+      }
+
+      .cls-2 {
+        font-size: 173px;
+        stroke: #f1f1ec;
+      }
+
+      .cls-2, .cls-4 {
+        font-family: UDReiminPr6N-Light-90ms-RKSJ-H, 'A-OTF UD Reimin Pr6N';
+        font-weight: 300;
+      }
+
+      .cls-4 {
+        font-size: 60px;
+      }
+    </style>
+  </defs>
+  <rect class="cls-3" width="281.87" height="281.87" rx="55.91" ry="55.91"/>
+  <rect class="cls-1" x="133.79" y="212.16" width="254.3" height="84.26" rx="27.03" ry="27.03"/>
+  <text class="cls-4" transform="translate(173.21 278.26)"><tspan x="0" y="0">HTML</tspan></text>
+  <text class="cls-2" transform="translate(70.34 203.23)"><tspan x="0" y="0">H</tspan></text>
+</svg>

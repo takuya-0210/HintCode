@@ -1,0 +1,290 @@
+@charset "utf-8";
+
+
+
+#splash {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+  background-color: #333;
+  text-align: center;
+  color: #fff;
+}
+
+#splash-logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#loader {
+  color: #FFFFFF;
+  font-size: 40px;
+  overflow: hidden;
+  width: 1em;
+  height: 1em;
+  border-radius: 50%;
+  position: relative;
+  transform: translateZ(0);
+  animation: load 1.7s infinite ease, rounder 1.7s infinite ease;
+}
+
+@keyframes load {
+  0% {
+    box-shadow: 0 -0.83em 0 -0.4em, 0 -0.83em 0 -0.42em, 0 -0.83em 0 -0.44em, 0 -0.83em 0 -0.46em, 0 -0.83em 0 -0.477em;
+  }
+  5%,
+  95% {
+    box-shadow: 0 -0.83em 0 -0.4em, 0 -0.83em 0 -0.42em, 0 -0.83em 0 -0.44em, 0 -0.83em 0 -0.46em, 0 -0.83em 0 -0.477em;
+  }
+  10%,
+  59% {
+    box-shadow: 0 -0.83em 0 -0.4em, -0.087em -0.825em 0 -0.42em, -0.173em -0.812em 0 -0.44em, -0.256em -0.789em 0 -0.46em, -0.297em -0.775em 0 -0.477em;
+  }
+  20% {
+    box-shadow: 0 -0.83em 0 -0.4em, -0.338em -0.758em 0 -0.42em, -0.555em -0.617em 0 -0.44em, -0.671em -0.488em 0 -0.46em, -0.749em -0.34em 0 -0.477em;
+  }
+  38% {
+    box-shadow: 0 -0.83em 0 -0.4em, -0.377em -0.74em 0 -0.42em, -0.645em -0.522em 0 -0.44em, -0.775em -0.297em 0 -0.46em, -0.82em -0.09em 0 -0.477em;
+  }
+  100% {
+    box-shadow: 0 -0.83em 0 -0.4em, 0 -0.83em 0 -0.42em, 0 -0.83em 0 -0.44em, 0 -0.83em 0 -0.46em, 0 -0.83em 0 -0.477em;
+  }
+}
+
+@keyframes rounder {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+#splashbg {
+  display: none;
+}
+
+body.appear #splashbg {
+  display: block;
+}
+
+body.appear #splashbg {
+  animation-name: PageAnime;
+  animation-duration: 1.2s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+  content: "";
+  position: fixed;
+  z-index: 999;
+  width: 50%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  transform: translateX(-300%) skewX(-45deg);
+  background-color: #000;;
+}
+
+@keyframes PageAnime {
+  0% {
+    transform-origin: left;
+    transform: translateX(-300%) skewX(-45deg);
+  }
+  
+  100% {
+    transform-origin: left;
+    transform: translateX(500%) skewX(-45deg);
+  }
+}
+
+#container {
+  position: relative;
+  opacity: 0;
+}
+
+body.appear #container {
+  animation-name: PageAnimeAppear;
+  animation-duration: 1s;
+  animation-delay: 0.6s;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+@keyframes PageAnimeAppear {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+
+
+
+
+/*h1*/
+.TextTypingFirst {
+  text-align: left;
+}
+
+.TextTypingFirst span {
+  display: none;
+}
+
+.TextTypingFirst::after {
+  content: "|";
+  animation: typinganime .8s ease infinite;
+}
+
+
+.TextTyping {
+  text-align: left;
+}
+
+.TextTyping span {
+  display: none;
+}
+
+.TextTyping::after {
+  content: "|";
+  animation: typinganime .8s ease infinite;
+}
+
+@keyframes typinganime {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+
+
+/*swiper*/
+
+.swiper-slide {
+  opacity: .5;
+  transform: scale(.6);
+  transition: .7s;
+}
+
+.swiper-slide-active {
+  opacity: 1;
+  transform: scale(1);
+  z-index: 2;
+  border: solid 0.5px var(--Hcolor);
+}
+
+.swiper-slide .Item-sentens,
+.swiper-slide .Item-more{
+  display: none;
+}
+
+.swiper-slide-active .Item-sentens,
+.swiper-slide-active .Item-more{
+display: block;
+}
+
+.swiper-slide-active .Item-Title {
+  font-weight: bold;
+  font-size: 1.4rem;
+  padding: 50px 0;
+  text-align: center;
+}
+
+
+
+/* ページネーションの基本スタイル */
+.swiper-pagination-bullet {
+  background-color: transparent; /* 背景色を透明に */
+  background-image: url("../image/PaginationIcon.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  border-radius: unset; /* これがないと画像が欠ける */
+  height: 50px;
+  opacity: 0.3; /* 画像の透過を無くす */
+  width: 50px;
+}
+/* 選択されているページネーション */
+.swiper-pagination-bullet-active {
+  background-image: url("../image/PaginationIconActive.svg");
+  opacity: 1; /* 画像の透過を無くす */
+  height: 50px;
+  width: 50px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

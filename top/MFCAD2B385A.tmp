@@ -1,0 +1,372 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>HSJ</title>
+<script>
+  (function(d) {
+    var config = {
+      kitId: 'zez1ooy',
+      scriptTimeout: 3000,
+      async: true
+    },
+    h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+  })(document);
+</script> 
+<script defer src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script> 
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.js"></script> 
+<script defer src="js/script.js"></script>
+<link rel="stylesheet" href="css/destyle.css">
+<link rel="stylesheet" href="css/program.css">
+<link rel="stylesheet" href="css/layout.css">
+</head>
+<body>
+
+<!--loading-->
+<div id="splash">
+  <div id="splash-logo">
+    <div id="loader"></div>
+    <br>
+    Code Hint </div>
+</div>
+<div id="splashbg"></div>
+  
+  
+<div id="container">
+  <header id="header"> <img src="image/codeHint.gif" alt=""> </header>
+  
+  
+  <main>
+    <div id="top-area">
+      
+<!--Html-->
+      <div class="topContainer">
+        <div class="topContent">
+          <div>
+            <h1 class="topfadeIn"><a href="#Html-article">Html</a></h1>
+          </div>
+          
+          <div class="topList">
+            <ul class="randomBox">
+              <li class="box"><a href="">要素のカテゴリー</a></li>
+              <li class="box"><a href="">ブロック要素とインライン要素</a></li>
+              <li class="box"><a href="">グローバル属性</a></li>
+              <li class="box"><a href="">文字参照</a></li>
+              <li class="box"><a href="">ページ概要の設定(meta)</a></li>
+            </ul>
+          </div>
+        </div>
+        
+        <div class="tagList">
+          <div id="tagHtml-btn">
+            <span></span>
+            <span>コンテンツ一覧</span>
+            <span></span>
+          </div>
+          
+          <div id="tagHtml-list">
+            <ul>
+              <li><a href="">abchj</a></li>
+              <li><a href="">abc</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      
+      
+<!--Css--> 
+      <div class="topContainer">
+        <div class="topContent">
+          <h1 class="topfadeIn delay-time2">Css</h1>
+          
+          <div class="topList">
+            <ul  class="randomBox">
+              <li class="box"><a href="">セレクタ</a></li>
+              <li class="box"><a href="">cssの優先順位</a></li>
+              <li class="box"><a href="">値の単位</a></li>
+            </ul>
+          </div>
+        </div>
+        
+        
+        <div id="propertiesListContainer">
+          <div id="propertiesList-btn">
+            <span></span>
+            <span>プロパティ一覧</span>
+            <span></span>
+          </div>
+          
+          <div id="properties-list">
+            <ul>
+              <li><a href=""></a></li>
+              <li><a href="">4342524</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      
+<!--Js-->
+      <div class="topContainer">
+        <div class="topContent">
+          <div>
+            <h1 class="topfadeIn delay-time4">Js</h1>
+          </div>
+          
+          <div class="topList">
+            <ul class="randomBox">
+              <li class="box"><a href="">特になし</a></li>
+            </ul>
+          </div>
+        </div>
+        
+        <div class="underList">
+          <div id="objectList-container">
+            <div id="objectList-btn">
+              <span></span>
+              <span>オブジェクト一覧</span>
+              <span></span>
+            </div>
+            <div id="objectList-list">
+              <ul>
+                <li><a href="">特になし</a></li>
+              </ul>
+            </div>
+          </div>
+          <div id="methodList-container">
+            <div id="methodList-btn">
+              <span></span>
+              <span>メソッド一覧</span>
+              <span></span>
+            </div>
+            <div id="methodList-list">
+              <ul>
+                <li><a href="">特になし</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        
+      </div><!--/Js-->
+
+        <div id="scrolldown"><span>Scroll</span></div>
+      </div><!--/top-area-->
+        
+    
+    
+<!--HTML内容-->
+      <article id="Html-article" class="article1st">
+        
+        <section id="HtmlSection1">
+          <div class="title-left">
+            <img src="image/HTML-tagu1.gif" alt="">
+          </div>
+          <div class="LbgextendTrigger">
+            <div class="bgRLextendTrigger">
+              
+              <p><span class="marker">HTML はコンテンツの構造を定義するマークアップ言語です。</span><br>
+                 HTML は一連の<span class="marker">要素</span>で構成されており、これらの要素がコンテンツのさまざまな部分を囲み、一定の表示や動作をさせることができます。<br>
+                 タグで囲むと、単語や画像をどこかにハイパーリンクさせたり、単語を斜体にしたり、フォントを大きくしたり小さくしたりすることができます。</p>
+            </div>
+          </div>
+        </section>
+
+         <section id="HtmlSection2">
+          <div class="title-right">
+            <img src="image/HTML-tagu2.gif" alt="">
+          </div>
+          <div class="RbgextendTrigger">
+            <div class="bgLRextendTrigger">
+              <p>要素は主に以下のようなもので構成されています。</p>
+              <dl>
+                <dt>開始タグ (opening tag)</dt>
+                <dd>これは、要素の名前（この場合は p）を山括弧で囲んだものです。<span class="marker">どこから要素が始まっているのか、</span><span class="marker">どこから効果が始まるのかを表します。</span><br>
+                  — 今回の場合どこから段落が始まるかを表しています。</dd>
+                <dt>終了タグ (closing tag)</dt>
+                <dd>これは、要素名の前にスラッシュが入っていることを除いて開始タグと同じです。<br>
+                  <span class="marker">どこで要素が終わるのか</span>を表しています。<br>
+                  — この場合は、段落が終わる場所を表します。終了タグの書き忘れは、初心者のよくある間違いで、おかしな結果になることがあります。</dd>
+                <dt>コンテンツ (content)</dt>
+                <dd>要素の内容です。今回の場合はただのテキストです。</dd>
+                <dt>要素 (element)</dt>
+                <dd>開始タグ、終了タグ、コンテンツで要素を構成します。</dd>
+              </dl>
+              <img src="image/HTML-explain.png" alt="">
+            </div>
+          </div>
+        </section>
+        
+        <section id="HtmlSection3">
+          <div class="title-left">
+            <img src="image/HTML-tagu3.gif" alt="">
+          </div>
+          <div class="LbgextendTrigger">
+            <div class="bgRLextendTrigger">
+              <p><span class="marker">要素の中に他の要素を入れる</span>こともできます。<br>
+                これをネスト（または入れ子）と言います。<br>
+                もしあなたの猫が「とっても」機嫌が悪いことを表したいとしたら、「とっても」という単語を&lt;strong&gt; 要素に入れて、単語の強調を表すことができます。</p>
+            </div>
+          </div>
+        </section>
+        
+        <section id="HtmlSection4">
+          <div class="title-right">
+            <img src="image/HTML-tagu4.gif" alt="">
+          </div>
+          <div class="RbgextendTrigger">
+            <div class="bgLRextendTrigger">
+              <p><span class="marker">コンテンツを持たない要素</span>もあります。<br>
+                そのような要素を 空要素 (void element) と呼びます。</p>
+            </div>
+          </div>
+        </section>
+
+
+      </article><!--/HTML内容-->
+
+    
+    
+<!--Css内容-->
+      <article id="Css-article" class="article1st">
+        
+        <section id="CssSection1">
+          <div class="title-left">
+            <img src="image/CSS-tag1.gif" alt="">
+          </div>
+          <div class="LbgextendTrigger">
+            <div class="bgRLextendTrigger">
+              <p>CSS（Cascading Style Sheets）とは、<span class="marker">Webサイトのサイズや色、レイアウトなどを設定するための</span>プログラミング言語です。CSSは「シーエスエス」や「スタイルシート」などと呼ばれており、背景の色の変更や画像の設置、文字のフォントや色などの幅広いデザインを定義する際に使用されます。</p>
+            </div>
+          </div>
+        </section>
+
+         <section id="CssSection2">
+          <div class="title-right">
+            <img src="image/CSS-tag2.gif" alt="">
+          </div>
+          <div class="RbgextendTrigger">
+            <div class="bgLRextendTrigger">
+              <p>CSSの基本的な書式は、「セレクタ{プロパティ:値;}」です。</p>
+              <dl>
+                <dt>セレクタ</dt>
+                <dd>CSSで指定する対象を決める役割です。<br>
+                  英語で「select（選択する）」を意味しており、h1、h2、p、bodyなどのタグ要素の指定や、「id=”属性名”」「 class=”属性名”」などで対象にした属性の指定を行います。<br>
+                  セレクタには要素名を直接指定したり、CSSの記法を用いて指定したりする方法があります。</dd>
+                <dt>プロパティ</dt>
+                <dd>CSSに関するスタイルの種類を決める役割です。セレクタの内容を「{ } 」で囲むことで、コードの内容を実行します。</dd>
+                <dt>値</dt>
+                <dd>プロパティを調整する役割です。</dd>
+              </dl>
+              
+            </div>
+          </div>
+        </section>
+        
+        <section id="CssSection3">
+          <div class="title-left">
+            <img src="image/CSS-tag3.gif" alt="">
+          </div>
+          <div class="LbgextendTrigger">
+            <div class="bgRLextendTrigger">
+              <p>CSSで使われる基本的な単位</p>
+              <table>
+                <tr>
+                  <td>px</td>
+                  <td>
+                    <ul>
+                      <li>1px=1ドットの絶対値</li>
+                      <li>親要素やその他の要素に影響されることなく、指定した値が要素に適用される</li>
+                    </ul>
+                  </td>
+                </tr>
+                <tr>
+                  <td>%</td>
+                  <td>親要素の値によって百分率で変動する相対値</td>
+                </tr>
+                <tr>
+                  <td>em</td>
+                  <td>
+                    <ul>
+                      <li>親要素のfont-sizeを基準にした相対値</li>
+                      <li>直近の親要素にfont-sizeの指定がない場合は、さらに親要素を遡ってfont-sizeの値を基準とする</li>
+                      <li>どの親要素にもfont-sizeの指定がない場合、最終的にはhtmlタグのfont-sizeを基準にした相対値となる</li>
+                    </ul>
+                    </td>
+                </tr>
+                <tr>
+                  <td>rem</td>
+                  <td>
+                    <ul>
+                      <li>ルート要素を基準にした相対値</li>
+                      <li>ルート要素=html</li>
+                    </ul>
+                  </td>
+                </tr>
+                <tr>
+                  <td>vw</td>
+                  <td>
+                    <ul>
+                      <li>ビューポート(ウィンドウ)の横幅を基準とした相対値</li>
+                      <li>1vw=ウィンドウ横幅1%</li>
+                    </ul>
+                    </td>
+                </tr>
+                <tr>
+                  <td>vh</td>
+                  <td>
+                    <ul>
+                      <li>ビューポート(ウィンドウ)の縦幅を基準とした相対値</li>
+                      <li>1vw=ウィンドウ横幅1%</li>
+                      <li>スマホの場合、ブラウザのメニューバーは考慮していないためheightを100vhで指定すると、すこしはみ出す場合があります</li>
+                    </ul>
+                  </td>
+                </tr>
+                <tr>
+                  <td>vmin</td>
+                  <td>
+                    <ul>
+                      <li>ビューポート(ウィンドウ)の幅を基準とした相対値</li>
+                      <li>1vw=ウィンドウ幅1%</li>
+                      <li>ビューポートの横幅と縦幅で値の小さい方を基準にします。</li>
+                    </ul>
+                  </td>
+                </tr>
+                <tr>
+                  <td>vmax</td>
+                    <td>
+                      <ul>
+                        <li>ビューポート(ウィンドウ)の幅を基準とした相対値</li>
+                        <li>1vw=ウィンドウ幅1%</li>
+                        <li>ビューポートの横幅と縦幅で値の大きい方を基準にします。</li>
+                      </ul>
+                    </td>
+                </tr>
+                  
+                
+              </table>
+              
+            </div>
+          </div>
+        </section>
+        
+        <section id="CssSection4">
+          <div class="Css-title-right">
+            <img src="image/Css-tagu4.gif" alt="">
+          </div>
+          <div class="RbgextendTrigger">
+            <div class="bgLRextendTrigger">
+              <p><span class="marker">コンテンツを持たない要素</span>もあります。<br>
+                そのような要素を 空要素 (void element) と呼びます。</p>
+            </div>
+          </div>
+        </section>
+
+
+      </article><!--/Css内容-->
+
+    
+    
+  </main>
+  <footer></footer>
+</div>
+</body>
+</html>
