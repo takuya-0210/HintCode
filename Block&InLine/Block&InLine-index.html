@@ -1,0 +1,380 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>ブロック要素とインライン要素</title>
+<script>
+  (function(d) {
+    var config = {
+      kitId: 'zez1ooy',
+      scriptTimeout: 3000,
+      async: true
+    },
+    h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+  })(document);
+</script> 
+<script defer src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script> 
+
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.js"></script> 
+<script defer src="JS/script.js"></script>
+<link rel="stylesheet" href="CSS/destyle.css">
+<link rel="stylesheet" href="CSS/program.css">
+<link rel="stylesheet" href="CSS/layout.css">
+</head>
+<body>
+
+<!--loading-->
+
+  <div id="bar">
+    <div id="circle">
+    </div>
+    <div id="bar-logo">
+      <p id="from">
+        Code<br>
+        Hint
+      </p>
+      <p id="to">Block<br>
+        &amp;<br>
+        InLine
+      </p>
+    </div>
+  </div>  
+
+
+  
+  
+<div id="container">
+  <header id="header">
+    <img src="image/codeHint.gif" alt="" width="100px">
+    <nav id="nav-list">
+      <ul>
+        <li><a class="js-nav-switch" href="#topArea">top</a></li>
+        <li><a class="js-nav-switch" href="#FlowArea">ブロック要素</a></li>
+        <li><a class="js-nav-switch" href="#InteractiveArea">インライン要素</a></li>
+        <li><a class="js-nav-switch" href="#MetadataArea">インラインブロック要素</a></li>
+        <li><a class="js-nav-switch" href="#PhrasingArea">配置ルール</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    
+<!--topArea-->
+    <div id="topArea" class="content-area">
+      <h1><span class="slide-in leftAnime"><span class="slidein_inner leftAnimeInner">ブロック要素とインライン要素</span></span></h1>
+      <p>HTML5より前のHTMLでは、<span class="marker">&lt;body&gt;要素内で使うほとんどの要素</span>は、ブロックレベル要素かインライン要素のどちらかに分類されています。<br>
+        なお、どちらにも分類されていない要素もあります（htmlの全体構造の要素など）。この分類は、主に配置ルールに使用します。
+      </p>
+    </div>
+    
+
+    
+<!--TableOfContents-->
+   
+    <div id="TableOfContentsArea">
+      <span><h2>目次</h2></span>
+      <ul>
+        <li>ブロック要素</li>
+        <li>インライン要素</li>
+        <li>インラインブロック要素</li>
+        <li>配置ルール</li>
+      </ul>
+    </div>
+    
+<!--scroll-->
+    <div class="scrolldown"><span>scroll</span></div>
+    
+    
+    
+<!--BlockArea-->
+    <section id="BlockArea" class="content-area">
+      <h3><span class="slide-in leftAnime"><span class="slidein_inner leftAnimeInner">ブロック要素</span></span></h3>
+      <p>
+        見出し・段落・表など、<span class="marker">文書を構成する基本となる要素</span>で、<br>
+        一つのかたまり(ブロック)に意味や役割を与える要素が分類される。<br>
+        一般的なブラウザでは要素の前後が改行される。
+      </p>
+ 
+      <div class="tab-wrap">
+        <h4>ブロック要素一覧</h4>
+        <ul>
+        <li class="tab-btn show">すべて</li>
+        <li class="tab-btn">a</li>
+        <li class="tab-btn">b</li>
+        <li class="tab-btn">d</li>
+        <li class="tab-btn">f</li>
+        <li class="tab-btn">h</li>
+        <li class="tab-btn">n</li>
+        <li class="tab-btn">o</li>
+        <li class="tab-btn">p</li>
+        <li class="tab-btn">t</li>
+        <li class="tab-btn">u</li>
+      </ul>
+      <code class="tab-area-conteiner">
+        <div class="tab-contents show">
+          <a href="">&lt;address&gt;</a>
+          <a href="">&lt;blockquote&gt;</a>
+          <a href="">&lt;div&gt;</a>
+          <a href="">&lt;dl&gt;</a>
+          <a href="">&lt;fieldset&gt;</a>
+          <a href="">&lt;form&gt;</a>
+          <a href="">&lt;h1&gt;</a>
+          <a href="">&lt;h2&gt;</a>
+          <a href="">&lt;h3&gt;</a>
+          <a href="">&lt;h4&gt;</a>
+          <a href="">&lt;h5&gt;</a>
+          <a href="">&lt;h6&gt;</a>
+          <a href="">&lt;hr&gt;</a>
+          <a href="">&lt;noscript&gt;</a>
+          <a href="">&lt;ol&gt;</a>
+          <a href="">&lt;p&gt;</a>
+          <a href="">&lt;pre&gt;</a>
+          <a href="">&lt;table&gt;</a>
+          <a href="">&lt;ul&gt;</a>
+        </div>
+        
+        <div class="tab-contents">
+          <a href="">&lt;address&gt;</a>
+        </div>
+        <div class="tab-contents">
+          <a href="">&lt;blockquote&gt;</a>
+        </div>
+        <div class="tab-contents">
+          <a href="">&lt;div&gt;</a>
+          <a href="">&lt;dl&gt;</a>
+        </div>
+        <div class="tab-contents">
+          <a href="">&lt;fieldset&gt;</a>
+          <a href="">&lt;form&gt;</a>
+        </div>
+        <div class="tab-contents">
+          <a href="">&lt;h1&gt;</a>
+          <a href="">&lt;h2&gt;</a>
+          <a href="">&lt;h3&gt;</a>
+          <a href="">&lt;h4&gt;</a>
+          <a href="">&lt;h5&gt;</a>
+          <a href="">&lt;h6&gt;</a>
+          <a href="">&lt;hr&gt;</a>
+        </div>
+        <div class="tab-contents">
+          <a href="">&lt;noscript&gt;</a>
+        </div>
+        <div class="tab-contents">
+          <a href="">&lt;ol&gt;</a>
+        </div>
+        <div class="tab-contents">
+          <a href="">&lt;p&gt;</a>
+          <a href="">&lt;pre&gt;</a>
+        </div>
+        <div class="tab-contents">
+          <a href="">&lt;table&gt;</a>
+        </div>
+        <div class="tab-contents">
+          <a href="">&lt;ul&gt;</a>
+        </div>
+      </code>
+      </div>
+    </section>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+<!--InlineArea-->
+    <section id="InlineArea" class="content-area">
+      <h3><span class="slide-in leftAnime"><span class="slidein_inner leftAnimeInner">インライン要素</span></span></h3>
+      <p>
+        ブロックレベル要素の内容の一部となる要素で、<span class="marker">特定の単語や、文章に意味や役割を与える要素や、画像</span>などが分類される。<br>
+        なお、文章自体もインライン要素に分類される。
+      </p>
+ 
+      <div class="tab-wrap"> 
+        <ul>
+        <li class="tab-btn show">すべて</li>
+        <li class="tab-btn">a</li>
+        <li class="tab-btn">b</li>
+        <li class="tab-btn">c</li>
+        <li class="tab-btn">d</li>
+        <li class="tab-btn">e</li>
+        <li class="tab-btn">i</li>
+        <li class="tab-btn">k</li>
+        <li class="tab-btn">l</li>
+        <li class="tab-btn">q</li>
+        <li class="tab-btn">s</li>
+        <li class="tab-btn">t</li>
+        <li class="tab-btn">u</li>
+      </ul>
+      <code class="tab-area-conteiner">
+        <div id="Interactive-oll"  class="tab-contents show">
+          <a href="">&lt;a&gt;</a>
+          <a href="">&lt;abbr&gt;</a>
+          <a href="">&lt;b&gt;</a>
+          <a href="">&lt;big&gt;</a>
+          <a href="">&lt;cite&gt;</a>
+          <a href="">&lt;code&gt;</a>
+          <a href="">&lt;dfn&gt;</a>
+          <a href="">&lt;em&gt;</a>
+          <a href="">&lt;i&gt;</a>
+          <a href="">&lt;img&gt;</a> 
+          <a href="">&lt;input&gt;</a>
+          <a href="">&lt;kbd&gt;</a>
+          <a href="">&lt;label&gt;</a>
+          <a href="">&lt;q&gt;</a>
+          <a href="">&lt;s&gt;</a>
+          <a href="">&lt;samp&gt;</a>
+          <a href="">&lt;select&gt;</a>
+          <a href="">&lt;small&gt;</a>
+          <a href="">&lt;span&gt;</a>
+          <a href="">&lt;strike&gt;</a>
+          <a href="">&lt;strong&gt;</a>
+          <a href="">&lt;sub&gt;</a>
+          <a href="">&lt;sup&gt;</a>
+          <a href="">&lt;textarea&gt;</a>
+          <a href="">&lt;u&gt;</a>
+        </div>
+        
+        <div class="tab-contents">
+          <a href="">&lt;a&gt;</a>
+          <a href="">&lt;abbr&gt;</a>
+        </div>
+        <div class="tab-contents">
+          <a href="">&lt;b&gt;</a>
+          <a href="">&lt;big&gt;</a>
+          <a href="">&lt;br&gt;</a>
+        </div>
+        <div class="tab-contents">
+          <a href="">&lt;cite&gt;</a>
+          <a href="">&lt;code&gt;</a>
+        </div>
+        <div class="tab-contents">
+          <a href="">&lt;dfn&gt;</a>
+        </div>
+        <div class="tab-contents">
+          <a href="">&lt;em&gt;</a>
+        </div>
+        <div class="tab-contents">
+          <a href="">&lt;i&gt;</a>
+          <a href="">&lt;img&gt;</a>
+          <a href="">&lt;input&gt;</a>
+        </div>
+         <div class="tab-contents">
+          <a href="">&lt;kbd&gt;</a>      
+        </div>
+        <div class="tab-contents">
+          <a href="">&lt;label&gt;</a>      
+        </div>
+        <div class="tab-contents">
+          <a href="">&lt;q&gt;</a>
+        </div>
+        <div class="tab-contents">
+          <a href="">&lt;s&gt;</a>
+          <a href="">&lt;samp&gt;</a>
+          <a href="">&lt;select&gt;</a>
+          <a href="">&lt;small&gt;</a>
+          <a href="">&lt;span&gt;</a>
+          <a href="">&lt;strike&gt;</a>
+          <a href="">&lt;strong&gt;</a>
+          <a href="">&lt;sub&gt;</a>
+          <a href="">&lt;sup&gt;</a>
+        </div>
+        <div class="tab-contents">
+          <a href="">&lt;textarea&gt;</a>
+        </div>
+        <div class="tab-contents">
+          <a href="">&lt;u&gt;</a>
+        </div>
+      </code>
+      </div>
+    </section>
+    
+   
+    
+    
+    
+    
+    
+    
+    
+    
+    
+<!--InlineBlockArea-->
+    <section id="InlineBlockArea" class="content-area">
+      <h3><span class="slide-in leftAnime"><span class="slidein_inner leftAnimeInner">インラインブロック要素</span></span></h3>
+      <p>
+        <span class="marker">ブロック要素とインライン要素の性質を併せ持った要素</span>です。<br>
+        横幅と高さの指定が可能で、横幅の初期値が内容で決まる等、他2つの要素に比べて直感的なコーディングができます。
+        インラインブロック要素の指定は<a href="">display</a>プロパティで指定できます。
+      </p>
+    </section>
+    
+    
+    
+    
+    
+    
+<!--ArrangementRuleArea-->
+    <section id="ArrangementRuleArea" class="content-area">
+      <h3><span class="slide-in leftAnime"><span class="slidein_inner leftAnimeInner">配置ルール</span></span></h3>
+      <p>
+        ブロックレベル要素の中には、他のブロックレベル要素やインライン要素を配置することができます。<br>
+        一方、インライン要素の中には、文字データや他のインライン要素を配置することができますが、<br>
+        <span class="marker">インライン要素の中にブロックレベル要素を配置することはできません。</span>
+      </p>
+      <table>
+        <tr>
+          <th></th>
+          <th>横幅と高さの指定</th>
+          <th>横幅の初期値</th>
+          <th>高さの初期値</th>
+          <th>他要素との並び方</th>
+          <th>余白のつき方</th>
+        </tr>
+        <tr>
+          <td>ブロック要素</td>
+          <td>可能</td>
+          <td>親要素の横幅の値</td>
+          <td>内容で決まる</td>
+          <td>改行される</td>
+          <td>勝手につくものがある</td>
+        </tr>
+        <tr>
+          <td>インライン要素</td>
+          <td>不可能</td>
+          <td>内容できまる</td>
+          <td>内容で決まる</td>
+          <td>改行されない</td>
+          <td>上下に特殊なつき方をする</td>
+        </tr>
+        <tr>
+          <td>インラインブロック要素</td>
+          <td>可能</td>
+          <td>内容できまる</td>
+          <td>内容で決まる</td>
+          <td>改行されない</td>
+          <td>勝手につくものがある</td>
+        </tr>
+      </table>
+      
+      
+      
+    </section>
+    
+    
+    
+    
+    
+    
+    
+
+ 
+  </main>
+  <footer>
+  </footer>
+</div>
+</body>
+</html>
