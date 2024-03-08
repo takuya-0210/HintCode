@@ -193,9 +193,17 @@
 <!-------------------------------------------------------------------------->    
 
 
+
+
+
+
+
 <!--■　HTML-article　■-->
     <article id="HtmlArticle">
       <h1 class="TextTyping">HTML</h1>
+
+
+
 
 <!--swiper-section-->
     <section id="Html-swiperSection">
@@ -264,10 +272,10 @@
       
 
 <!-- search-section-->
-    <section>
+    <section id="search">
 <!--要素ボタン-->
       <ul class="search-wrap">
-        <li id="search-item1">
+        <li>
           <button class="search-btn">
               <h3>要素一覧</h3>
           </button>
@@ -275,7 +283,7 @@
 
 
 <!--属性ボタン-->
-        <li id="search-item2">
+        <li>
           <button class="search-btn">
               <h3>属性一覧</h3>
           </button>
@@ -284,83 +292,212 @@
       </ul>
 
 
-      <!--要素欄呼び出しリスト-->
+<!--要素欄呼び出しリスト-->
       <div id="Html-item1-list">
-        <ul class="item1-category-list">
-          <li class="item1-list-title">
-            <button class="js-sort js-sort1" data-title="js-cat1">全て</button>
-          </li>
-          <li class="item1-list-title">
-            <button class="js-sort js-sort2" data-title="js-cat2">メインルート</button>
-          </li>
-          <li class="item1-list-title">
-            <button class="js-sort js-sort3" data-title="js-cat3">文書メタデータ</button>
-          </li>
-          <li class="item1-list-title">
-            <button class="js-sort js-sort4" data-title="js-cat4">区分化ルート</button>
-          </li>
-          <li class="item1-list-title">
-            <button class="js-sort js-sort5" data-title="js-cat5">コンテンツ区分</button>
-          </li>
-          <li class="item1-list-title">
-            <button class="js-sort js-sort6" data-title="js-cat6">テキストコンテンツ</button>
-          </li>
-          <li class="item1-list-title">
-            <button class="js-sort js-sort7" data-title="js-cat7">インラインテキスト意味付け</button>
-          </li>
-          <li class="item1-list-title">
-            <button class="js-sort js-sort8" data-title="js-cat8">画像とマルチメディア</button>
-          </li>
-          <li class="item1-list-title">
-            <button class="js-sort js-sort9" data-title="js-cat9">埋め込みコンテンツ</button>
-          </li>
-          <li class="item1-list-title">
-            <button class="js-sort js-sort10" data-title="js-cat10">SVGとMathML</button>
-          </li>
-          <li class="item1-list-title">
-            <button class="js-sort js-sort11" data-title="js-cat11">編集範囲の特定</button>
-          </li>
-          <li class="item1-list-title">
-            <button class="js-sort js-sort12" data-title="js-cat12">表コンテンツ</button>
-          </li>
-          <li class="item1-list-title">
-            <button class="js-sort js-sort13" data-title="js-cat13">フォーム</button>
-          </li>
-          <li class="item1-list-title">
-            <button class="js-sort js-sort14" data-title="js-cat14">インタラクティブ要素</button>
-          </li>
-          <li class="item1-list-title">
-            <button class="js-sort js-sort15" data-title="js-cat15">ウェブコンポーネント</button>
-          </li>
-          <li class="item1-list-title">
-            <button class="js-sort js-sort16" data-title="js-cat16">廃止または非推奨の要素</button>
-          </li>
+        <ul class="category-list">
+          <li>全て</li><!--all-->
+          <li>メインルート</li><!--1-->
+          <li>文書メタデータ</li><!--2-->
+          <li>区分化ルート</li><!--3-->
+          <li>コンテンツ区分</li><!--4-->
+          <li>テキストコンテンツ</li><!--5-->
+          <li>インラインテキスト意味付け</li><!--6-->
+          <li>画像とマルチメディア</li><!--7-->
+          <li>埋め込みコンテンツ</li><!--8-->
+          <li>SVGとMathML</li><!--9-->
+          <li>編集範囲の特定</li><!--10-->
+          <li>表コンテンツ</li><!--11-->
+          <li>フォーム</li><!--12-->
+          <li>インタラクティブ要素</li><!--13-->
+          <li>ウェブコンポーネント</li><!--14-->
+          <li>スクリプト</li><!--15-->
+          <li>廃止または非推奨の要素</li><!--16-->
         </ul>
       </div>
+
+
+<!--属性欄呼び出しリスト-->
+      <div id="Html-item2-list">
+        <ul class="category-list">
+          <li>全て</li><!--all-->
+          <li>グローバル属性</li>
+          <li>イベントハンドラー属性</li>
+        </ul>
+      </div>
+
+
+
+
+<!--要素-->
       <div id="Html-item1-ListItem">
         <ul class="product-list">
-          <li class="all A no6">&lt;a&gt;</li>
-          <li class="all A no6">&lt;abbr&gt;</li>
-          <li class="all A no16">&lt;acronym&gt;</li>
-          <li class="all A no4">&lt;address&gt;</li>
-          <li class="all A no7">&lt;area&gt;</li>
-          <li class="all A no4">&lt;article&gt;</li>
-          <li class="all A no4">&lt;aside&gt;</li>
-          <li class="all A no7">&lt;audio&gt;</li>
-          <li class="all B no6">&lt;b&gt;</li>
-          <li class="all B no2">&lt;base&gt;</li>
-          <li class="all B no6">&lt;bdi&gt;</li>
-          <li class="all B no6">&lt;bdo&gt;</li>
-          <li class="all B no16">&lt;big&gt;</li>
-          <li class="all B no5">&lt;blockquote&gt;</li>
-          <li class="all B no3">&lt;body&gt;</li>
-          <li class="all B no6">&lt;br&gt;</li>
-          <li class="all B no13">&lt;button&gt;</li>
-          <li class="all C ">&lt;canvas&gt;</li>
-          <li class="all C ">&lt;caption&gt;</li>
-          <li class="all D ">&lt;center&gt;</li>
+          <li class="all no6">&lt;a&gt;</li>
+          <li class="all no6">&lt;abbr&gt;</li>
+          <li class="all no16">&lt;acronym&gt;</li>
+          <li class="all no4">&lt;address&gt;</li>
+          <li class="all no7">&lt;area&gt;</li>
+          <li class="all no4">&lt;article&gt;</li>
+          <li class="all no4">&lt;aside&gt;</li>
+          <li class="all no7">&lt;audio&gt;</li>
+          <li class="all no6">&lt;b&gt;</li>
+          <li class="all no2">&lt;base&gt;</li>
+          <li class="all no6">&lt;bdi&gt;</li>
+          <li class="all no6">&lt;bdo&gt;</li>
+          <li class="all no16">&lt;big&gt;</li>
+          <li class="all no5">&lt;blockquote&gt;</li>
+          <li class="all no3">&lt;body&gt;</li>
+          <li class="all no6">&lt;br&gt;</li>
+          <li class="all no12">&lt;button&gt;</li>
+          <li class="all no1 no15">&lt;canvas&gt;</li>
+          <li class="all no11">&lt;caption&gt;</li>
+          <li class="all no16">&lt;center&gt;</li>
+          <li class="all no6">&lt;cite&gt;</li>
+          <li class="all no6">&lt;code&gt;</li>
+          <li class="all no11">&lt;col&gt;</li>
+          <li class="all no11">&lt;colgroup&gt;</li>
+          <li class="all ">&lt;command&gt;</li>
+          <li class="all no16">&lt;content&gt;</li>
+          <li class="all no6">&lt;data&gt;</li>
+          <li class="all no12">&lt;datalist&gt;</li>
+          <li class="all no5">&lt;dd&gt;</li>
+          <li class="all no10">&lt;del&gt;</li>
+          <li class="all no13">&lt;details&gt;</li>
+          <li class="all no6">&lt;dfn&gt;</li>
+          <li class="all no13">&lt;dialog&gt;</li>
+          <li class="all no16">&lt;dir&gt;</li>
+          <li class="all no5">&lt;div&gt;</li>
+          <li class="all no5">&lt;dl&gt;</li>
+          <li class="all no5">&lt;dt&gt;</li>
+          <li class="all no6">&lt;em&gt;</li>
+          <li class="all no8">&lt;embed&gt;</li>
+          <li class="all no12">&lt;fieldset&gt;</li>
+          <li class="all no5">&lt;figcaption&gt;</li>
+          <li class="all no5">&lt;figure&gt;</li>
+          <li class="all no16">&lt;font&gt;</li>
+          <li class="all no4">&lt;footer&gt;</li>
+          <li class="all no12">&lt;form&gt;</li>
+          <li class="all no16">&lt;frame&gt;</li>
+          <li class="all no16">&lt;frameset&gt;</li>
+          <li class="all no4">&lt;h1~h6&gt;</li>
+          <li class="all ">&lt;head&gt;</li>
+          <li class="all no2 no4">&lt;header&gt;</li>
+          <li class="all no4">&lt;hgroup&gt;</li>
+          <li class="all no5">&lt;hr&gt;</li>
+          <li class="all ">&lt;html&gt;</li>
+          <li class="all no6">&lt;i&gt;</li>
+          <li class="all no8">&lt;iframe&gt;</li>
+          <li class="all ">&lt;ilayer&gt;</li>
+          <li class="all no7">&lt;img&gt;</li>
+          <li class="all no16">&lt;image&gt;</li>
+          <li class="all no12">&lt;input&gt;</li>
+          <li class="all no10">&lt;ins&gt;</li>
+          <li class="all ">&lt;isindex&gt;</li>
+          <li class="all no6">&lt;kbd&gt;</li>
+          <li class="all ">&lt;keygen&gt;</li>
+          <li class="all no12">&lt;label&gt;</li>
+          <li class="all ">&lt;layer&gt;</li>
+          <li class="all no12">&lt;legend&gt;</li>
+          <li class="all no5">&lt;li&gt;</li>
+          <li class="all no2">&lt;link&gt;</li>
+          <li class="all ">&lt;listing&gt;</li>
+          <li class="all no4">&lt;main&gt;</li>
+          <li class="all no7">&lt;map&gt;</li>
+          <li class="all no16">&lt;marquee&gt;</li>
+          <li class="all no6">&lt;mark&gt;</li>
+          <li class="all no9">&lt;math&gt;</li>
+          <li class="all no5">&lt;menu&gt;</li>
+          <li class="all no16">&lt;menuitem&gt;</li>
+          <li class="all no2">&lt;meta&gt;</li>
+          <li class="all no12">&lt;meter&gt;</li>
+          <li class="all ">&lt;multicol&gt;</li>
+          <li class="all no4">&lt;nav&gt;</li>
+          <li class="all no16">&lt;nobr&gt;</li>
+          <li class="all no16">&lt;noembed&gt;</li>
+          <li class="all no16">&lt;noframes&gt;</li>
+          <li class="all ">&lt;nolayer&gt;</li>
+          <li class="all no15">&lt;noscript&gt;</li>
+          <li class="all no8">&lt;object&gt;</li>
+          <li class="all no5">&lt;ol&gt;</li>
+          <li class="all no12">&lt;optgroup&gt;</li>
+          <li class="all no12">&lt;option&gt;</li>
+          <li class="all no12">&lt;output&gt;</li>
+          <li class="all no5">&lt;p&gt;</li>
+          <li class="all ">&lt;param&gt;</li>
+          <li class="all no8">&lt;picture&gt;</li>
+          <li class="all no16">&lt;plaintext&gt;</li>
+          <li class="all no8">&lt;portal&gt;</li>
+          <li class="all no5">&lt;pre&gt;</li>
+          <li class="all no12">&lt;progress&gt;</li>
+          <li class="all no6">&lt;q&gt;</li>
+          <li class="all no16">&lt;rb&gt;</li>
+          <li class="all no6">&lt;rp&gt;</li>
+          <li class="all no6">&lt;rt&gt;</li>
+          <li class="all no16">&lt;rtc&gt;</li>
+          <li class="all no6">&lt;ruby&gt;</li>
+          <li class="all no6">&lt;s&gt;</li>
+          <li class="all no6">&lt;samp&gt;</li>
+          <li class="all no15">&lt;script&gt;</li>
+          <li class="all no4">&lt;search&gt;</li>
+          <li class="all no4">&lt;section&gt;</li>
+          <li class="all no12">&lt;select&gt;</li>
+          <li class="all no16">&lt;shadow&gt;</li>
+          <li class="all no14">&lt;slot&gt;</li>
+          <li class="all no6">&lt;small&gt;</li>
+          <li class="all no8">&lt;source&gt;</li>
+          <li class="all ">&lt;spacer&gt;</li>
+          <li class="all no6">&lt;span&gt;</li>
+          <li class="all no16">&lt;strike&gt;</li>
+          <li class="all no6">&lt;strong&gt;</li>
+          <li class="all no2">&lt;style&gt;</li>
+          <li class="all no6">&lt;sub&gt;</li>
+          <li class="all no13">&lt;summary&gt;</li>
+          <li class="all no6">&lt;sup&gt;</li>
+          <li class="all no9">&lt;svg&gt;</li>
+          <li class="all no11">&lt;table&gt;</li>
+          <li class="all no11">&lt;tbody&gt;</li>
+          <li class="all no11">&lt;td&gt;</li>
+          <li class="all no14">&lt;template&gt;</li>
+          <li class="all no12">&lt;textarea&gt;</li>
+          <li class="all no11">&lt;tfoot&gt;</li>
+          <li class="all no11">&lt;th&gt;</li>
+          <li class="all no11">&lt;thead&gt;</li>
+          <li class="all no6">&lt;time&gt;</li>
+          <li class="all no2">&lt;title&gt;</li>
+          <li class="all no11">&lt;tr&gt;</li>
+          <li class="all no16">&lt;tt&gt;</li>
+          <li class="all no7">&lt;track&gt;</li>
+          <li class="all no6">&lt;u&gt;</li>
+          <li class="all no5">&lt;ul&gt;</li>
+          <li class="all no6">&lt;var&gt;</li>
+          <li class="all no7">&lt;video&gt;</li>
+          <li class="all no6">&lt;wbr&gt;</li>
+          <li class="all no16">&lt;xmp&gt;</li>
+          <li class="all ">&lt;!doctype&gt;</li>
+          <li class="all ">&lt;!----&gt;</li>
         </ul>
       </div>
+
+<!--要素-->
+<div id="Html-item2-ListItem">
+  <ul class="product-list">
+    <li class="all no1">&lt;accesskey&gt;</li>
+    <li class="all no1">&lt;class&gt;</li>
+    <li class="all no1">&lt;contenteditable&gt;</li>
+    <li class="all no1">&lt;data-*&gt;</li>
+    <li class="all no1">&lt;dir&gt;</li>
+    <li class="all no1">&lt;draggable&gt;</li>
+    <li class="all no1">&lt;hidden&gt;</li>
+    <li class="all no1">&lt;id&gt;</li>
+    <li class="all no1">&lt;lang&gt;</li>
+    <li class="all no1">&lt;spellcheck&gt;</li>
+    <li class="all no1">&lt;style&gt;</li>
+    <li class="all no1">&lt;tabindex&gt;</li>
+    <li class="all no1">&lt;title&gt;</li>
+    <li class="all no1">&lt;translate&gt;</li>
+    <li class="no2">not yet</li>
+  </ul>
+</div>
+      
     </section>
 
       
