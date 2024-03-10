@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="_レイヤー_1" data-name="レイヤー 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 99.3 129.17">
+  <defs>
+    <style>
+      .cls-1, .cls-2, .cls-3 {
+        fill: none;
+        stroke: #231815;
+      }
+
+      .cls-1, .cls-3 {
+        stroke-miterlimit: 10;
+      }
+
+      .cls-2 {
+        stroke-linejoin: round;
+      }
+
+      .cls-2, .cls-3 {
+        stroke-linecap: round;
+      }
+    </style>
+  </defs>
+  <path class="cls-1" d="m98.8,31.14v93.96c0,1.97-1.6,3.57-3.57,3.57H4.07c-1.97,0-3.57-1.6-3.57-3.57V4.07C.5,2.1,2.1.5,4.07.5h63.57"/>
+  <line class="cls-2" x1="10.59" y1="16.46" x2="54.5" y2="16.46"/>
+  <line class="cls-3" x1="10.59" y1="26.46" x2="54.5" y2="26.46"/>
+  <line class="cls-3" x1="10.59" y1="36.46" x2="54.5" y2="36.46"/>
+  <line class="cls-3" x1="10.59" y1="46.46" x2="92.37" y2="46.46"/>
+  <line class="cls-3" x1="10.59" y1="56.46" x2="92.37" y2="56.46"/>
+  <line class="cls-3" x1="10.59" y1="66.46" x2="92.37" y2="66.46"/>
+  <line class="cls-3" x1="10.59" y1="76.46" x2="92.37" y2="76.46"/>
+  <line class="cls-3" x1="10.59" y1="86.46" x2="92.37" y2="86.46"/>
+  <line class="cls-3" x1="10.59" y1="96.46" x2="92.37" y2="96.46"/>
+  <line class="cls-3" x1="10.59" y1="106.46" x2="92.37" y2="106.46"/>
+  <line class="cls-3" x1="10.59" y1="116.46" x2="92.37" y2="116.46"/>
+  <path class="cls-1" d="m67.87,33.27l30.29-2.52L68.02,1.07l-3.48,28.75c-.26,2.2,1.27,3.8,3.32,3.45Z"/>
+</svg>

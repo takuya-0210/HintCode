@@ -196,7 +196,9 @@ main {
 
 
 
-
+#Html-swiperSection  {
+  margin-top: 100px;
+}
 
 .container {
   position: relative;
@@ -284,6 +286,11 @@ main {
 
 
 /*HtmlArticle-search*/
+
+#search {
+  margin-top: 100px;
+}
+
 .search-wrap {
   width: 100%;
   display: flex;
@@ -400,6 +407,7 @@ main {
 
 
 
+/*要素・属性*/
 
 #Html-item1-ListItem, #Html-item2-ListItem {
   display: none;
@@ -424,24 +432,126 @@ main {
 }
 
 
+/*--------------------------------------------------------*/
 
 
 
+/*colum-section*/
+
+#column {
+  margin: 100px auto 0 auto;
+  height: 570px;
+  width: 90vw;
+  overflow: hidden;
+  overflow-y: scroll;
+}
 
 
 
+#column > ul > li {
+  display: flex;
+  width: 80vw;
+  height: 150px;
+  padding: 10px 0 0 30px;
+  border-radius: 20px;
+  margin: 30px auto 0 auto;
+  box-shadow: 5px 5px 7px -3px #717171;
+  background-color: #fafaf5;
+}
+
+#column > ul > li > .main {
+  width: 180px;
+  height: 90%;
+  text-align: center;
+
+  border-radius: 10px;
+  background-color: #f8ddca;
+}
+
+#tableColumn > .main > img{
+  width: 100px;
+  height: 100px;
+}
+
+#sentenceColumn > .main > img {
+  width: 100px;
+  height: 100px;
+  padding: 10px 0;
+}
+
+#fontCooperativeColumn > .main > img {
+  width: 100px;
+  height: 100px;
+}
+
+#linkColumn > .main > img {
+  width: 100px;
+  height: 100px;
+}
+
+#listMenuColumn > .main > img {
+  width: 100px;
+  height: 100px;
+  padding: 10px 0;
+}
+
+#pictureColumn > .main > img {
+  width: 100px;
+  height: 100px;
+  padding: 10px 0;
+}
+
+#formColumn > .main > img {
+  width: 100px;
+  height: 100px;
+  padding: 10px 0;
+}
+
+#column > ul > li > h3 {
+  font-size: 1.2rem;
+}
+
+#pictureColumn:hover {
+  transform: scale(1.06);
+}
 
 
 
+#column > ul > li > .sub {
+  width: calc(100% - 180px);
+  height: 90%;
+  padding-right: 20px;
+  margin-left: 20px;
+  text-align: left;
+}
 
+.sub > .sub-list {
+  height: 100%;
+  overflow: hidden;
+  overflow-y: scroll;
+  display: flex;
+  flex-wrap: wrap;
+}
 
+.sub > .sub-list > li {
+  width: auto;
+  padding-top: 5px;
+  margin-top: 10px;
+  margin-right: 20px;
+  text-align: center;
+}
 
+.sub > .sub-list > li > h4 {
+  padding-bottom: 3px;
+  border-bottom: solid 2px #cdcdcd;
+  margin-bottom: 4px;
+  font-size: 1rem;
+}
 
-
-
-
-
-
+.sub > .sub-list > li > p {
+  color: #9f9f9f;
+  font-size: 0.9rem;
+}
 
 
 
