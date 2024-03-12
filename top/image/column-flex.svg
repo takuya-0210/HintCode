@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="_レイヤー_1" data-name="レイヤー 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 344.84 218.31">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: rgba(35, 24, 21, .32);
+      }
+
+      .cls-1, .cls-2, .cls-3, .cls-4, .cls-5, .cls-6, .cls-7, .cls-8, .cls-9, .cls-10, .cls-11, .cls-12 {
+        stroke: #231815;
+        stroke-miterlimit: 10;
+      }
+
+      .cls-2 {
+        fill: rgba(35, 24, 21, .18);
+      }
+
+      .cls-3 {
+        fill: rgba(35, 24, 21, .81);
+      }
+
+      .cls-4 {
+        fill: rgba(35, 24, 21, .12);
+      }
+
+      .cls-5 {
+        fill: rgba(35, 24, 21, .3);
+      }
+
+      .cls-6 {
+        fill: rgba(35, 24, 21, .08);
+      }
+
+      .cls-7 {
+        fill: rgba(35, 24, 21, .07);
+      }
+
+      .cls-8 {
+        fill: rgba(35, 24, 21, .1);
+      }
+
+      .cls-9 {
+        fill: none;
+        stroke-width: 3px;
+      }
+
+      .cls-10 {
+        fill: rgba(35, 24, 21, .7);
+      }
+
+      .cls-11 {
+        fill: rgba(35, 24, 21, .83);
+      }
+
+      .cls-12 {
+        fill: rgba(35, 24, 21, .47);
+      }
+    </style>
+  </defs>
+  <rect class="cls-9" x="1.5" y="1.5" width="341.84" height="215.31" rx="14.29" ry="14.29"/>
+  <rect class="cls-1" x="28.64" y="30.07" width="77.55" height="29.59" rx="5.67" ry="5.67"/>
+  <rect class="cls-4" x="133.64" y="30.07" width="77.55" height="29.59" rx="5.67" ry="5.67"/>
+  <rect class="cls-6" x="28.64" y="75.07" width="207.73" height="29.59" rx="5.67" ry="5.67"/>
+  <rect class="cls-7" x="98.5" y="165.07" width="177.87" height="29.59" rx="5.67" ry="5.67"/>
+  <rect class="cls-3" x="238.64" y="30.07" width="77.55" height="29.59" rx="5.67" ry="5.67"/>
+  <rect class="cls-12" x="262.93" y="75.07" width="53.27" height="29.59" rx="5.67" ry="5.67"/>
+  <rect class="cls-11" x="301.4" y="165.07" width="14.8" height="29.59" rx="5.67" ry="5.67"/>
+  <rect class="cls-10" x="28.64" y="120.07" width="77.55" height="29.59" rx="5.67" ry="5.67"/>
+  <rect class="cls-2" x="28.64" y="165.07" width="43.31" height="29.59" rx="5.67" ry="5.67"/>
+  <rect class="cls-8" x="133.64" y="120.07" width="77.55" height="29.59" rx="5.67" ry="5.67"/>
+  <rect class="cls-5" x="238.64" y="120.07" width="77.55" height="29.59" rx="5.67" ry="5.67"/>
+</svg>

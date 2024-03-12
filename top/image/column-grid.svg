@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="_レイヤー_1" data-name="レイヤー 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 344.84 218.31">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: rgba(35, 24, 21, .12);
+      }
+
+      .cls-1, .cls-2, .cls-3, .cls-4, .cls-5, .cls-6 {
+        stroke: #231815;
+        stroke-miterlimit: 10;
+      }
+
+      .cls-2 {
+        fill: rgba(35, 24, 21, .44);
+      }
+
+      .cls-3 {
+        fill: rgba(35, 24, 21, .1);
+      }
+
+      .cls-4 {
+        fill: none;
+        stroke-width: 3px;
+      }
+
+      .cls-5 {
+        fill: rgba(35, 24, 21, .61);
+      }
+
+      .cls-6 {
+        fill: rgba(35, 24, 21, .83);
+      }
+    </style>
+  </defs>
+  <rect class="cls-4" x="1.5" y="1.5" width="341.84" height="215.31" rx="14.29" ry="14.29"/>
+  <rect class="cls-6" x="21.91" y="24.46" width="255.1" height="54.08" rx="5.67" ry="5.67"/>
+  <rect class="cls-2" x="21.91" y="85.46" width="130.61" height="54.08" rx="5.67" ry="5.67"/>
+  <rect class="cls-3" x="162.91" y="85.46" width="114.1" height="54.08" rx="5.67" ry="5.67"/>
+  <rect class="cls-1" x="21.91" y="146.46" width="302.04" height="54.08" rx="5.67" ry="5.67"/>
+  <rect class="cls-5" x="284.15" y="24.46" width="40.8" height="115.08" rx="5.67" ry="5.67"/>
+</svg>

@@ -172,11 +172,18 @@ body.appear #container {
   transition: .7s;
 }
 
-.swiper-slide-active {
+#Html-swiperSection .swiper-slide-active {
   opacity: 1;
   transform: scale(1);
   z-index: 2;
   border: solid 0.5px var(--Hcolor);
+}
+
+#Css-swiperSection .swiper-slide-active {
+  opacity: 1;
+  transform: scale(1);
+  z-index: 2;
+  border: solid 0.5px var(--Ccolor);
 }
 
 .swiper-slide .Item-sentens,
