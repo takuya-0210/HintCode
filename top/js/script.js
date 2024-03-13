@@ -127,6 +127,10 @@ const swiper = new Swiper(".swiper", {
 
 
 
+
+
+
+
 //section-search
 const searchItems = document.querySelectorAll('.search-btn');
 const Html_searchItem1_list = document.querySelector('#Html-item1-list');

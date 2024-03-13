@@ -20,6 +20,13 @@ font-style: normal;
   --h2: 1.4rem;
 }
 
+body {
+  background: var(--bgc);
+
+  margin: 0;
+  padding: 0;
+}
+
 article {
   margin: 0 50px 500px 50px;
 
@@ -53,10 +60,22 @@ header {
 }
 
 
-main {
-  background-color: var(--bgc);
+
+
+
+.bgContent {
+  background-image:linear-gradient(rgb(203, 203, 203) 0px, transparent 1px), linear-gradient(90deg, rgb(203, 203, 203) 0px, transparent 1px);
+  background-size: 20px 20px;
+  background-position: -2px -2px, -2px -2px, -1px -1px, -1px -1px;
+  min-height: 100%;
+  width: 100vw;
+  animation: bgAnime 200s linear infinite;
 }
 
+@keyframes bgAnime {
+	0% { background-position: 50% 0%; }
+	100% { background-position: 50% 100%; }
+}
 
 
 
@@ -183,6 +202,245 @@ main {
 
 
 
+/*scroll-animation*/
+.mouseArea {
+  width: 100vw;
+  position: relative;
+  bottom: 200px;
+  
+}
+
+.mouseArea > .mouse {
+  text-align: center;
+  width: 52px;
+  height: 88px;
+  position: relative;
+  left: calc(50% - 25px);
+  background: #c8c8c8 
+              linear-gradient(transparent 0%,
+                              transparent 50%,
+                              var(--black) 50%,
+                              var(--black) 100%);
+  background-size: 100% 200%;
+  border-radius: 100px;
+  animation: colorSlide 5s linear infinite,
+             nudgeMouse 5s ease-out infinite;
+}
+
+.mouse:before, .mouse:after{
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+}
+
+.mouse:before{
+  width: 46px;
+  height: 82px;
+  background-color: var(--bgc);
+  border-radius: 100px;
+}
+
+.mouse:after{
+  background-color: var(--black);
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+  animation: trackBallSlide 5s linear infinite;
+}
+
+.mouseArea > .text {
+  text-align: center;
+  margin-top: 50px;
+  letter-spacing: 12px;
+  color: #c8c8c8;
+  text-indent: 12px;
+  animation: colorText 5s ease-out infinite,
+             nudgeText 5s ease-out infinite;
+}
+
+@keyframes colorSlide{
+  0% {
+    background-position: 0% 100%;
+  }
+  20% {
+    background-position: 0% 0%;
+  }
+  21% {
+    background-color: #c8c8c8;
+  }
+  29.99% {
+    background-color: var(--black);
+    background-position: 0% 0%;
+  }
+  30% {
+    background-color: #c8c8c8;
+    background-position: 0% 100%;
+  }
+  50% {
+    background-position: 0% 0%;
+  }
+  51% {
+    background-color: #c8c8c8;
+  }
+  59% {
+    background-color: var(--black);
+    background-position: 0% 0%;
+  }
+  60% {
+    background-color: #c8c8c8;
+    background-position: 0% 100%;
+  }
+  80% {
+    background-position: 0% 0%;
+  }
+  81% {
+    background-color: #c8c8c8;
+  }
+  90%, 100% {
+    background-color: var(--black);
+  }
+}
+
+@keyframes colorText{
+  21% {
+    color: #c8c8c8;
+  }
+  30% {
+    color: var(--black);
+  }
+  51% {
+    color: #c8c8c8;
+  }
+  60% {
+    color: var(--black);
+  }
+  81% {
+    color: #c8c8c8;
+  }
+  90% {
+    color: var(--black);
+  }
+} 
+
+@keyframes trackBallSlide{
+  0%{
+    opacity: 1;
+    transform: scale(1) translateY(-20px);
+  }
+  6%{
+    opacity: 1;
+    transform: scale(0.9) translateY(5px);
+  }
+  14%{
+    opacity: 0;
+    transform: scale(0.4) translateY(40px);
+  }
+  15%, 19%{
+    opacity: 0;
+    transform: scale(0.4) translateY(-20px);
+  }
+  28%, 29.99%{
+    opacity: 1;
+    transform: scale(1) translateY(-20px);
+  }
+  30%{
+    opacity: 1;
+    transform: scale(1) translateY(-20px);
+  }
+  36%{
+    opacity: 1;
+    transform: scale(0.9) translateY(5px);
+  }
+  44%{
+    opacity: 0;
+    transform: scale(0.4) translateY(40px);
+  }
+  45%, 49%{
+    opacity: 0;
+    transform: scale(0.4) translateY(-20px);
+  }
+  58%, 59.99%{
+    opacity: 1;
+    transform: scale(1) translateY(-20px);
+  }
+  60%{
+    opacity: 1;
+    transform: scale(0.9) translateY(-20px);
+  }
+  66%{
+    opacity: 1;
+    transform: scale(0.9) translateY(5px);
+  }
+  74%{
+    opacity: 0;
+    transform: scale(0.4) translateY(40px);
+  }
+  75%, 79%{
+    opacity: 0;
+    transform: scale(0.4) translateY(-20px);
+  }
+  88%, 100%{
+    opacity: 1;
+    transform: scale(1) translateY(-20px);
+  }
+}
+
+@keyframes nudgeMouse{
+  0%{
+    transform: translateY(0);
+  }
+  20%{
+    transform: translateY(8px);
+  }
+  30%{
+    transform: translateY(0);
+  }
+  50%{
+    transform: translateY(8px);
+  }
+  60%{
+    transform: translateY(0);
+  }
+  80%{
+    transform: translateY(8px);
+  }
+  90%{
+    transform: translateY(0);
+  }
+}
+
+@keyframes nudgeMouse{
+  0%{
+    transform: translateY(0);
+  }
+  20%{
+    transform: translateY(8px);
+  }
+  30%{
+    transform: translateY(0);
+  }
+  50%{
+    transform: translateY(8px);
+  }
+  60%{
+    transform: translateY(0);
+  }
+  80%{
+    transform: translateY(8px);
+  }
+  90%{
+    transform: translateY(0);
+  }
+}
+
+
+
+
+
 
 
 #HtmlArticle .TextTyping {
@@ -276,11 +534,9 @@ main {
 }
 
 
-
-/* ページネーション */
-.swiper-pagination-bullets.swiper-pagination-horizontal {
+.swiper-pagination {
   position: relative;
-  top: 20px;
+  bottom: 70px;
 }
 
 
