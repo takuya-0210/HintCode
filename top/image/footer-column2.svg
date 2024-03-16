@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="_レイヤー_1" data-name="レイヤー 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 321.78 157.16">
+  <defs>
+    <style>
+      .cls-1 {
+        stroke: #040000;
+        stroke-miterlimit: 10;
+      }
+
+      .cls-1, .cls-2 {
+        fill: #040000;
+        opacity: .43;
+      }
+
+      .cls-2, .cls-3, .cls-4, .cls-5 {
+        stroke-width: 0px;
+      }
+
+      .cls-3 {
+        fill: #d2bf37;
+      }
+
+      .cls-6 {
+        font-family: UDReiminPr6N-Light-90ms-RKSJ-H, 'A-OTF UD Reimin Pr6N';
+        font-size: 17.53px;
+      }
+
+      .cls-6, .cls-7 {
+        font-weight: 300;
+      }
+
+      .cls-6, .cls-8 {
+        fill: #231815;
+      }
+
+      .cls-4 {
+        fill: #f1f1ec;
+      }
+
+      .cls-7 {
+        font-family: SourceSerifRoman-Light, 'Source Serif Variable';
+        font-size: 56.19px;
+        font-variation-settings: 'wght' 300;
+      }
+
+      .cls-7, .cls-9 {
+        fill: #fff;
+      }
+
+      .cls-8 {
+        font-size: 33.23px;
+      }
+
+      .cls-8, .cls-9 {
+        font-family: SourceSerifVariable-Roman, 'Source Serif Variable';
+        font-variation-settings: 'wght' 389;
+      }
+
+      .cls-5 {
+        fill: #494949;
+        opacity: .41;
+      }
+
+      .cls-9 {
+        font-size: 17.3px;
+      }
+    </style>
+  </defs>
+  <rect class="cls-4" x="20.94" y="6.67" width="300" height="150" rx="23.75" ry="23.75"/>
+  <rect class="cls-3" x="0" y="0" width="124" height="25" rx="12.5" ry="12.5"/>
+  <text class="cls-9" transform="translate(20.46 17.51)"><tspan x="0" y="0">Java Script</tspan></text>
+  <text class="cls-8" transform="translate(48.05 78.1)"><tspan x="0" y="0">JavaScript</tspan></text>
+  <text class="cls-6" transform="translate(152.04 112.33)"><tspan x="0" y="0">高さや位置まとめ</tspan></text>
+  <g>
+    <rect class="cls-1" x="21.28" y="6.66" width="300" height="150" rx="23.75" ry="23.75"/>
+    <rect class="cls-2" x=".34" y="0" width="124" height="25" rx="12.5" ry="12.5"/>
+    <rect class="cls-5" x="32.3" y="43.81" width="277.28" height="76.09" rx="13.7" ry="13.7"/>
+    <text class="cls-7" transform="translate(49.66 99.88)"><tspan x="0" y="0">Currently</tspan></text>
+  </g>
+</svg>

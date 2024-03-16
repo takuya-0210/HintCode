@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="_レイヤー_1" data-name="レイヤー 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 153.91 117.96">
+  <defs>
+    <style>
+      .cls-1 {
+        letter-spacing: .08em;
+      }
+
+      .cls-1, .cls-2, .cls-3, .cls-4 {
+        font-family: UDReiminPr6N-Light-90ms-RKSJ-H, 'A-OTF UD Reimin Pr6N';
+        font-weight: 300;
+      }
+
+      .cls-5 {
+        stroke-miterlimit: 10;
+      }
+
+      .cls-5, .cls-6 {
+        stroke: #231815;
+        stroke-width: 2px;
+      }
+
+      .cls-5, .cls-6, .cls-7 {
+        fill: #f1f1ec;
+      }
+
+      .cls-2 {
+        font-size: 24.11px;
+        letter-spacing: .08em;
+      }
+
+      .cls-2, .cls-8 {
+        fill: #231815;
+      }
+
+      .cls-6 {
+        stroke-linejoin: round;
+      }
+
+      .cls-8 {
+        font-size: 14.96px;
+      }
+
+      .cls-3, .cls-9 {
+        letter-spacing: .08em;
+      }
+
+      .cls-9 {
+        font-family: Century, Century;
+      }
+
+      .cls-4 {
+        letter-spacing: .33em;
+      }
+
+      .cls-7 {
+        stroke-width: 0px;
+      }
+    </style>
+  </defs>
+  <g>
+    <path class="cls-6" d="m1,12.11v104.85c23.85-12.15,52.07-12.15,75.91,0V12.11C53.07-.04,24.85-.04,1,12.11Z"/>
+    <path class="cls-6" d="m77,12.11v104.85c23.85-12.15,52.07-12.15,75.91,0V12.11C129.07-.04,100.85-.04,77,12.11Z"/>
+  </g>
+  <g>
+    <path class="cls-5" d="m1,10.11v104.85c23.85-12.15,52.07-12.15,75.91,0V10.11C53.07-2.04,24.85-2.04,1,10.11Z"/>
+    <path class="cls-5" d="m77,10.11v104.85c23.85-12.15,52.07-12.15,75.91,0V10.11c-23.85-12.15-52.07-12.15-75.91,0Z"/>
+  </g>
+  <g>
+    <path class="cls-7" d="m1,10.11v104.85c23.85-12.15,52.07-12.15,75.91,0V10.11C53.07-2.04,24.85-2.04,1,10.11Z"/>
+    <path class="cls-7" d="m77,10.11v104.85c23.85-12.15,52.07-12.15,75.91,0V10.11c-23.85-12.15-52.07-12.15-75.91,0Z"/>
+  </g>
+  <g>
+    <path class="cls-7" d="m1.96,9.67v104.85c23.85-12.15,52.07-12.15,75.91,0V9.67C54.03-2.48,25.8-2.48,1.96,9.67Z"/>
+    <path class="cls-7" d="m75.96,9.67v104.85c23.85-12.15,52.07-12.15,75.91,0V9.67c-23.85-12.15-52.07-12.15-75.91,0Z"/>
+  </g>
+  <g>
+    <path class="cls-7" d="m.91,10.11v104.85c23.85-12.15,52.07-12.15,75.91,0V10.11C52.98-2.04,24.76-2.04.91,10.11Z"/>
+    <path class="cls-7" d="m76.91,10.11v104.85c23.85-12.15,52.07-12.15,75.91,0V10.11c-23.85-12.15-52.07-12.15-75.91,0Z"/>
+  </g>
+  <text class="cls-2" transform="translate(24.98 52.66)"><tspan x="0" y="0">反復処理</tspan></text>
+  <text class="cls-8" transform="translate(36.26 77.86)"><tspan class="cls-3" x="0" y="0">(</tspan><tspan class="cls-9" x="6.75" y="-.29">while</tspan><tspan class="cls-4" x="53.93" y="0">文</tspan><tspan class="cls-1" x="73.78" y="0">)</tspan></text>
+</svg>

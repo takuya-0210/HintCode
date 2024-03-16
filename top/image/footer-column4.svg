@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="_レイヤー_1" data-name="レイヤー 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 306.72 157.15">
+  <defs>
+    <style>
+      .cls-1 {
+        font-size: 33.23px;
+      }
+
+      .cls-1, .cls-2, .cls-3 {
+        fill: #231815;
+        font-family: UDReiminPr6N-Light-90ms-RKSJ-H, 'A-OTF UD Reimin Pr6N';
+      }
+
+      .cls-1, .cls-2, .cls-3, .cls-4 {
+        font-weight: 300;
+      }
+
+      .cls-5 {
+        stroke: #040000;
+      }
+
+      .cls-5, .cls-6 {
+        fill: #040000;
+        opacity: .43;
+      }
+
+      .cls-5, .cls-7, .cls-8 {
+        stroke-miterlimit: 10;
+      }
+
+      .cls-2 {
+        font-size: 12px;
+      }
+
+      .cls-6, .cls-9, .cls-10, .cls-11, .cls-12 {
+        stroke-width: 0px;
+      }
+
+      .cls-3 {
+        font-size: 18.73px;
+      }
+
+      .cls-9 {
+        fill: #275aa9;
+      }
+
+      .cls-10, .cls-8 {
+        fill: #f1f1ec;
+      }
+
+      .cls-4 {
+        font-family: SourceSerifRoman-Light, 'Source Serif Variable';
+        font-size: 56.19px;
+        font-variation-settings: 'wght' 300;
+      }
+
+      .cls-4, .cls-7, .cls-13 {
+        fill: #fff;
+      }
+
+      .cls-7, .cls-8 {
+        stroke: #231815;
+      }
+
+      .cls-11 {
+        fill: #494949;
+        opacity: .41;
+      }
+
+      .cls-12 {
+        fill: #ef8139;
+      }
+
+      .cls-13 {
+        font-family: SourceSerifVariable-Roman, 'Source Serif Variable';
+        font-size: 17.3px;
+        font-variation-settings: 'wght' 389;
+      }
+    </style>
+  </defs>
+  <rect class="cls-10" x="5.88" y="6.66" width="300" height="150" rx="23.75" ry="23.75"/>
+  <g>
+    <rect class="cls-9" x="99.18" y="0" width="71.55" height="25" rx="12.5" ry="12.5"/>
+    <text class="cls-13" transform="translate(120.11 17.78)"><tspan x="0" y="0">Css</tspan></text>
+  </g>
+  <g>
+    <rect class="cls-12" x="1.06" y="0" width="90.16" height="25" rx="12.5" ry="12.5"/>
+    <text class="cls-13" transform="translate(22 17.78)"><tspan x="0" y="0">HTML</tspan></text>
+  </g>
+  <text class="cls-2" transform="translate(233.27 119.89)"><tspan x="0" y="0">まとめ</tspan></text>
+  <text class="cls-3" transform="translate(139.2 102.25)"><tspan x="0" y="0">切り替えボタン</tspan></text>
+  <g>
+    <rect class="cls-7" x="35.61" y="110.17" width="71.28" height="33.45" rx="16.72" ry="16.72"/>
+    <circle class="cls-8" cx="52.35" cy="126.82" r="13.79"/>
+  </g>
+  <text class="cls-1" transform="translate(30.56 78.62)"><tspan x="0" y="0">ON・OFF</tspan></text>
+  <g>
+    <rect class="cls-5" x="6.22" y="6.65" width="300" height="150" rx="23.75" ry="23.75"/>
+    <rect class="cls-6" x="99.35" y="0" width="71.21" height="25" rx="12.5" ry="12.5"/>
+    <rect class="cls-6" x="0" y="0" width="91.22" height="25" rx="12.5" ry="12.5"/>
+    <rect class="cls-11" x="17.24" y="43.8" width="277.28" height="76.09" rx="13.7" ry="13.7"/>
+    <text class="cls-4" transform="translate(34.6 99.87)"><tspan x="0" y="0">Currently</tspan></text>
+  </g>
+</svg>

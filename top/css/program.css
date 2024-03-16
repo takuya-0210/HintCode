@@ -166,7 +166,7 @@ body.appear #container {
 
 /*swiper*/
 
-.swiper-slide {
+.Item {
   opacity: .5;
   transform: scale(.6);
   transition: .7s;
@@ -184,6 +184,13 @@ body.appear #container {
   transform: scale(1);
   z-index: 2;
   border: solid 0.5px var(--Ccolor);
+}
+
+#Js-swiperSection .swiper-slide-active {
+  opacity: 1;
+  transform: scale(1);
+  z-index: 2;
+  border: solid 0.5px var(--Jcolor);
 }
 
 .swiper-slide .Item-sentens,
@@ -205,8 +212,8 @@ display: block;
 
 
 
-/* ページネーションの基本スタイル */
-.paginationWrap1 .swiper-pagination-bullet {
+/*ページネーションの基本スタイル */
+.swiper-pagination-bullet {
   position: relative;
   top: 16px;
   background-color: transparent; /* 背景色を透明に */
@@ -218,7 +225,7 @@ display: block;
   opacity: 0.3; /* 画像の透過を無くす */
   width: 50px;
 }
-/* 選択されているページネーション */
+/* Html 選択されているページネーション */
 .paginationWrap1 .swiper-pagination-bullet-active {
   background-image: url("../image/PaginationIconActive.svg");
   opacity: 1; /* 画像の透過を無くす */
@@ -226,22 +233,17 @@ display: block;
   width: 50px;
 }
 
-/* ページネーションの基本スタイル */
-.paginationWrap2 .swiper-pagination-bullet {
-  position: relative;
-  top: 16px;
-  background-color: transparent; /* 背景色を透明に */
-  background-image: url("../image/PaginationIcon.svg");
-  background-repeat: no-repeat;
-  background-size: contain;
-  border-radius: unset; /* これがないと画像が欠ける */
-  height: 50px;
-  opacity: 0.3; /* 画像の透過を無くす */
-  width: 50px;
-}
-/* 選択されているページネーション */
+/* Css 選択されているページネーション */
 .paginationWrap2 .swiper-pagination-bullet-active {
   background-image: url("../image/PaginationIconActive2.svg");
+  opacity: 1; /* 画像の透過を無くす */
+  height: 50px;
+  width: 50px;
+}
+
+/* Js 選択されているページネーション */
+.paginationWrap3 .swiper-pagination-bullet-active {
+  background-image: url("../image/PaginationIconActive3.svg");
   opacity: 1; /* 画像の透過を無くす */
   height: 50px;
   width: 50px;
