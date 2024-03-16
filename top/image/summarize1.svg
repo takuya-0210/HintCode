@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="_レイヤー_1" data-name="レイヤー 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 153.91 117.96">
+  <defs>
+    <style>
+      .cls-1 {
+        stroke-miterlimit: 10;
+      }
+
+      .cls-1, .cls-2 {
+        stroke: #231815;
+        stroke-width: 2px;
+      }
+
+      .cls-1, .cls-2, .cls-3 {
+        fill: #f1f1ec;
+      }
+
+      .cls-2 {
+        stroke-linejoin: round;
+      }
+
+      .cls-4 {
+        font-size: 12px;
+        letter-spacing: .08em;
+      }
+
+      .cls-4, .cls-5 {
+        fill: #231815;
+        font-family: UDReiminPr6N-Light-90ms-RKSJ-H, 'A-OTF UD Reimin Pr6N';
+        font-weight: 300;
+      }
+
+      .cls-5 {
+        font-size: 24.34px;
+        letter-spacing: .08em;
+      }
+
+      .cls-3 {
+        stroke-width: 0px;
+      }
+    </style>
+  </defs>
+  <g>
+    <path class="cls-2" d="m1,12.11v104.85c23.85-12.15,52.07-12.15,75.91,0V12.11C53.07-.04,24.85-.04,1,12.11Z"/>
+    <path class="cls-2" d="m77,12.11v104.85c23.85-12.15,52.07-12.15,75.91,0V12.11C129.07-.04,100.85-.04,77,12.11Z"/>
+  </g>
+  <g>
+    <path class="cls-1" d="m1,10.11v104.85c23.85-12.15,52.07-12.15,75.91,0V10.11C53.07-2.04,24.85-2.04,1,10.11Z"/>
+    <path class="cls-1" d="m77,10.11v104.85c23.85-12.15,52.07-12.15,75.91,0V10.11c-23.85-12.15-52.07-12.15-75.91,0Z"/>
+  </g>
+  <g>
+    <path class="cls-3" d="m.96,9.73v104.85c23.85-12.15,52.07-12.15,75.91,0V9.73C53.03-2.42,24.8-2.42.96,9.73Z"/>
+    <path class="cls-3" d="m76.96,9.73v104.85c23.85-12.15,52.07-12.15,75.91,0V9.73c-23.85-12.15-52.07-12.15-75.91,0Z"/>
+  </g>
+  <text class="cls-5" transform="translate(11.59 61.42)"><tspan x="0" y="0">定数</tspan></text>
+  <text class="cls-5" transform="translate(91.07 62.42)"><tspan x="0" y="0">変数</tspan></text>
+  <text class="cls-4" transform="translate(70.3 58.98)"><tspan x="0" y="0">×</tspan></text>
+</svg>

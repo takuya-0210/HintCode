@@ -36,12 +36,35 @@
   
   
 <div id="container">
-  
+  <div class="bgContent">
   
   <header>
     <nav id="pagination">
       <ul>
-        <li><a href="">Menu</a></li>
+        <li class="minNav"><span><a href="HomeArticle">TOP</a></span></li>
+        <li class="minNav">
+          <span><a href="#HtmlArticle">HTML</a></span>
+          <ul>
+            <li class="point"><a href="#Html-swiperSection">基礎知識</a></li>
+            <li class="point"><a href="#Html-search">頻出語句</a></li>
+            <li class="point"><a href="#Html-column">まとめ</a></li>
+          </ul>
+        </li>
+        <li class="minNav">
+          <span><a href="#CssArticle">CSS</a></span>
+          <ul>
+            <li class="point"><a href="#Css-swiperSection">基礎知識</a></li>
+            <li class="point"><a href="#Css-search">頻出語句</a></li>
+            <li class="point"><a href="#Css-column">まとめ</a></li>
+          </ul>
+        </li>
+        <li class="minNav">
+          <span><a href="#JsArticle">JavaScript</a></span>
+          <ul>
+            <li class="point"><a href="#Js-swiperSection">基礎知識</a></li>
+            <li class="point"><a href="#JsSummarize">頻出語句</a></li>
+          </ul>
+        </li>
       </ul>
     </nav>
   </header>
@@ -51,56 +74,62 @@
   <main >
     
     
-<div class="bgContent">
+
 <!--■　top-article　■-->
 <article id="HomeArticle">
   <h1 class="TextTypingFirst">CodeHint</h1>
   <ul class="kinds">
+    
     <li>
-      <svg id="HtmlIcon" data-name="レイヤー 12" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 389.59 300.04" height="100px">
-        <defs>
-          <style>
-            .Hcls-1 {
-              font-size: 60px;
-              fill: #BAB9B9;
-            }
-
-            .Hcls-2 {
-              font-size: 173px;
-              stroke: #BAB9B9;
-              fill: #BAB9B9;
-            }
+        <svg id="HtmlIcon" data-name="レイヤー 12" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 389.59 300.04" height="100px">
+          <a xlink:href="#HtmlArticle">
+          <defs>
             
-            .Hcls-1, .Hcls-2 {
-              font-family: UDReiminPr6N-Light-90ms-RKSJ-H, 'A-OTF UD Reimin Pr6N';
-              font-weight: 300;
-            }
-
-            .Hcls-3 {
-              stroke: #BAB9B9;
-              stroke-width: 4px;
-              fill: #F2F2ED;
-            }
-
-            .Hcls-4 {
-              stroke: #BAB9B9;
-              stroke-width: 3px;
-            }
-
-          .Hcls-4, .Hcls-2 {
-              fill: #F2F2ED;
-              stroke-miterlimit: 10;
-            }
-          </style>
-        </defs>
-        <rect class="Hcls-3" width="281.87" height="281.87" rx="55.91" ry="55.91"/>
-        <rect class="Hcls-4" x="133.79" y="212.16" width="254.3" height="84.26" rx="27.03" ry="27.03"/>
-        <text class="Hcls-1" transform="translate(173.21 278.26)"><tspan x="0" y="0">HTML</tspan></text>
-        <text class="Hcls-2" transform="translate(70.34 203.23)"><tspan x="0" y="0">H</tspan></text>
-      </svg>
+            <style>
+              .Hcls-1 {
+                font-size: 60px;
+                fill: #BAB9B9;
+              }
+  
+              .Hcls-2 {
+                font-size: 173px;
+                stroke: #BAB9B9;
+                fill: #BAB9B9;
+              }
+              
+              .Hcls-1, .Hcls-2 {
+                font-family: UDReiminPr6N-Light-90ms-RKSJ-H, 'A-OTF UD Reimin Pr6N';
+                font-weight: 300;
+              }
+  
+              .Hcls-3 {
+                stroke: #BAB9B9;
+                stroke-width: 4px;
+                fill: #F2F2ED;
+              }
+  
+              .Hcls-4 {
+                stroke: #BAB9B9;
+                stroke-width: 3px;
+              }
+  
+            .Hcls-4, .Hcls-2 {
+                fill: #F2F2ED;
+                stroke-miterlimit: 10;
+              }
+            </style>
+          
+          </defs>
+          <rect class="Hcls-3" width="281.87" height="281.87" rx="55.91" ry="55.91"/>
+          <rect class="Hcls-4" x="133.79" y="212.16" width="254.3" height="84.26" rx="27.03" ry="27.03"/>
+          <text class="Hcls-1" transform="translate(173.21 278.26)"><tspan x="0" y="0">HTML</tspan></text>
+          <text class="Hcls-2" transform="translate(70.34 203.23)"><tspan x="0" y="0">H</tspan></text>
+        </a>
+        </svg>
     </li>
     <li>
       <svg id="CssIcon" data-name="レイヤー 12" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 356.39 300.03" height="100px">
+        <a xlink:href="#CssArticle">
         <defs>
           <style>
             .Ccls-1 {
@@ -142,10 +171,12 @@
         <rect class="Ccls-4" x="144.77" y="212.16" width="210.13" height="84.26" rx="27.03" ry="27.03"/>
         <text class="Ccls-1" transform="translate(187.51 278.25)"><tspan x="0" y="0">CSS</tspan></text>
         <text class="Ccls-2" transform="translate(64.34 203.23)"><tspan x="0" y="0">C</tspan></text>
+      </a>
       </svg>
     </li>
     <li>
       <svg id="JsIcon" data-name="レイヤー 12" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 510.1 297.91" height="100px">
+        <a xlink:href="#JsArticle">
         <defs>
           <style>
             .Jcls-1 {
@@ -186,6 +217,7 @@
         <rect class="Jcls-4" x="133.79" y="212.16" width="374.81" height="84.26" rx="27.03" ry="27.03"/>
         <text class="Jcls-1" transform="translate(173.21 275.26)"><tspan x="0" y="0">Java Script</tspan></text>
         <text class="Jcls-2" transform="translate(94.82 193.02) scale(1.4 1)"><tspan x="0" y="0">J</tspan></text>
+      </a>
       </svg>
     </li>
   </ul>
@@ -198,6 +230,13 @@
 <div class="mouse"></div>
 <p class="text">scroll</p>
 </div>
+<!---------------------------------------------------------------------------------->
+
+
+
+
+
+
 
 
 
@@ -1351,7 +1390,6 @@
       </li>
     </ul>
   </section>
-
 </article>
 
 
@@ -1359,101 +1397,123 @@
 
 
 
-<div class="test">
-<p>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
-<p>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
-<p>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
-<p>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
-<p>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
-<p>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
-<p>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
-<p>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
-<p>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
-<p>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
-<p>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
-<p>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
-<p>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
-<p>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
-<p>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
-<p>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
-<p>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
-<p>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
-<p>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
-<p>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
-<p>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
-<p>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
-<p>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
-<p>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
-<p>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
-<p>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
-<p>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
-<p>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
-<p>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
-<p>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
-<p>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
-<p>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
-<p>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
-<p>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
-<p>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
-<p>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
-<p>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
-<p>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
-<p>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
-<p>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
-<p>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
-<p>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
-<p>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
-<p>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
-<p>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
-<p>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
-<p>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
-<p>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
-<p>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
-<p>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
-<p>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
-<p>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
-<p>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
-<p>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
-<p>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
-<p>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
-<p>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
-<p>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
-<p>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
-<p>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
-<p>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
-<p>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
-<p>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
-<p>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
-<p>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
-<p>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
-<p>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
-<p>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
-<p>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
-<p>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
-<p>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
-<p>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
-<p>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
-<p>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
-<p>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
-<p>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
-<p>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
-<p>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
-<p>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
-<p>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
-<p>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
-<p>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
-<p>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
-<p>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
-<p>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
-<p>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
-<p>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
-</div>
+
+
+<!--■　Js-article　■-->
+  <article id="JsArticle">
+    <h1 class="TextTyping">JavaScript</h1>
+
+    <!--swiper-section -->
+  <section id="Js-swiperSection"  class="swiperSection">
+    <div class="container">
+      <div class="swiper JsSwiper">
+        <ul class="ItemWrap swiper-wrapper">
+          
+          <li class="Item swiper-slide">
+              <h2 class="Item-Title">要素のカテゴリー</h2>
+            <p class="Item-sentens">
+              主要なカテゴリーだけでも7つあります。<br>
+              多くの要素は1つのカテゴリーにのみ属しているわけではなく、複数のカテゴリーに属していたりします。<br>
+            </p>
+            <div class="Item-more">
+              <a href="">もっと詳しく…</a>
+            </div>
+          </li>
+          
+          <li class="Item swiper-slide">
+            <h2 class="Item-Title">ブロック要素とインライン要素</h2>
+            <p class="Item-sentens">
+              主要なカテゴリーだけでも7つあります。<br>
+              多くの要素は1つのカテゴリーにのみ属しているわけではなく、複数のカテゴリーに属していたりします。<br>
+            </p>
+            <div class="Item-more">
+              <a href="">もっと詳しく…</a>
+            </div>
+          </li>
+          
+          <li class="Item swiper-slide">
+            <h2 class="Item-Title">グローバル属性</h2>
+            <p class="Item-sentens">
+              主要なカテゴリーだけでも7つあります。<br>
+              多くの要素は1つのカテゴリーにのみ属しているわけではなく、複数のカテゴリーに属していたりします。<br>
+            </p>
+            <div class="Item-more">
+              <a href="">もっと詳しく…</a>
+            </div>
+          </li>
+          
+          <li class="Item swiper-slide">
+            <h2 class="Item-Title">特殊文字</h2>
+            <p class="Item-sentens">
+              主要なカテゴリーだけでも7つあります。<br>
+              多くの要素は1つのカテゴリーにのみ属しているわけではなく、複数のカテゴリーに属していたりします。<br>
+            </p>
+            <div class="Item-more">
+              <a href="">もっと詳しく…</a>
+            </div>
+          </li>
+          <li class="Item swiper-slide">
+            <h2 class="Item-Title">ページ概要の設定</h2>
+            <p class="Item-sentens">
+              主要なカテゴリーだけでも7つあります。<br>
+              多くの要素は1つのカテゴリーにのみ属しているわけではなく、複数のカテゴリーに属していたりします。<br>
+            </p>
+            <div class="Item-more">
+              <a href="">もっと詳しく…</a>
+            </div>
+          </li>
+        </ul>
+        <div class="paginationWrap3">
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
     </div>
+  </section><!--/swiper-section-->
 
 
-
+<!-- section-summarize -->
+  <section id="JsSummarize" class="summarize">
+    <div class="swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"><div class="slide-item"><img src="image/summarize1.svg" alt=""></div></div>
+        <div class="swiper-slide"><div class="slide-item"><img src="image/summarize2.svg" alt=""></div></div>
+        <div class="swiper-slide"><div class="slide-item"><img src="image/summarize3.svg" alt=""></div></div>
+        <div class="swiper-slide"><div class="slide-item"><img src="image/summarize4.svg" alt=""></div></div>
+        <div class="swiper-slide"><div class="slide-item"><img src="image/summarize5.svg" alt=""></div></div>
+        <div class="swiper-slide"><div class="slide-item"><img src="image/summarize6.svg" alt=""></div></div>
+        <div class="swiper-slide"><div class="slide-item"><img src="image/summarize7.svg" alt=""></div></div>
+        <div class="swiper-slide"><div class="slide-item"><img src="image/summarize8.svg" alt=""></div></div>
+      </div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    </div>
+  </section>
+  </article>
+</div>
   </main>
- 
+
+<footer>
+  <section id="footerSection1">
+    <h1><span>その他の記事</span></h1>
+    <div class="swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="image/footer-column.svg" alt=""></div>
+        <div class="swiper-slide"><img src="image/footer-column2.svg" alt=""></div>
+        <div class="swiper-slide"><img src="image/footer-column3.svg" alt=""></div>
+        <div class="swiper-slide"><img src="image/footer-column4.svg" alt=""></div>
+      </div>
+      <div class="swiper-scrollbar"></div>
+    </div>
+    
+    
+    
+  </section>
+    
+  
+
+
+
+</footer>
 </div>
 </body>
 </html>
