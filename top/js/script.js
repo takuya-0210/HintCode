@@ -233,13 +233,19 @@ console.log()
 const swiper = new Swiper(".swiperSection .swiper", {
   slidesPerView: 3,
   slidesPerView: 1.5,
-  spaceBetween: 100,
+
+  spaceBetween: 30,
   speed: 1000,
   mousewheel: true,
   pagination: {
     el: ".swiper-pagination",
     clickable: true, 
   },
+  breakpoints: {
+    600: {
+      spaceBetween: 100,
+    }
+  }
 });
 
 
@@ -751,20 +757,34 @@ C_item2_categories.forEach(function (element) {
 const JsSwiper = new Swiper ('.summarize .swiper', {
   loop: true,
   loopAdditionalSlides: 1,
-  slidesPerView: 5,
+  
   spaceBetween: 10,
   centeredSlides: true,
   watchSlidesProgress: true,
   navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
+  },
+  breakpoints: {
+    770: {
+      slidesPerView: 5,
+    },
+    600: {
+      slidesPerView: 4,
+    },
+    400: {
+      slidesPerView: 3,
+    },
+    200: {
+      slidesPerView: 2,
+    }
   }
 });
 
 const footerSwiper = new Swiper ('#footerSection1 .swiper', {
   loop: true,
   loopSlides: 2,
-  slidesPerView: "3",
+  
   speed: 10000,
   autoplay: {
     delay: 0,
@@ -775,6 +795,14 @@ const footerSwiper = new Swiper ('#footerSection1 .swiper', {
     thresholdDelta: 70,
     forceToAxis: true,
   },
+  breakpoints: {
+    1000: {
+      slidesPerView: "3",
+    },
+    300: {
+      slidesPerView: "2",
+    }
+  }
 });
 
 
