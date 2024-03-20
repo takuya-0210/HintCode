@@ -14,24 +14,30 @@ body {
 }
 
 #container {
+  width: 100%;
+  max-width: 1400px;
   background-color: #F2F2ED;
   color: #2D2D2B;
   font-family: "a-otf-ud-reimin-pr6n", sans-serif;
   padding: 0 30px;
+  margin: 0 auto;
 }
 
-@media screen and (min-width: 1400px) {
-  #container {
-    width: 100%;
-    max-width: 1400px;
-    margin: 0 auto;
+main {
+  width: 90%;
+}
+
+@media only screen and (min-width: 600px) and (max-width: 1100px) {
+  main {
+    width: 80%;
   }
 }
 
 
+
 /*h-setting*/
 h1 {
-  font-size: 5rem;
+  font-size: 4rem;
 }
 
 h2 {
@@ -70,90 +76,48 @@ h4 {
   border-left: solid 5px #C9BC9C;
 }
 
-
-
-
-
-
-
-/*table-setting*/
-table {
+main p {
+  font-size: 1.2rem;
+  line-height: 1.4em;
   margin-top: 16px;
 }
 
-table td, table th {
-  border: 1px solid #C9BC9C;
-  padding: 10px 15px;
+@media only screen and (min-width: 600px) and (max-width: 1100px) {
+  main {
+    width: 80%;
+  }
+  h1 {
+    font-size: 1.9rem;
+  }
+  h2 {
+    font-size: 1.4rem;
+ 
+  }
+  h3 {
+    font-size: 1.2rem;
+  }
+  main p{
+    font-size: 0.8rem;
+  }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-#TableOfContentsArea {
-  width: 90%;
+@media screen and (max-width: 599px) {
+  h1 {
+    font-size: 1.4rem;
+  }
+  h2 {
+    font-size: 1.2rem;
+  }
+  h3 {
+    font-size: 1rem;
+  }
+  h4 {
+    font-size: 0.9rem;
+  }
+  main p{
+    font-size: 0.8rem;
+  }
 }
-
-
-#TableOfContentsArea ul {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  margin: 50px 5% 0 5%;
-  font-size: 1.2rem;
-}
-
-#TableOfContentsArea ul li {
-  position: relative;
-  
-}
-
-#TableOfContentsArea ul li:hover {
-  color: #ff8534;
-  cursor: pointer;
-}
-
-
-#TableOfContentsArea ul li::after {
-    content: '';
-    /*絶対配置で線の位置を決める*/
-    position: absolute;
-    bottom: -20%;
-    left: -10%;
-    /*線の形状*/
-    width: 120%;
-    height: 2px;
-    background:#FF8534;
-    /*アニメーションの指定*/
-    transition: all .3s;
-    transform: scale(0, 1);/*X方向0、Y方向1*/
-    transform-origin: center top;/*上部中央基点*/
-}
-
-
-
-#TableOfContentsArea ul li:hover::after {
-    transform: scale(1, 1);/*X方向にスケール拡大*/
-}
-
-
-
-
-
-
-
-
-
-
 
 
 /*header*/
@@ -165,7 +129,7 @@ table td, table th {
   top: 0;
   left: 90%;
   z-index: 10;
-
+  background-color: #F2F2ED;
 }
 
 #header img {
@@ -196,9 +160,32 @@ table td, table th {
   font-weight: bold;
 }
 
+/*タブレット用設定*/
+@media only screen and (min-width: 600px) and (max-width: 1100px) {
+  #header {
+    width: 20%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 80%;
+    z-index: 10;
+  }
+  #header img {
+    padding: 20%;
+  }
+}
+
+@media screen and (max-width: 599px) {
+  .js-nav-switch {
+    writing-mode: vertical-rl;
+  }
+  
+}
 
 
-/*topArea*/
+
+
+/*topArea================================================*/
 #topArea p{
   margin-top: 32px;
 }
@@ -215,51 +202,128 @@ table td, table th {
 
 
 
+/*目次========================================================================*/
+#TableOfContentsArea {
+  width: 100%;
+}
+
+#displayContainer {
+  font-size: 1.2rem;
+  display: grid;
+  grid-template-rows: 50px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+#display_item1 {
+  grid-row: 1 / 4;
+}
+
+#TableOfContentsArea ul li {
+  text-align: center;
+  position: relative;
+}
+
+#TableOfContentsArea ul li:hover {
+  color: #ff8534;
+  cursor: pointer;
+}
+
+
+#TableOfContentsArea ul li::after {
+    content: '';
+    /*絶対配置で線の位置を決める*/
+    position: absolute;
+    bottom: 40%;
+    left: 10%;
+    /*線の形状*/
+    width: 80%;
+    height: 2px;
+    background:#FF8534;
+    /*アニメーションの指定*/
+    transition: all .3s;
+    transform: scale(0, 1);/*X方向0、Y方向1*/
+    transform-origin: center top;/*上部中央基点*/
+}
 
 
 
+#TableOfContentsArea ul li:hover::after {
+    transform: scale(1, 1);/*X方向にスケール拡大*/
+}
+
+/*タブレット用設定*/
+@media only screen and (min-width: 600px) and (max-width: 1100px) {
+  #TableOfContentsArea ul li {
+    font-size: 0.9rem;
+  }
+}
+@media screen and (max-width: 710px) {
+  #displayContainer {
+    font-size: 1.2rem;
+    display: grid;
+    grid-template-rows: 30px 30px;
+    grid-template-columns: 1fr 1fr;
+  }
+  #display_item1 {
+    grid-row: 1 / 2;
+    grid-column: 1 / 2;
+  }
+  #display_item2 {
+    grid-row: 1 / 2;
+    grid-column: 2 / 3;
+  }
+  #display_item3 {
+    grid-row: 2 / 3;
+    grid-column: 1 / 2;
+  }
+  #display_item4 {
+    grid-row: 2 / 3;
+    grid-column: 2 / 3;
+  }
+  #TableOfContentsArea ul li::after {
+    bottom: 20%;
+    left: 10%;
+}
+}
+
+@media screen and (max-width: 599px) {
+  #displayContainer {
+    font-size: 1rem;
+    display: block;
+  }
 
 
-
-
-
-
-
-
+  #TableOfContentsArea ul li::after {
+    bottom: 20%;
+    left: 10%;
+  }
+  #displayContainer li {
+  margin-top: 10px;
+  }
+  #TableOfContentsArea ul li::after {
+    bottom: -10%;
+    left: 21%;
+    width: 60%;
+  }
+}
 
 
 
 .content-area {
   padding-top: 200px;
   margin-top: 130px;
-  width: 90%;
+  width: 100%;
 }
 
 .content-area:first-child {
   padding-top: 100px;
 }
-.content-area p {
-  font-size: 1.2rem;
-  line-height: 1.4em;
-  margin-top: 16px;
-}
+
 
 .content-area .tab {
   margin-top: 16px;
 }
 
-.content-area .footnote p{
-  font-size: 0.8rem;
-  line-height: 0.2em;
-}
-
-@media screen and (min-width: 960px) {
-  .content-area {
-    padding-top: 200px;
-    margin-top: 70px;
-    width: 85%;
-  }
-}
 
 
 
@@ -268,12 +332,11 @@ table td, table th {
 
 
 
-
-
+/*tab===================================================================*/
 .tab-wrap ul {
   display: flex;
   flex-wrap: wrap;
-  width: 90%;
+  width: 100%;
   margin-top: 16px;
 }
 
@@ -352,16 +415,24 @@ table td, table th {
 }
 
 
-
-
-#others {
-  width: 90%;
-  padding-top: 200px;
-  margin-top: 80px;
+/*タブレット用設定*/
+@media only screen and (min-width: 600px) and (max-width: 1100px) {
+  .tab-wrap .tab-btn{
+    font-size: 1.4rem;
+    font-weight: lighter;
+  }
+  .tab-contents a {
+    font-size: 1rem/1.5em
+  }
 }
-#others p {
-  text-align: center;
-  margin-top: 15px;
+@media screen and (max-width: 599px) {
+  .tab-wrap .tab-btn{
+    font-size: 1rem;
+    font-weight: lighter;
+  }
+  .tab-contents a {
+    font-size: 1rem/1.4em
+  }
 }
 
 
@@ -370,6 +441,53 @@ table td, table th {
 
 
 
+/*テーブル設定========================================================*/
+#ArrangementRuleArea table,
+#ArrangementRuleArea table th,
+#ArrangementRuleArea table td {
+  border: 1px solid #C9BC9C;
+}
+
+#ArrangementRuleArea table {
+  margin-top: 10px;
+}
+
+#ArrangementRuleArea th,
+#ArrangementRuleArea td {
+    padding: 5px;
+  }
+
+@media screen and (max-width: 1100px) {
+  #ArrangementRuleArea {
+    width: 100%;
+    overflow: auto;
+  }
+  #ArrangementRuleArea table {
+    font-size: 0.9rem;
+    white-space: nowrap;
+  }
+  
+
+  #ArrangementRuleArea tr:first-child th:first-child{
+    z-index: 2;
+    background-color: #F2F2ED;
+}
+
+  #ArrangementRuleArea  th {
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background-color: #F2F2ED;
+  }
+
+}
+@media screen and (max-width: 599px) {
+  #ArrangementRuleArea table {
+    font-size: 0.8rem;
+    white-space: nowrap;
+  }
+}
 
 
 
@@ -377,7 +495,50 @@ table td, table th {
 
 
 
+/*footer*/
+footer {
+  margin-top: 50px;
+  height: 300px;
+  background-color: #C9BC9C;
+}
 
+footer h1 {
+  padding-top: 50px;
+  font-size: 1.5rem;
+}
+
+footer img {
+  width: 150px;
+  height: auto;
+}
+
+footer .swiper-wrapper {
+  width: 100%;
+  height: 150px;
+  transition-timing-function: linear;
+}
+
+
+
+@media screen and (max-width: 1100px) {
+  footer {
+    margin-top: 50px;
+    height: 250px;
+    background-color: #C9BC9C;
+  }
+
+  footer h1 {
+    padding-top: 30px;
+    margin-left: 5px;
+    font-size: 1.2rem;
+  }
+
+  footer img {
+    padding-top: 10px;
+    width: 120px;
+    height: auto;
+  }
+}
 
 
 

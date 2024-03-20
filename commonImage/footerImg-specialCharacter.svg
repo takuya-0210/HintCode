@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="_レイヤー_1" data-name="レイヤー 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 204.67 197.57">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        stroke: #ef8139;
+        stroke-miterlimit: 10;
+        stroke-width: 2px;
+      }
+
+      .cls-1, .cls-3 {
+        fill: #f1f1ec;
+      }
+
+      .cls-2 {
+        fill: none;
+        stroke-dasharray: 0 0 0 0 0 0 48.49 10.76 .02 48.47 10.77 0;
+      }
+
+      .cls-4 {
+        fill: #231815;
+        font-size: 20.81px;
+      }
+
+      .cls-4, .cls-5 {
+        font-family: UDDigiKyokashoNK-R, 'UD Digi Kyokasho NK-R';
+      }
+
+      .cls-5 {
+        fill: #040000;
+        font-size: 32.51px;
+      }
+
+      .cls-3 {
+        stroke-width: 0px;
+      }
+    </style>
+  </defs>
+  <rect class="cls-3" y="22.57" width="175" height="175" rx="35.59" ry="35.59"/>
+  <rect class="cls-2" x="6.95" y="29.53" width="161.1" height="161.1" rx="30.14" ry="30.14"/>
+  <rect class="cls-1" x="88.19" y="12.29" width="114.82" height="36.51" rx="9.68" ry="9.68" transform="translate(11.72 -34.32) rotate(14)"/>
+  <text class="cls-4" transform="translate(100.36 29.1) rotate(14)"><tspan x="0" y="0">基礎知識</tspan></text>
+  <text class="cls-5" transform="translate(24.08 124.49) scale(1.01 1)"><tspan x="0" y="0">特殊文字</tspan></text>
+</svg>
