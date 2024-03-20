@@ -2,6 +2,7 @@
 <html lang="ja">
 <head>
 <meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
 <title>ブロック要素とインライン要素</title>
 <script>
   (function(d) {
@@ -13,13 +14,18 @@
     h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
   })(document);
 </script> 
-<script defer src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script> 
-
-<script defer src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.js"></script> 
-<script defer src="JS/script.js"></script>
 <link rel="stylesheet" href="CSS/destyle.css">
 <link rel="stylesheet" href="CSS/program.css">
 <link rel="stylesheet" href="CSS/layout.css">
+<link
+rel="stylesheet"
+href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
+<script defer src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script defer src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script> 
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.js"></script>
+<script defer src="JS/script.js"></script>
+
 </head>
 <body>
 
@@ -48,11 +54,11 @@
     <img src="image/codeHint.gif" alt="" width="100px">
     <nav id="nav-list">
       <ul>
-        <li><a class="js-nav-switch" href="#topArea">top</a></li>
-        <li><a class="js-nav-switch" href="#FlowArea">ブロック要素</a></li>
-        <li><a class="js-nav-switch" href="#InteractiveArea">インライン要素</a></li>
-        <li><a class="js-nav-switch" href="#MetadataArea">インラインブロック要素</a></li>
-        <li><a class="js-nav-switch" href="#PhrasingArea">配置ルール</a></li>
+        <li><a class="js-nav-switch" href="#topArea">トップ</a></li>
+        <li><a class="js-nav-switch" href="#BlockArea">ブロック要素</a></li>
+        <li><a class="js-nav-switch" href="#InlineArea">インライン要素</a></li>
+        <li><a class="js-nav-switch" href="#InlineblockArea">インラインブロック要素</a></li>
+        <li><a class="js-nav-switch" href="#ArrangementRuleArea">配置ルール</a></li>
       </ul>
     </nav>
   </header>
@@ -72,11 +78,11 @@
    
     <div id="TableOfContentsArea">
       <span><h2>目次</h2></span>
-      <ul>
-        <li>ブロック要素</li>
-        <li>インライン要素</li>
-        <li>インラインブロック要素</li>
-        <li>配置ルール</li>
+      <ul id="displayContainer">
+        <li id="display_item1" class="display_items">ブロック要素</li>
+        <li id="display_item2" class="display_items">インライン要素</li>
+        <li id="display_item3" class="display_items">インラインブロック要素</li>
+        <li id="display_item4" class="display_items">配置設定</li>
       </ul>
     </div>
     
@@ -303,7 +309,7 @@
     
     
 <!--InlineBlockArea-->
-    <section id="InlineBlockArea" class="content-area">
+    <section id="InlineblockArea" class="content-area">
       <h3><span class="slide-in leftAnime"><span class="slidein_inner leftAnimeInner">インラインブロック要素</span></span></h3>
       <p>
         <span class="marker">ブロック要素とインライン要素の性質を併せ持った要素</span>です。<br>
@@ -335,7 +341,7 @@
           <th>余白のつき方</th>
         </tr>
         <tr>
-          <td>ブロック要素</td>
+          <th>ブロック要素</th>
           <td>可能</td>
           <td>親要素の横幅の値</td>
           <td>内容で決まる</td>
@@ -343,7 +349,7 @@
           <td>勝手につくものがある</td>
         </tr>
         <tr>
-          <td>インライン要素</td>
+          <th>インライン要素</th>
           <td>不可能</td>
           <td>内容できまる</td>
           <td>内容で決まる</td>
@@ -351,7 +357,7 @@
           <td>上下に特殊なつき方をする</td>
         </tr>
         <tr>
-          <td>インラインブロック要素</td>
+          <th>インラインブロック要素</th>
           <td>可能</td>
           <td>内容できまる</td>
           <td>内容で決まる</td>
@@ -359,21 +365,18 @@
           <td>勝手につくものがある</td>
         </tr>
       </table>
-      
-      
-      
     </section>
-    
-    
-    
-    
-    
-    
-    
-
- 
   </main>
   <footer>
+    <h1>HTMLについて他にも…</h1>
+    <div class="swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="../commonImage/footerImg.svg" alt=""></div>
+        <div class="swiper-slide"><img src="../commonImage/footerImg-global.svg" alt=""></div>
+        <div class="swiper-slide"><img src="../commonImage/footerImg-specialCharacter.svg" alt=""></div>
+        <div class="swiper-slide"><img src="../commonImage/footerImg-meta.svg" alt=""></div>
+      </div>
+    </div>
   </footer>
 </div>
 </body>
