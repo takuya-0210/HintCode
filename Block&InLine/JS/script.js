@@ -153,7 +153,6 @@ const swiper = new Swiper("footer .swiper", {
   },
   speed: 4000,
   slidesPerView: 3,
-
 });
 
 
