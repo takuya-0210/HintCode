@@ -2,6 +2,7 @@
 <html lang="ja">
 <head>
 <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>要素のカテゴリー</title>
 <script>
   (function(d) {
@@ -13,13 +14,17 @@
     h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
   })(document);
 </script> 
-<script defer src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script> 
-
-<script defer src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.js"></script> 
-<script defer src="JS/script.js"></script>
 <link rel="stylesheet" href="CSS/destyle.css">
 <link rel="stylesheet" href="CSS/program.css">
 <link rel="stylesheet" href="CSS/layout.css">
+<link
+rel="stylesheet"
+href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
+<script defer src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script defer src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script> 
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.js"></script> 
+<script defer src="JS/script.js"></script>
 </head>
 <body>
 
@@ -44,22 +49,23 @@
   
   
 <div id="container">
-  <header id="header">
-    <img src="image/codeHint.gif" alt="" width="100px">
+  <header id="header" >
+    <img src="image/codeHint.gif" alt="" class="">
     <nav id="nav-list">
-      <ul>
-        <li><a class="js-nav-switch" href="#topArea">top</a></li>
-        <li><a class="js-nav-switch" href="#FlowArea">フロー<br>コンテンツ</a></li>
-        <li><a class="js-nav-switch" href="#InteractiveArea">インタラクティブ<br>コンテンツ</a></li>
-        <li><a class="js-nav-switch" href="#MetadataArea">メタデータ<br>コンテンツ</a></li>
-        <li><a class="js-nav-switch" href="#PhrasingArea">フレージン<br>コンテンツ</a></li>
-        <li><a class="js-nav-switch" href="#EmbeddedArea">エンベディッド<br>コンテンツ</a></li>
-        <li><a class="js-nav-switch" href="#HeadingArea">ヘディング<br>コンテンツ</a></li>
-        <li><a class="js-nav-switch" href="#SectioningArea">セクショニング<br>コンテンツ</a></li>
-        <li><a class="js-nav-switch" href="#others">その他</a></li>
+      <ul id="headerGrid">
+        <li class="item1 gItem"><a class="js-nav-switch" href="#topArea">top</a></li>
+        <li class="item2 gItem"><a class="js-nav-switch" href="#FlowArea">フロー<br>コンテンツ</a></li>
+        <li class="item3 gItem"><a class="js-nav-switch" href="#InteractiveArea">インタラクティブ<br>コンテンツ</a></li>
+        <li class="item4 gItem"><a class="js-nav-switch" href="#MetadataArea">メタデータ<br>コンテンツ</a></li>
+        <li class="item5 gItem"><a class="js-nav-switch" href="#PhrasingArea">フレージン<br>コンテンツ</a></li>
+        <li class="item6 gItem"><a class="js-nav-switch" href="#EmbeddedArea">エンベディッド<br>コンテンツ</a></li>
+        <li class="item7 gItem"><a class="js-nav-switch" href="#HeadingArea">ヘディング<br>コンテンツ</a></li>
+        <li class="item8 gItem"><a class="js-nav-switch" href="#SectioningArea">セクショニング<br>コンテンツ</a></li>
+        <li class="item9 gItem"><a class="js-nav-switch" href="#others">その他</a></li>
       </ul>
     </nav>
   </header>
+
   <main>
     
 <!--topArea-->
@@ -1175,12 +1181,18 @@
         </div>
       </code>
       </div>
-      
     </section>
-    
- 
   </main>
   <footer>
+    <h1>HTMLについて他にも…</h1>
+    <div class="swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="../commonImage/footerImg.svg" alt=""></div>
+        <div class="swiper-slide"><img src="../commonImage/footerImg-global.svg" alt=""></div>
+        <div class="swiper-slide"><img src="../commonImage/footerImg-specialCharacter.svg" alt=""></div>
+        <div class="swiper-slide"><img src="../commonImage/footerImg-meta.svg" alt=""></div>
+      </div>
+    </div>
   </footer>
 </div>
 </body>

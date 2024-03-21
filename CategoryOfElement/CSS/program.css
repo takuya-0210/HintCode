@@ -255,4 +255,8 @@ body.appear #container {
 }
 
 
-
+@media screen and (max-width: 629px) {
+  .marker {
+    font-size: 1.1rem;
+  }
+}

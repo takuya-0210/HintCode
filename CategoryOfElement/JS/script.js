@@ -152,7 +152,17 @@ $(window).on('load',function(){
 
 
 
-
+//swiper
+const swiper = new Swiper("footer .swiper", {
+  loop: true,
+  autoplay: {
+      delay: 0,
+      pauseOnMouseEnter: true,
+      disableOnInteraction: false,
+  },
+  speed: 4000,
+  slidesPerView: 3,
+});
 
 
 
