@@ -14,12 +14,15 @@
     h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
   })(document);
 </script> 
-<script defer src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script> 
-<script defer src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.js"></script> 
-<script defer src="JS/script.js"></script>
 <link rel="stylesheet" href="CSS/destyle.css">
 <link rel="stylesheet" href="CSS/program.css">
 <link rel="stylesheet" href="CSS/layout.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+<script defer src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script defer src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script> 
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.js"></script> 
+<script defer src="JS/script.js"></script>
+
 </head>
 <body>
 
@@ -57,6 +60,10 @@
         HTML5以降に追加されたいくつかの属性から成ります。
       </p>
     </div>
+    
+
+<!--scroll-->
+    <div class="scrolldown"><span>scroll</span></div>
     
 
     
@@ -135,16 +142,117 @@
         </tr>
       </table>
     </div>
-    
-    
-
-    
-    
-
  
+  <article id="accesskey" class="DetailContent">
+    <h1>accesskey</h1>
+    <section>
+      <h2>accesskeyとは</h2>
+      <p>accesskey属性は、主にリンクや、入力フォームにアクセスキー（ショートカットキー）を割り当てる属性です。
+        この属性を指定することで、マウスや、トラックパッドなどが操作できない環境においても、キーボードのキーでその要素を選択することが出来ます。
+        属性値には、1文字の半角英数字を指定します。</p>
+    </section>
+    <section>
+      <h2>アクセスキーの実行方法</h2>
+      <p>accesskey属性で指定したアクセスキーの実行方法は、OSやブラウザによって異なります。</p>
+
+      <table>
+        <thead>
+          <tr>
+            <th>ブラウザー</th>
+            <th>Windows</th>
+            <th>Linux</th>
+            <th>Mac</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th>Firefox</th>
+            <td colspan="2"><span>Alt</span> + <span>Shift</span> + <span>アクセスキー</span></td>
+            <td>
+              Firefox 57以降では<br>
+              <span>Control</span> + <span>Option</span> + <span>アクセスキー</span><br>
+              または <br>
+              <span>Control</span> + <span>Alt</span> + <span>アクセスキー</span><br>
+              Firefox 14以降では<br>
+              <span>Control</span> + <span>Alt</span> + <span>アクセスキー</span><br>
+              Firefox 13以前では <br>
+              <span>Control</span> + <span>アクセスキー</span>
+            </td>
+          </tr>
+          <tr>
+            <th>Edge</th>
+            <td>N/A</td>
+            <td rowspan="3">
+              <span>Control</span> + <span>Option</span> + <span>アクセスキー</span><br>
+              <span>Control</span> + <span>Option</span> + <span>Shift</span> + <span>アクセスキー</span>
+            </td>
+          </tr>
+          <tr>
+            <th>Google<br>Chrome</th>
+            <td><span>Alt</span> + <span>アクセスキー</span></td>
+          </tr>
+          <tr>
+            <th>Safari</th>
+            <td>N/A</td>
+          </tr>
+          <tr>
+            <th>Opera 15+</th>
+            <td colspan="2"><span>Alt</span> + <span>アクセスキー</span></td>
+            <td><span>Control</span> + <span>Alt</span> + <span>アクセスキー</span></td>
+          </tr>
+          <tr>
+            <th>Opera 12+</th>
+            <td colspan="3">
+              <span>Shift</span> + <span>Esc</span>で、accesskeyでアクセスできるコンテンツの一覧を開く。<br>
+              そして、<span>アクセスキー</span>を押すと、該当項目を選択できる。
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <h2>指定できる要素</h2>
+      <p>accesskey属性はグローバル属性のため、すべてのHTML要素に指定することができます。</p>
+      <p>ただし、属性と要素の組み合わせによっては効果がない場合もあります。</p>
+    </section>
+
+    <section class="example">
+      <h2>使用例</h2>
+      <pre><code>&lt;a href="index.html" <span>accesskey="U 1"</span>&gt;リンクテキスト&lt;/a&gt;</code></pre>
+    </section>
+
+
+
+
+    
+
+  </article>
+
+
+
+
+
+
+
+
+
+
   </main>
-  <footer>
-  </footer>
+
+<!--footer-->
+<footer>
+  <h1>HTMLについて他にも…</h1>
+  <div class="swiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide"><img src="../commonImage/footerImg.svg" alt=""></div>
+      <div class="swiper-slide"><img src="../commonImage/footerImg-global.svg" alt=""></div>
+      <div class="swiper-slide"><img src="../commonImage/footerImg-specialCharacter.svg" alt=""></div>
+      <div class="swiper-slide"><img src="../commonImage/footerImg-meta.svg" alt=""></div>
+    </div>
+  </div>
+</footer>
+
 </div>
 </body>
 </html>
